@@ -14,8 +14,8 @@ website:
     style: 'docked'
     search: true
     contents:
-      #- section: Index (2024-3)
-      #  href: index.qmd
+      - section: Index (2024-3)
+        href: index.qmd
       - section: Indroduction
         #href: chapter01.qmd
         contents: 
