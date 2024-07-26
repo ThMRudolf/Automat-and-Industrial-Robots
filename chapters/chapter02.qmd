@@ -1,0 +1,12 @@
+---
+title: "Neumatic and Electroneumatic Automatization"
+author: "Thomas M. Rudolf"
+format: html
+editor: visual
+---
+
+## Elements of a neumatic circuit
+
+## Elements of a electic circuit, electrical acutators and control elements
+
+## Automatization of neumatic and electroneumatic sequences

@@ -1,0 +1,12 @@
+---
+title: "Introduction"
+author: "Thomas M. Rudolf"
+format: html
+editor: visual
+---
+
+## Definition of Automation
+
+## Process Control
+
+## Types of different Industrial Processes

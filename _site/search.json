@@ -1,0 +1,154 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Automation and Process Control",
+    "section": "",
+    "text": "Introduction\n\nDefinition of Automation\nProcess Control\nTypes of different Industrial Processes\n\n\n\nNeumatic and Electroneumatic Automatization\n\nElements of a neumatic circuit\nElements of a electic circuit, electrical acutators and control elements\nAutomatization of neumatic and electroneumatic sequences\n\n\n\nProgramable Logical Control (PLC)\n\nLogical Operations with ladder diagram\nInput and output variables, internal registers of PLC\nDifferent componentens and instructions of PLC programation\n\n\n\nGRAFCET - Funcional Graph of Stage-Transition Control\n\nStages and transition conditions\nRules to develope a GRAFCET\nTransformation of a GRAFCET into a ladder diagram lenguaje Ladder\n\n\n\nState flow\n\nIntroduction to state flow in Matlab\nStates and transitions\nControl a simulation enviroment with state flow\nControl a plant with state flow\n\n\n\nIndustrial Robots\n\nIntroductions to industrial robots\nSecurity topics for usage of industrial robots"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Thomas M. Rudolf",
+    "section": "",
+    "text": "Biography\nHe is currently an full professor and researcher at ITAM. He completed his engineering studies with a specialization in Mechatronics at the University of Darmstadt. During his studies, he focused on the fundamentals of control theory, identification of systems and mechanics. After his studies in Darmstadt, he started working as a research assistant at the Laboratory of Machine Tools at the University of Aachen, RWTH Aachen.\nDuring the following six years at the RWTH, he worked as a scientific assistant and development engineer. During this time, he worked on his doctoral investigation. Besides the investigation, his responsibilities also included the coordination and management of investigation projects. His doctoral thesis (Adaptable parametrization of diagnostic systems by using digital drive signals for process monitoring) was defended on the 11th of March 2014 with a presentation about “Systems Engineering for Medical Devices”.\nHe continued his professional carrier at Roche Diagnostics as a Systems Engineer with a focus on simulation and computation. His primary task was the physical modeling and calculation of insulin delivery systems in order to define technical requirements as well as to verify changes of specifications. This task also included DoE in order to find the most relevant system parameters, the tolerance analysis, and statistical evaluations applying Six Sigma methods, e.g. to evaluate the risks of new consumable products for medical devices. He also applied the methods of Six Sigma to develop a quality gate for the selection of sterile consumable products for medical devices.\nHe lectures Control Engineering, Manufacturing of Components, Computer Integrated Manufacturing, as well as a Solid Mechanics, Design of Robotics Mechanisms, and Mechatronics Systems. He published several articles in international journals about diagnostics and monitoring of manufacturing processes.",
+    "crumbs": [
+      "Automation and Process Control",
+      "about"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter01.html#process-control",
+    "href": "chapters/chapter01.html#process-control",
+    "title": "Introduction",
+    "section": "Process Control",
+    "text": "Process Control",
+    "crumbs": [
+      "Automation and Process Control",
+      "Indroduction",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter01.html#types-of-different-industrial-processes",
+    "href": "chapters/chapter01.html#types-of-different-industrial-processes",
+    "title": "Introduction",
+    "section": "Types of different Industrial Processes",
+    "text": "Types of different Industrial Processes",
+    "crumbs": [
+      "Automation and Process Control",
+      "Indroduction",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter06.html#security-topics-for-usage-of-industrial-robots",
+    "href": "chapters/chapter06.html#security-topics-for-usage-of-industrial-robots",
+    "title": "Industrial Robots",
+    "section": "Security topics for usage of industrial robots",
+    "text": "Security topics for usage of industrial robots",
+    "crumbs": [
+      "Automation and Process Control",
+      "Chapter 6"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter04.html#rules-to-develope-a-grafcet",
+    "href": "chapters/chapter04.html#rules-to-develope-a-grafcet",
+    "title": "GRAFCET - Funcional Graph of Stage-Transition Control",
+    "section": "Rules to develope a GRAFCET",
+    "text": "Rules to develope a GRAFCET",
+    "crumbs": [
+      "Automation and Process Control",
+      "Chapter 4"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter04.html#transformation-of-a-grafcet-into-a-ladder-diagram-lenguaje-ladder",
+    "href": "chapters/chapter04.html#transformation-of-a-grafcet-into-a-ladder-diagram-lenguaje-ladder",
+    "title": "GRAFCET - Funcional Graph of Stage-Transition Control",
+    "section": "Transformation of a GRAFCET into a ladder diagram lenguaje Ladder",
+    "text": "Transformation of a GRAFCET into a ladder diagram lenguaje Ladder",
+    "crumbs": [
+      "Automation and Process Control",
+      "Chapter 4"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter02.html#elements-of-a-electic-circuit-electrical-acutators-and-control-elements",
+    "href": "chapters/chapter02.html#elements-of-a-electic-circuit-electrical-acutators-and-control-elements",
+    "title": "Neumatic and Electroneumatic Automatization",
+    "section": "Elements of a electic circuit, electrical acutators and control elements",
+    "text": "Elements of a electic circuit, electrical acutators and control elements",
+    "crumbs": [
+      "Automation and Process Control",
+      "Chapter 2"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter02.html#automatization-of-neumatic-and-electroneumatic-sequences",
+    "href": "chapters/chapter02.html#automatization-of-neumatic-and-electroneumatic-sequences",
+    "title": "Neumatic and Electroneumatic Automatization",
+    "section": "Automatization of neumatic and electroneumatic sequences",
+    "text": "Automatization of neumatic and electroneumatic sequences",
+    "crumbs": [
+      "Automation and Process Control",
+      "Chapter 2"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter03.html#input-and-output-variables-internal-registers-of-plc",
+    "href": "chapters/chapter03.html#input-and-output-variables-internal-registers-of-plc",
+    "title": "Programable Logical Control (PLC)",
+    "section": "Input and output variables, internal registers of PLC",
+    "text": "Input and output variables, internal registers of PLC",
+    "crumbs": [
+      "Automation and Process Control",
+      "Chapter 3"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter03.html#different-componentens-and-instructions-of-plc-programation",
+    "href": "chapters/chapter03.html#different-componentens-and-instructions-of-plc-programation",
+    "title": "Programable Logical Control (PLC)",
+    "section": "Different componentens and instructions of PLC programation",
+    "text": "Different componentens and instructions of PLC programation",
+    "crumbs": [
+      "Automation and Process Control",
+      "Chapter 3"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter05.html#states-and-transitions",
+    "href": "chapters/chapter05.html#states-and-transitions",
+    "title": "State flow",
+    "section": "States and transitions",
+    "text": "States and transitions",
+    "crumbs": [
+      "Automation and Process Control",
+      "Chapter 5"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter05.html#control-a-simulation-enviroment-with-state-flow",
+    "href": "chapters/chapter05.html#control-a-simulation-enviroment-with-state-flow",
+    "title": "State flow",
+    "section": "Control a simulation enviroment with state flow",
+    "text": "Control a simulation enviroment with state flow",
+    "crumbs": [
+      "Automation and Process Control",
+      "Chapter 5"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter05.html#control-a-plant-with-state-flow",
+    "href": "chapters/chapter05.html#control-a-plant-with-state-flow",
+    "title": "State flow",
+    "section": "Control a plant with state flow",
+    "text": "Control a plant with state flow",
+    "crumbs": [
+      "Automation and Process Control",
+      "Chapter 5"
+    ]
+  }
+]

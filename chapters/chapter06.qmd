@@ -1,0 +1,10 @@
+---
+title: "Industrial Robots"
+author: "Thomas M. Rudolf"
+format: html
+editor: visual
+---
+
+## Introductions to industrial robots
+
+## Security topics for usage of industrial robots
