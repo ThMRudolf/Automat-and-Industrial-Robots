@@ -1,0 +1,12 @@
+---
+title: "GRAFCET - Funcional Graph of Stage-Transition Control"
+author: "Thomas M. Rudolf"
+format: html
+editor: visual
+---
+
+## Stages and transition conditions
+
+## Rules to develope a GRAFCET
+
+## Transformation of a GRAFCET into a ladder diagram lenguaje Ladder

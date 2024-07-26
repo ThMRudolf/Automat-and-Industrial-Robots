@@ -1,0 +1,14 @@
+---
+title: "State flow"
+author: "Thomas M. Rudolf"
+format: html
+editor: visual
+---
+
+## Introduction to state flow in Matlab
+
+## States and transitions
+
+## Control a simulation enviroment with state flow
+
+## Control a plant with state flow
