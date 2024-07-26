@@ -1,6 +1,8 @@
 project:
   type: website
 
+output-dir: ./
+
 website:
   title: "HOME" #"Automatation and Industrial Robots"
   navbar:
@@ -44,6 +46,7 @@ website:
 format:
   html:
     #theme: cosmo
+    output-file: index.html
     css: style.css
     toc: false
     toc-location: left
