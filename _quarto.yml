@@ -1,12 +1,14 @@
 execute:
-  freeze: auto
+    freeze: auto
 
 project:
   type: website
-
+  output-dir: _site
+  #author: "Thomas M. Rudolf"
 
 website:
   title: "HOME" #"Automatation and Industrial Robots"
+  
   navbar:
     left:
       - href: index.qmd
@@ -16,8 +18,10 @@ website:
     contents:
       - section: Index (2024-3)
         href: index.qmd
+        contents: 
+        -  index.qmd
       - section: Indroduction
-        #href: chapter01.qmd
+        href: chapter01.qmd
         contents: 
         - chapter01.qmd
       - section: Chapter 2
@@ -47,8 +51,8 @@ website:
       
 format:
   html:
-    #theme: cosmo
-    output-file: index.html
+    theme: default
+    #output-file: index.html
     css: style.css
     toc: false
     toc-location: left
