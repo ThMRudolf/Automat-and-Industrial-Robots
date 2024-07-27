@@ -9,6 +9,8 @@ editor: visual
 
 What is automation?
 
+![figure 1.1 Automation](figures/fig01-001.png)
+
 ## Process Control
 
 ## Types of different Industrial Processes
