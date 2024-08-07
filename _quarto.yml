@@ -20,7 +20,7 @@ website:
         href: index.qmd
         contents: 
         -  index.qmd
-      - section: About the lecure
+      - section: About the lecture
         href: chapter00.qmd
         contents: 
         - chapter00.qmd
