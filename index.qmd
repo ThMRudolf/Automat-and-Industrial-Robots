@@ -52,7 +52,7 @@ toc-title: "Index 2024-3"
 
 -   Control a plant with state flow
 
-# Industrial Robots
+# Industrial Robots (optional)
 
 -   Introductions to industrial robots
 

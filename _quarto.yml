@@ -24,7 +24,7 @@ website:
         href: chapter00.qmd
         contents: 
         - chapter00.qmd
-      - section: Indroduction
+      - section: Chapter 1
         href: chapter01.qmd
         contents: 
         - chapter01.qmd
