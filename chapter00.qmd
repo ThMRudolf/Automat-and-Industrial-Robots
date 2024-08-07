@@ -1,0 +1,62 @@
+---
+title: "About the Lecure"
+author: "Thomas M. Rudolf"
+format: html
+editor: visual
+---
+
+## General Information about the lecture
+
+### Schedules
+
+-   Theory: Mon / Wed, 12:30-14:00 hrs
+
+-   Lab: Fri 11:00-14:00 hrs
+
+### Lecturers
+
+-   Prof. Thomas M. Rudolf( theory)
+-   Prof. Claudia Victoria Olivar Jiménez (laboratory)
+
+### Location
+
+-   Aula LMINT
+
+## Description and Objetives
+
+-   Address concepts related to Industrial Automation systems.
+-   Control methods applied mainly to sequential processes and the theory related to Grafcet will also be studied.
+-   Application of emerging technologies to automate industrial processes. The structure and programming logic for Programmable Logic Controllers (PLC) will be studied.-
+## What is covered in this lecture:
+
+![](figures/fig00-001.png)
+
+## What is not covered in this lecture:
+
+-   It is not a lectura about neumatics nor hydraulics
+-   It is not a fluid dynamics lecture.
+
+## Evaluation
+
+| Type          | percentage |
+|---------------|------------|
+| 2 Parcials    | 25 % each  |
+| Final Project | 30%        |
+| Laboratory    | 20%        |
+
+## Course rules
+
+-   Maximum 10 minutes delay.
+-   NO re-examinations.
+-   Sanction for plagiarism according to the regulations
+-   Food is not allowed in the lab
+
+## Topics
+
+-   Introduction to automation
+-   Pneumatic and Electro-pneumatic Automatization
+-   PLC programmable controllers
+-   Grafcet
+-   State Flow
+-   Industrial Robots (optional)
+![](figures/fig00-002.png)

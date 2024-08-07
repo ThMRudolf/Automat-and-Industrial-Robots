@@ -20,6 +20,10 @@ website:
         href: index.qmd
         contents: 
         -  index.qmd
+      - section: About the lecure
+        href: chapter00.qmd
+        contents: 
+        - chapter01.qmd
       - section: Indroduction
         href: chapter01.qmd
         contents: 
