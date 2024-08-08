@@ -21,6 +21,23 @@ To improve the resulting behaviour and be able to correct possible differences b
 
 ## Industrial Process
 
+Set of actions for transporting and transforming raw materials to obtain a final product.
+
 ## Types of Industrial Processes
+
+### Continouse Processes:
+
+-   Uninterrupted process over time in which analog variables (temperature, speed, etc.) are manipulated. Process in which raw materials are constantly entering at one end of the system, while at the other end a finished product is continuously obtained.
+
+-   Proceso en el que las materias primas están constantemente entrando por un extremo del sistema, mientras que en el otro extremo se obtiene de forma continua un producto terminado.
+
+*Example: Heating System*
+Someone defines the requiered temperature in the room. The input value can be done by different types of devices, digital or analogue inputs, for example.
+The at the same time, the current room temperature is measured and compared to the reference. The difference between these two value a the input to the controller and the controller calculates the new opening value for a valve that opens ths gas flow to the burner. The room gets warmer (or not) and a new temparature is measured. This new temparature value is than compared again to the reference value.
+
+![fig. 1.3 Heating System](figures/fig01-003.png)
+
+
+![fig. 1.4 representation of a heating System in blocks](figures/fig01-004.png)
 
 ## Industrial Automation
