@@ -13,11 +13,11 @@ There are basically two types of control: Open Loop and Closed Loop
 
 The open loop has the following structure. It receives a command or reference signal. The controller calulates an input signal for the actuator. The output of the actuatar starts manipulating the system. Since the controler does not receives any feedback on how the systems reacts on the command the results might be different from the desired behaviour. Examples for the application of open loop control are: A tennis player who hits the ball, if you turn on a light in you room or a DC motor without sensors.
 
-## ![structure open loop.](figures/fig01-001.png)
+![fig. 1.1: general structure of a open loop control](figures/fig01-001.png)
 
-To improve the resulting behaviour and be able to correct possible differences between the commad value and the resulting value, one can implement sensors that observe the resulting behaviour of the systems or process. This sensors return the current behaviour to the controller and the controller can correct the input signal to the actuator. The following figure shows the general structure of a close loop control.
+To improve the resulting behaviour and be able to correct possible differences between the commad value and the resulting value, one can implement sensors that observe the resulting behaviour of the systems or process. This sensors return the current behaviour to the controller and the controller can correct the input signal to the actuator. The following figure shows the general structure of a close loop control.fi
 
-![general structure of a close loop control](figures/fig01-002.png)
+![fig. 1.2: general structure of a close loop control](figures/fig01-002.png)
 
 ## Industrial Process
 
