@@ -31,13 +31,12 @@ Set of actions for transporting and transforming raw materials to obtain a final
 
 -   Proceso en el que las materias primas están constantemente entrando por un extremo del sistema, mientras que en el otro extremo se obtiene de forma continua un producto terminado.
 
-*Example: Heating System*
-Someone defines the requiered temperature in the room. The input value can be done by different types of devices, digital or analogue inputs, for example.
-The at the same time, the current room temperature is measured and compared to the reference. The difference between these two value a the input to the controller and the controller calculates the new opening value for a valve that opens ths gas flow to the burner. The room gets warmer (or not) and a new temparature is measured. This new temparature value is than compared again to the reference value.
+*Example: Heating System* Someone defines the requiered temperature in the room. The input value can be done by different types of devices, digital or analogue inputs, for example. The at the same time, the current room temperature is measured and compared to the reference. The difference between these two value a the input to the controller and the controller calculates the new opening value for a valve that opens ths gas flow to the burner. The room gets warmer (or not) and a new temparature is measured. This new temparature value is than compared again to the reference value.
 
 ![fig. 1.3 Heating System](figures/fig01-003.png)
 
-
 ![fig. 1.4 representation of a heating System in blocks](figures/fig01-004.png)
+
+One can abstact the real system in block diagrams with different levels. In fig.1.4 the complete heating system is represented as one block *Process*. The block has inputs and outputs. in the presented case, the inputs are air, water and gas while the outputs are the air with a desired temperature.
 
 ## Industrial Automation
