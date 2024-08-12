@@ -21,11 +21,13 @@ To improve the resulting behaviour and be able to correct possible differences b
 
 ## Industrial Process
 
-Set of actions for transporting and transforming raw materials to obtain a final product.
+An industrial Process is a set of actions for transporting and transforming raw materials to obtain a final product.
 
 ## Types of Industrial Processes
 
-### Continouse Processes:
+There are different types pf proceses within industrial processes: Continuous Processes, Discrete and Processes Non-continouse Processes by batches. Each type will be explained shortly.
+
+### Continuous Processes:
 
 -   Uninterrupted process over time in which analog variables (temperature, speed, etc.) are manipulated. Process in which raw materials are constantly entering at one end of the system, while at the other end a finished product is continuously obtained.
 
@@ -37,6 +39,13 @@ Set of actions for transporting and transforming raw materials to obtain a final
 
 ![fig. 1.4 representation of a heating System in blocks](figures/fig01-004.png)
 
-One can abstact the real system in block diagrams with different levels. In fig.1.4 the complete heating system is represented as one block *Process*. The block has inputs and outputs. in the presented case, the inputs are air, water and gas while the outputs are the air with a desired temperature.
+### Discrete Processes
+-   Processes that involve variables that can take a finite number of possible values or states. 
+
+-   Processes in which the output product is obtained through a series of operations.
+
+
+
+
 
 ## Industrial Automation
