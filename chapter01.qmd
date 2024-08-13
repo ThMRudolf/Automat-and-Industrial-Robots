@@ -7,7 +7,8 @@ editor: visual
 
 ## Definition of Automation
 
-Replacement of the human operator by an artificial operator, in the execution of a previously programmed physical or mental task. \## Types of control schemes One has to control the system in order to autmate it.
+Replacement of the human operator by an artificial operator, in the execution of a previously programmed physical or mental task. One has to control the system in order to autmate it.
+## Types of control schemes 
 
 There are basically two types of control: Open Loop and Closed Loop
 
