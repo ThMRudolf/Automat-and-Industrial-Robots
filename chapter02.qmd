@@ -67,7 +67,25 @@ Air density is significantly smaller than that of oil (used in hydraulics). Ther
 
 *Composition:* Types of gases that make up the air under consideration. Example: dry air at sea level is composed mainly of Nitrogen (78%) and Oxygen (20.99%). *Shape and volume:* They have no defined shape or volume. They acquire the shape and volume of the tank that contains them. *Cost (Flow):* It is the quantity of fluid that circulates through a section of the duct per unit of time.
 
+The relative humidity is the amount of water vapor contained in volume of air. It depends on the air temperature and pressure. When the air is saturated, it means that the relative humidity is at 100%.
+
 Consider the behavior of air with water under defined circumstances: temperature 20°C and a relative humidity of 50%. This means that it contains 8.7g of water which is the half of the maximum 17.4g.
+
+When the compressor compresses the 4 $𝑚^3$. to form 1 $𝑚^3$, the $4×8.7=34.8 g$ of water cannot hold in it. The $𝑚^3$ can hold at most 17.4 g of water. The other $2×8.7=17.4g$ fall as drops.
+
+![fig. 2.1 effect on air with relative humidity when compressed](figures/fig02-001.png){width="60%"}
+
+*Conclusion:* When air is compressed, water $H_2O$ liquefies from gaseous state to liquid state. The water vapor in the air is also compressed and the result is similar to squeezing a sponge. The compressed air reaches a saturation of 100% relative humidity inside the tank. The separated water can be drained via a drainage system.
+
+*Gas pressure and gas laws:* The relation between force $F$ and pressure $p$ is related by its contact area A: $F=pA$. The gas behaviour can be explained by several laws, explained as follows with $V$ as volume and $T$ as temperature:
+
+-   Pascal's law: $p_{in} = \frac{F_{in}}{A_{in}} = \frac{F_{out}}{A_{out}}=p_{out}$, with in as input and out as output,
+
+-   Boyle's law: $V_1 p_1 = V_2 p_2$ or $Vp=constant$ and $V \propto \frac{1}{p}$, with V as volume
+
+-   Charles' law: $\frac{V}{T}=constant$,
+
+-   Gay-Lussac's law: $\frac{p}{T}=constant$.
 
 ### Pneumatic Installations
 
