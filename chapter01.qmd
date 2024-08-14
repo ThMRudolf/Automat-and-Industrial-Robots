@@ -7,8 +7,7 @@ editor: visual
 
 ## Definition of Automation
 
-Replacement of the human operator by an artificial operator, in the execution of a previously programmed physical or mental task. One has to control the system in order to autmate it.
-## Types of control schemes 
+Replacement of the human operator by an artificial operator, in the execution of a previously programmed physical or mental task. One has to control the system in order to autmate it. \## Types of control schemes
 
 There are basically two types of control: Open Loop and Closed Loop
 
@@ -41,12 +40,53 @@ There are different types pf proceses within industrial processes: Continuous Pr
 ![fig. 1.4 representation of a heating System in blocks](figures/fig01-004.png)
 
 ### Discrete Processes
--   Processes that involve variables that can take a finite number of possible values or states. 
+
+-   Processes that involve variables that can take a finite number of possible values or states.
 
 -   Processes in which the output product is obtained through a series of operations.
 
+Example: *Production of metalic pieces*
 
+Steps:
 
+1.  Cut the piece
 
+2.  Transport the piece
+
+3.  Drilling A
+
+4.  Drilling B T
+
+5.  ake the piece out
+
+![fig. 1.5 example of the production of a metalic product](figures/fig01-005.png){width="60%"}
+
+## Non-continouse Processe by batches
+
+Processes where the final product is made up of different components.
+
+Steps:
+
+1.  Position pieces C,D and E
+
+2.  Position piece B
+
+3.  Position piece A
+
+4.  return cylindres pieces C,D and E
+
+![fig. 1.6 Assembly process](figures/fig01-006.png){width="80%"}
+
+Box Stacker:
+
+![fig. 1.7 process of box positioning for further transport.](figures/fig01-007.png){width="80%"}
+
+## Resume: Types fo processes and types of control
+
+![fig. 1.8 resume of processes and control types](figures/fig01-008.png){width="80%"}
 
 ## Industrial Automation
+
+Total (or partial) elimination of human intervention in manufacturing processes, carrying out calculation and decision functions.
+
+Typical examples with pneumatic application can be found in the food and drug industry ([example](https://www.youtube.com/watch?v=pUbH4j4f1-g)) or in the textil industry ([example](https://www.youtube.com/watch?v=oeSu9Vcu0DU)).
