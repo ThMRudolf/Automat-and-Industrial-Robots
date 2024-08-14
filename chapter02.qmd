@@ -25,16 +25,19 @@ The design of devices that used air energy dates back to the 18th century (with 
 
 #### Comparison with other technologies
 
-|     | Col2 | Col3 | Col4 |
-|-----|------|------|------|
-|     |      |      |      |
-|     |      |      |      |
-|     |      |      |      |
-|     |      |      |      |
-|     |      |      |      |
-|     |      |      |      |
+|                          | Electricity                                                                    | Hydraulic                                                                      | Pneumatic                                                               |
+|--------------------------|--------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| Leaks                    |                                                                                | Pollution                                                                      | Apart from energy loss, no disadvantages.                               |
+| Environmental influences | Explosion hazard in certain environments; relatively sensitive to temperature. | Sensitive to temperature fluctuations; Fire hazard in case of leaks.           | Does not cause explosions; Insensitive to temperatures.                 |
+| Energy storage           | Difficult and only in small quantities using batteries                         | Within certain limits, using gases                                             | Easy                                                                    |
+| Energy transport         | Unlimited, but with energy loss                                                | Up to 100 m with flow velocity of v = 2-6 m/s, signal velocity up to 1000 m/s. | Up to 1000 m with flow velocityv = 20-40 m/s,signal velocity 20-40 m/s. |
+| Working speed            |                                                                                | v = 0.5 m/s                                                                    | v = 1.5 m/s                                                             |
 
 : Comparison with other technologies
+
+*Advantages of pneumatic energy over hydraulic energy*
+
+Air density is significantly smaller than that of oil (used in hydraulics). Therefore, the inertia effect is smaller. Air can be discharged into the atmosphere after a task. Pneumatic systems are more economical. Pneumatic systems are less toxic and cleaner. Pneumatic systems are lighter, easier to transport.
 
 ### Basic physical characteristics of gases
 
@@ -42,11 +45,11 @@ The design of devices that used air energy dates back to the 18th century (with 
 
 ### Pneumatic actuators.
 
-### Pneumatic valves. 
+### Pneumatic valves.
 
-### Pneumatic circuits with Simscape /Fluids. 
+### Pneumatic circuits with Simscape /Fluids.
 
-### Pneumatic sequences. 
+### Pneumatic sequences.
 
 1.  Cascade method
 
