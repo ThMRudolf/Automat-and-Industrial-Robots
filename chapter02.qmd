@@ -81,11 +81,11 @@ When the compressor compresses the 4 $𝑚^3$. to form 1 $𝑚^3$, the $4×8.7=3
 
 -   Pascal's law: $p_{in} = \frac{F_{in}}{A_{in}} = \frac{F_{out}}{A_{out}}=p_{out}$, with in as input and out as output,
 
--   Boyle's law: $V_1 p_1 = V_2 p_2$ or $Vp=constant$ and $V \propto \frac{1}{p}$, with V as volume
+-   Boyle's law: $V_1 p_1 = V_2 p_2$ or $Vp=constant$ and $V \propto \frac{1}{p}$, with constant temperature $T$
 
--   Charles' law: $\frac{V}{T}=constant$,
+-   Charles' law: $\frac{V}{T}=constant$, with constant pressure $p$
 
--   Gay-Lussac's law: $\frac{p}{T}=constant$.
+-   Gay-Lussac's law: $\frac{p}{T}=constant$, with constant volume $V$
 
 ### Pneumatic Installations
 
