@@ -77,9 +77,37 @@ When the compressor compresses the 4 $𝑚^3$. to form 1 $𝑚^3$, the $4×8.7=3
 
 *Conclusion:* When air is compressed, water $H_2O$ liquefies from gaseous state to liquid state. The water vapor in the air is also compressed and the result is similar to squeezing a sponge. The compressed air reaches a saturation of 100% relative humidity inside the tank. The separated water can be drained via a drainage system.
 
-*Gas pressure and gas laws:* The relation between force $F$ and pressure $p$ is related by its contact area A: $F=pA$. The gas behaviour can be explained by several laws, explained as follows with $V$ as volume and $T$ as temperature:
+The flow is defined as the quantity of fluid that circulates through a section of duct per unit of time. Generally the letter $Q$ is used. $Q = \frac{V}{t}=\frac{A s}{t}$ wit $s$ as displacement, $A$ as areaof the cross section and $t$ as time. Considering that $\frac{s}{t}$displacement per time unit is velocity, one can rewrite $Q=Av$. The standard units of the variables are as follows:
 
--   Pascal's law: $p_{in} = \frac{F_{in}}{A_{in}} = \frac{F_{out}}{A_{out}}=p_{out}$, with in as input and out as output,
+-   $[Q] = [ \frac{m^3}{s}]$
+
+-   $[A] = [m^2]$
+
+-   $[v] = [\frac{m}{s}]$
+
+    ![Fig. 2.2 graphical description of flow \$Q\$](figures/fig02-002.png){width="352"}
+
+*Gas pressure and gas laws:* The relation between force $F$ and pressure $p$ is related by its contact cross section area A: $F=pA$. The unit in Pascal $[Pa]=[\frac{N}{m^2}]$in the international system (SI) and it is $[psi]=[\frac{lb}{in^2}]$ in english units. For many industrial aplications, one uses $bar$. The relation between $bar$ and $Pa$ is $1 bar = 10^5 Pa =100kPa$. The pressure that air exerts “naturally” on the Earth's surface due to its weight is called atmospheric pressure (Atm): $1 atm = 1.01325 bar = 101,325 P$. Due to the weight of the air column above: it decreases at higher altitudes and increases at lower altitudes.
+
+![fig. 2.3 pressure defined by force and cross section](figures/fig02-003.png){width="31%"}
+
+*Gauge pressure (relative pressure)* indicated by the manometers (\$bar\$ or $ps$). It is the excess of air pressure with respect to atmospheric pressure. It is abbreviated $p_m$ ($p_g$ in English).
+
+$p_{absolute}=p_m+1.01325 bar (1 atm)$
+
+For simlification, one aproximates $1 atm = 1 bar$
+
+Another unit of pressure measurement is the $torr$ or $mmHg$. It is equivalent to the pressure exerted by a one millimeter column of mercury. However, we won´t use this units in our course.
+
+![](figures/fig02-004.png){width="60%"}
+
+The gas behaviour can be explained by several laws, explained as follows with $V$ as volume and $T$ as temperature:
+
+-   Pascal's law: $p_{in} = \frac{F_{in}}{A_{in}} = \frac{F_{out}}{A_{out}}=p_{out}$, with in as input and out as output
+
+    Fluid pressure is transmitted equally in all directions. The force exerted by a piston is equal to the product of the effective area times the air pressure: Example of a Hydraulic Press:
+
+![](figures/fig02-005.png){fig-align="center" width="50%"}
 
 -   Boyle's law: $V_1 p_1 = V_2 p_2$ or $Vp=constant$ and $V \propto \frac{1}{p}$, with constant temperature $T$
 
