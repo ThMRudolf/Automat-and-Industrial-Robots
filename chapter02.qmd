@@ -95,7 +95,7 @@ The flow is defined as the quantity of fluid that circulates through a section o
 
 $p_{absolute}=p_m+1.01325 bar (1 atm)$
 
-For simlification, one aproximates $1 atm = 1 bar$
+For simlification, one aproximates $1 atm \propto 1 bar$
 
 Another unit of pressure measurement is the $torr$ or $mmHg$. It is equivalent to the pressure exerted by a one millimeter column of mercury. However, we won´t use this units in our course.
 
