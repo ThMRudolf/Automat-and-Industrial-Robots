@@ -38,7 +38,7 @@ editor: visual
 
 ## What is not covered in this lecture:
 
--   It is not a lectura about pneumatics nor hydraulics
+-   It is not a lectur about pneumatics nor hydraulics.
 -   It is not a fluid dynamics lecture.
 
 ## Evaluation
