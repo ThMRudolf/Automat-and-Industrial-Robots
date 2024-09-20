@@ -19,7 +19,7 @@ editor: visual
 
 ### Lecturers
 
--   Prof. Thomas M. Rudolf( theory)
+-   Prof. Thomas M. Rudolf (theory)
 -   Prof. Claudia Victoria Olivar Jiménez (laboratory)
 
 ### Location
