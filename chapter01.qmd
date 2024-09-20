@@ -7,15 +7,17 @@ editor: visual
 
 ## Definition of Automation
 
-Replacement of the human operator by an artificial operator, in the execution of a previously programmed physical or mental task. One has to control the system in order to autmate it. \## Types of control schemes
+Replacement of the human operator by an artificial operator, in the execution of a previously programmed physical or mental task. One has to control the system in order to automate it. 
+
+## Types of control schemes
 
 There are basically two types of control: Open Loop and Closed Loop
 
-The open loop has the following structure. It receives a command or reference signal. The controller calulates an input signal for the actuator. The output of the actuatar starts manipulating the system. Since the controler does not receives any feedback on how the systems reacts on the command the results might be different from the desired behaviour. Examples for the application of open loop control are: A tennis player who hits the ball, if you turn on a light in you room or a DC motor without sensors.
+The open loop has the following structure. It receives a command or reference signal. The controller calulates an input signal for the actuator. The output of the actuator starts manipulating the system. Since the controler does not receives any feedback on how the systems reacts on the command the results might be different from the desired behaviour. Examples for the application of open loop control are: A tennis player who hits the ball, if you turn on a light in you room or a DC motor without sensors.
 
 ![fig. 1.1: general structure of a open loop control](figures/fig01-001.png)
 
-To improve the resulting behaviour and be able to correct possible differences between the commad value and the resulting value, one can implement sensors that observe the resulting behaviour of the systems or process. This sensors return the current behaviour to the controller and the controller can correct the input signal to the actuator. The following figure shows the general structure of a close loop control.fi
+To improve the resulting behaviour and be able to correct possible differences between the commad value and the resulting value, one can implement sensors that observe the resulting behaviour of the systems or process. This sensors return the current behaviour to the controller and the controller can correct the input signal to the actuator. The following figure shows the general structure of a close loop control.
 
 ![fig. 1.2: general structure of a close loop control](figures/fig01-002.png)
 
@@ -25,15 +27,16 @@ An industrial Process is a set of actions for transporting and transforming raw 
 
 ## Types of Industrial Processes
 
-There are different types pf proceses within industrial processes: Continuous Processes, Discrete and Processes Non-continouse Processes by batches. Each type will be explained shortly.
+There are different types of proceses within industrial processes: Continuous Processes, Discrete and Processes Non-continouse Processes by batches. Each type will be explained shortly.
 
 ### Continuous Processes:
 
--   Uninterrupted process over time in which analog variables (temperature, speed, etc.) are manipulated. Process in which raw materials are constantly entering at one end of the system, while at the other end a finished product is continuously obtained.
+-   Uninterrupted process over time in which analog variables (temperature, speed, etc.) are manipulated. 
 
--   Proceso en el que las materias primas están constantemente entrando por un extremo del sistema, mientras que en el otro extremo se obtiene de forma continua un producto terminado.
+-   Process in which raw materials are constantly entering at one end of the system, while at the other end a finished product is continuously obtained.
 
-*Example: Heating System* Someone defines the requiered temperature in the room. The input value can be done by different types of devices, digital or analogue inputs, for example. The at the same time, the current room temperature is measured and compared to the reference. The difference between these two value a the input to the controller and the controller calculates the new opening value for a valve that opens ths gas flow to the burner. The room gets warmer (or not) and a new temparature is measured. This new temparature value is than compared again to the reference value.
+
+*Example: Heating System* Someone defines the requiered temperature in the room. The input value can be done by different types of devices, digital or analogue inputs, for example. At the same time, the current room temperature is measured and compared to the reference. The difference between these two values are the input to the controller and the controller calculates the new opening value for a valve that opens the gas flow to the burner. The room gets warmer (or not) and a new temparature is measured. This new temparature value is then compared again to the reference value.
 
 ![fig. 1.3 Heating System](figures/fig01-003.png)
 
@@ -55,25 +58,25 @@ Steps:
 
 3.  Drilling A
 
-4.  Drilling B T
+4.  Drilling B 
 
-5.  ake the piece out
+5.  Take the piece out
 
 ![fig. 1.5 example of the production of a metalic product](figures/fig01-005.png){width="60%"}
 
-## Non-continouse Processe by batches
+## Non-continuous Processes by batches
 
 Processes where the final product is made up of different components.
 
 Steps:
 
-1.  Position pieces C,D and E
+1.  Position pieces C, D and E
 
 2.  Position piece B
 
 3.  Position piece A
 
-4.  return cylindres pieces C,D and E
+4.  Return cylinders pieces C, D and E
 
 ![fig. 1.6 Assembly process](figures/fig01-006.png){width="80%"}
 
@@ -81,7 +84,7 @@ Box Stacker:
 
 ![fig. 1.7 process of box positioning for further transport.](figures/fig01-007.png){width="80%"}
 
-## Resume: Types fo processes and types of control
+## Resume: Types of processes and types of control
 
 ![fig. 1.8 resume of processes and control types](figures/fig01-008.png){width="80%"}
 
