@@ -32,10 +32,10 @@ website:
         href: chapter02.qmd
         contents: 
         - chapter02.qmd
-      #- section: Chapter 3
-      #  href: chapter03.qmd
-      #  contents: 
-      #  - chapter03.qmd
+      - section: Chapter 3
+        href: chapter03.qmd
+        contents: 
+        - chapter03.qmd
       #- section: Chapter 4
       #  href: chapter04.qmd
       #  contents: 
