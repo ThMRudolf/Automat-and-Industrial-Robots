@@ -7,7 +7,7 @@ editor: visual
 
 ## Elements of a pneumatic circuit
 
-‘Pneumatics’ is derived from the Greek ‘neuma’ (air or breath). Originally, the term pneumatics designated the science of the movement and properties of air. Branch of engineering that deals with the study and application of compressed air, its generation, transmission and control.
+The word ‘Pneumatics’ is derived from the Greek ‘neuma’ (air or breath). Originally, the term pneumatics designated the science of the movement and properties of air. This is the branch of engineering that deals with the study and application of compressed air, its generation, transmission and control.
 
 The design of devices that used air energy dates back to the 18th century (with the pneumatic rifle). “Modern” devices: pneumatic rock drill, pneumatic brakes. “Modern” pneumatics was born in the 1950s, when techniques and forms of air energy control were introduced in industrial processes.
 
@@ -34,7 +34,7 @@ The design of devices that used air energy dates back to the 18th century (with 
 +--------------------------+--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+-------------------------------------------------------------------------+
 | Energy storage           | Difficult and only in small quantities using batteries                         | Within certain limits, using gases                                             | Easy                                                                    |
 +--------------------------+--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+-------------------------------------------------------------------------+
-| Energy transport         | Unlimited, but with energy loss                                                | Up to 100 m with flow velocity of v = 2-6 m/s, signal velocity up to 1000 m/s. | Up to 1000 m with flow velocityv = 20-40 m/s,signal velocity 20-40 m/s. |
+| Energy transport         | Unlimited, but with energy loss                                                | Up to 100 m with flow velocity of v = 2-6 m/s, signal velocity up to 1000 m/s. | Up to 1000 m with flow velocity v = 20-40 m/s, signal velocity 20-40 m/s. |
 +--------------------------+--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+-------------------------------------------------------------------------+
 | Working speed            |                                                                                | v = 0.5 m/s                                                                    | v = 1.5 m/s                                                             |
 +--------------------------+--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+-------------------------------------------------------------------------+
