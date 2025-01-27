@@ -4,13 +4,12 @@ author: "Thomas M. Rudolf"
 format: html
 editor: visual
 ---
-TEST
 
 ## General Information about the lecture
 
 ### Schedules
 
--   Theory: Mon / Wed, 12:30-14:00 hrs
+-   Theory: Mon / Wed, 12:30-14:00 hrs TEST
 
 -   Laboratory:
 
