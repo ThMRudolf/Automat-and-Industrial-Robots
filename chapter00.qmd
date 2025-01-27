@@ -9,7 +9,7 @@ editor: visual
 
 ### Schedules
 
--   Theory: Mon / Wed, 12:30-14:00 hrs TEST
+-   Theory: Mon / Wed, 12:30-14:00 hrs
 
 -   Laboratory:
 
