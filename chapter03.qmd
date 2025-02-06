@@ -5,8 +5,82 @@ format: html
 editor: visual
 ---
 
-## Logical Operations with ladder diagram
+## Logical Operations with Ladder Diagram
 
-## Input and output variables, internal registers of PLC
+GRAFCET (Graphical Functional Control Step Transition) emerged in the 70s through collaboration between PLC manufacturers and official organizations like AFCET and ADEPA. It is a graphical tool used to describe deterministic control behavior.
 
-## Different componentens and instructions of PLC programation
+**Insert Image**  
+<div style='color: red; font-weight: bold;'>INSERT IMAGE</div>
+
+## Input and Output Variables, Internal Registers of PLC
+
+GRAFCET allows modeling the sequential behavior of an automated system. It describes process evolution, indicating the actions required and the information triggering them.
+
+### Elements of GRAFCET
+- **Stages**: Each stage corresponds to a specific process step.
+- **Transitions**: Define the conditions to move between stages.
+- **Links**: Connect different process parts.
+- **Interpretation Elements**: Conditions necessary for process transitions.
+
+**Insert Image**  
+<div style='color: red; font-weight: bold;'>INSERT IMAGE</div>
+
+## Different Components and Instructions of PLC Programming
+
+A sequential process executes an action based on the result of the previous action. Transition conditions must be met to move from one stage to another.
+
+### Transition Conditions
+- **Active Condition (CT[i] = F1)**: Activates stage *i* when signal F1 is active.
+- **Inactive Condition (CT[i] = F1’)**: Activates stage *i* when signal F1 is inactive.
+- **Time Condition (CT[i] = t/i/10 sec)**: Activates stage *i* after a time delay.
+- **Logical Condition (CT[i] = F1·F2’·F3)**: Activates when specific signals are met.
+- **Unconditional Condition (CT[i] = 1)**: Always activates the next stage.
+
+### Process Evolution Example
+1. **Step 1**: The part reaches position B (sensor detects it).
+2. **Step 2**: Conveyor moves part from A to B.
+3. **Step 3**: Robot picks up the part.
+4. **Step 4**: Drilling process begins.
+5. **Step 5**: Finished part is detected and removed.
+
+**Insert Image**  
+<div style='color: red; font-weight: bold;'>INSERT IMAGE</div>
+
+## Conversion from GRAFCET to Ladder Diagram
+- Each stage corresponds to an internal PLC bit (B3).
+- Stages are activated and deactivated using **Latch** and **Unlatch** commands.
+- Left side conditions define activation and deactivation logic.
+
+### Example: Traffic Light Control Using Timers
+1. **Start Button**: Initiates the sequence.
+2. **Red Light**: Turns on for a specified duration.
+3. **Green Light**: Turns on after Red Light.
+4. **Yellow Light**: Activates before Red.
+5. **Cycle Restarts**.
+
+**Insert Image**  
+<div style='color: red; font-weight: bold;'>INSERT IMAGE</div>
+
+## Common Errors in GRAFCET Implementation
+1. **Incorrect transition conditions** leading to improper process evolution.
+2. **Simultaneous sequence start/end issues**.
+3. **Nested simultaneous sequences causing execution conflicts**.
+4. **Skipping intermediate stages unintentionally**.
+
+## Practical Exercises
+### Exercise 1: Convert the Following Sequence to Ladder Diagram
+- **Sequence**: B+ → A+ → A- → A+ → B- → A-
+
+### Exercise 2: Crane Control System
+- **Four limit switches**: Two for horizontal movement (S3, S4) and two for vertical (S1, S2).
+- **Motors**: Two dual-direction motors controlling crane movement.
+- **Process Flow**:
+  - Move crane to pickup position.
+  - Lift part using vertical motor.
+  - Transport to destination.
+  - Lower and release part.
+
+**Insert Image**  
+<div style='color: red; font-weight: bold;'>INSERT IMAGE</div>
+
+*Note: Replace INSERT IMAGE with actual images related to each section.*
