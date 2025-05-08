@@ -36,18 +36,18 @@ website:
         href: chapter03.qmd
         contents: 
         - chapter03.qmd
-      #- section: Chapter 4
-      #  href: chapter04.qmd
-      #  contents: 
-      #  - chapter04.qmd
-      #- section: Chapter 5
-      #  href: chapter05.qmd
-      #  contents: 
-      #  - chapter05.qmd
-      #- section: Chapter 6
-      #  href: chapter06.qmd
-      #  contents: 
-      #  - chapter06.qmd
+      - section: Chapter 4
+        href: chapter04.qmd
+        contents: 
+        - chapter04.qmd
+      - section: Chapter 5
+        href: chapter05.qmd
+        contents: 
+        - chapter05.qmd
+      - section: Chapter 6
+        href: chapter06.qmd
+        contents: 
+        - chapter06.qmd
       - section: about
         href: about.qmd
         contents: 
