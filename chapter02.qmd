@@ -25,19 +25,21 @@ The design of devices that used air energy dates back to the 18th century (with 
 
 #### Comparison with other technologies
 
-+--------------------------+--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+-------------------------------------------------------------------------+
-|                          | Electricity                                                                    | Hydraulic                                                                      | Pneumatic                                                               |
-+==========================+================================================================================+================================================================================+=========================================================================+
-| Leaks                    |                                                                                | Pollution                                                                      | Apart from energy loss, no disadvantages.                               |
-+--------------------------+--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+-------------------------------------------------------------------------+
-| Environmental influences | Explosion hazard in certain environments; relatively sensitive to temperature. | Sensitive to temperature fluctuations; Fire hazard in case of leaks.           | Does not cause explosions; Insensitive to temperatures.                 |
-+--------------------------+--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+-------------------------------------------------------------------------+
-| Energy storage           | Difficult and only in small quantities using batteries                         | Within certain limits, using gases                                             | Easy                                                                    |
-+--------------------------+--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+-------------------------------------------------------------------------+
-| Energy transport         | Unlimited, but with energy loss                                                | Up to 100 m with flow velocity of v = 2-6 m/s, signal velocity up to 1000 m/s. | Up to 1000 m with flow velocity v = 20-40 m/s, signal velocity 20-40 m/s. |
-+--------------------------+--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+-------------------------------------------------------------------------+
-| Working speed            |                                                                                | v = 0.5 m/s                                                                    | v = 1.5 m/s                                                             |
-+--------------------------+--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+-------------------------------------------------------------------------+
++----------------------------------+--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+---------------------------------------------------------------------------+------------+
+| ========================== Leaks | # Electricity                                                                  | # Hydraulic                                                                    | # Pneumatic                                                               |            |
+|                                  |                                                                                |                                                                                |                                                                           |            |
+|                                  |                                                                                | Pollution                                                                      | Apart from energy loss, no disadvantages.                                 |            |
++----------------------------------+--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+---------------------------------------------------------------------------+------------+
+|                                  |                                                                                |                                                                                |                                                                           |            |
++----------------------------------+--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+---------------------------------------------------------------------------+------------+
+| Environmental influences         | Explosion hazard in certain environments; relatively sensitive to temperature. | Sensitive to temperature fluctuations; Fire hazard in case of leaks.           | Does not cause explosions; Insensitive to temperatures.                   |            |
++----------------------------------+--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+---------------------------------------------------------------------------+------------+
+| Energy storage                   | Difficult and only in small quantities using batteries                         | Within certain limits, using gases                                             | Easy                                                                      |            |
++----------------------------------+--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+---------------------------------------------------------------------------+------------+
+| Energy transport                 | Unlimited, but with energy loss                                                | Up to 100 m with flow velocity of v = 2-6 m/s, signal velocity up to 1000 m/s. | Up to 1000 m with flow velocity v = 20-40 m/s, signal velocity 20-40 m/s. |            |
++----------------------------------+--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+---------------------------------------------------------------------------+------------+
+| Working speed                    |                                                                                | v = 0.5 m/s                                                                    | v = 1.5 m/s                                                               |            |
++----------------------------------+--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+---------------------------------------------------------------------------+------------+
 
 : Comparison with other technologies
 
@@ -95,11 +97,15 @@ The flow is defined as the quantity of fluid that circulates through a section o
 
 $p_{absolute}=p_m+1.01325 bar (1 atm)$
 
-For simlification, one aproximates $1 atm \propto 1 bar$
+For simplification, one approximates $1 atm \propto 1 bar$
 
 Another unit of pressure measurement is the $torr$ or $mmHg$. It is equivalent to the pressure exerted by a one millimeter column of mercury. However, we won´t use this units in our course.
 
 ![](figures/fig02-004.png){width="60%"}
+
+$Equivalences$:
+
+![](images/clipboard-3445928741.png){width="60%"}
 
 The gas behaviour can be explained by several laws, explained as follows with $V$ as volume and $T$ as temperature:
 
@@ -109,13 +115,119 @@ The gas behaviour can be explained by several laws, explained as follows with $V
 
 ![](figures/fig02-005.png){fig-align="center" width="50%"}
 
--   Boyle's law: $V_1 p_1 = V_2 p_2$ or $Vp=constant$ and $V \propto \frac{1}{p}$, with constant temperature $T$
+### Gas Law´s
 
--   Charles' law: $\frac{V}{T}=constant$, with constant pressure $p$
+They describe the relationships between pressure, volume and temperature: they describe how two of them are related when the other remains constant:
 
--   Gay-Lussac's law: $\frac{p}{T}=constant$, with constant volume $V$
+#### Boyle's law
+
+$V_1 p_1 = V_2 p_2$ or $Vp=constant$ and $V \propto \frac{1}{p}$, with constant temperature $T$
+
+“At constant temperature, the volume of gas is inversely proportional to its pressure”.
+
+![](images/clipboard-70317625.png){width="60%"}
+
+Boyle's Law is valid as long as the temperature does not vary. Normally, when a gas is compressed, energy is dissipated in the form of heat, that is, its temperature increases. Processes with these characteristics are known as adiabatic. Otherwise, if the temperature does not change, it is known as an isothermal process. To be possible, the process must be slow
+
+#### Charles' law:
+
+“At constant pressure, the volume of gas is proportional to its temperature”
+
+$\frac{V}{T}=constant$, with constant pressure $p$
+
+![](images/clipboard-838678896.png){width="60%"}
+
+#### Gay-Lussac's law
+
+"At constant volume, the absolute temperature of a gas is proportional to its absolute pressure"
+
+$\frac{p}{T}=constant$, with constant volume $V$
+
+![](images/clipboard-1257856144.png){width="60%"}
+
+#### Relative Humidity: A Thermodynamic Perspective
+
+It measures the amount of water vapor in the air compared to the maximum amount of water vapor it could contain before precipitation. Relative humidity (RH) varies with air temperature.
+
+![](images/clipboard-271346497.png){width="60%"}
+
+Relative humidity (RH) is a dimensionless ratio, expressed as a percentage, that quantifies the amount of water vapor present in the air relative to the maximum amount the air can hold at a given temperature before reaching saturation. Mathematically, it is defined as:
+
+$\text{RH} = \left( \frac{e}{e_s} \right) \times 100$
+
+Where:
+
+\- $e$ is the actual vapor pressure of water in the air.
+
+ - $e_s$ is the saturation vapor pressure at the same temperature.
+
+##### Temperature Dependence
+
+The saturation vapor pressure $e_s$ increases exponentially with temperature due to the enhanced kinetic energy of water molecules. This means:
+
+\- **Warm air** can hold significantly more water vapor before becoming saturated.
+
+\- **Cool air** has a lower capacity for water vapor, so RH increases as temperature drops (assuming constant moisture content). This relationship is governed by the Clausius-Clapeyron equation, which describes how vapor pressure changes with temperature:
+
+$\frac{d \ln e_s}{dT} = \frac{L}{R_v T^2}$
+
+Where:
+
+\- $L$ is the latent heat of vaporization,
+
+ - $R_v$ is the specific gas constant for water vapor,
+
+\- $T$ is the absolute temperature in Kelvin.
+
+##### Practical Implications
+
+\- When RH reaches **100%**, the air is saturated, and **condensation** occurs -leading to dew, fog, or precipitation.
+
+\- RH is a crucial parameter in **meteorology, climate science**, and **HVAC** engineering, influencing thermal comfort, cloud formation, and heat transfer processes
 
 ### Pneumatic Installations
+
+The follwoing part explains the components required to use pneumatic systems. The structure is composed of 5 main components: Power Supply, Actuators, Conductors, Control valves and Air conditioning.
+
+![](images/clipboard-2333093332.png){width="40%"}
+
+**Structure**
+
+-   Power supply (pneumatic): Energy source
+
+    -   This is typically an air compressor that draws in atmospheric air and compresses it to a usable pressure level (commonly 60–120 PSI, **4.1 to 8.3 bar**).
+    -   The compressed air is stored in a receiver tank, which acts as a reservoir to stabilize pressure and meet demand spikes.
+    -   The energy in the form of pressurized air is the driving force behind all pneumatic operations
+
+-   Actuators: They do the work of the system
+
+    -   Actuators convert the energy of compressed air into mechanical motion.
+    -   Common types include:
+        -   Cylinders (linear motion)
+    -   Rotary actuators (rotational motion)
+    -   These components perform tasks like pushing, pulling, lifting, clamping, or rotating—depending on the application.
+
+-   Conductors: They distribute the air
+
+    -   These are the pipes, hoses, and tubes that transport compressed air from the power supply to the actuators and control valves.
+    -   Materials vary (e.g., polyurethane, nylon, copper) depending on pressure, flexibility, and environmental conditions.
+    -   Proper sizing and layout are crucial to minimize pressure drops and ensure efficient delivery.
+
+-   Control valves: Control the flow/direction of air
+
+    -   Valves regulate the flow rate, pressure, and direction of air.
+    -   Types include:
+        -   Directional control valves (e.g., 2/2, 3/2, 5/2 valves)
+    -   Flow control valves (adjust speed of actuators)
+    -   Pressure regulators (maintain safe operating pressure)
+    -   These are often controlled manually, electrically, or via PLCs in automated systems.
+
+-   Air conditioning: They purify the air
+
+    -   Filters – remove dust and particulates
+    -   Dryers – eliminate moisture to prevent corrosion and freezing
+    -   Lubricators – add a fine mist of oil to reduce friction in moving parts
+    -   These components are often grouped into FRL units (Filter-Regulator-Lubricator).
 
 ### Pneumatic actuators.
 
