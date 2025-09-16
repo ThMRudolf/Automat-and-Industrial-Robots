@@ -189,7 +189,11 @@ Where:
 
 The follwoing part explains the components required to use pneumatic systems. The structure is composed of 5 main components: Power Supply, Actuators, Conductors, Control valves and Air conditioning.
 
-![](images/clipboard-2333093332.png){width="40%"}
++---------------------------------------------------+-------------------------------------------------------+
+| Structure                                         | Example                                               |
++===================================================+=======================================================+
+| ![](images/clipboard-2333093332.png){width="60%"} | ![](images/clipboard-3902604058.png){width="60%"}     |
++---------------------------------------------------+-------------------------------------------------------+
 
 **Structure**
 
