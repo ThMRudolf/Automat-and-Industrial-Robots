@@ -1,0 +1,157 @@
+---
+title: "Pneumatic and Electro-pneumatic Automatization: Exercises"
+author: "Thomas M. Rudolf"
+format: html
+editor: visual
+---
+
+## Exercises
+
+### Exercise 11: Boyle’s Law Calculation
+- **Sequence**: A tank with a volume of 0.5 $m^3$ is filled to a gauge pressure of 7 bar at 40°C. The temperature then drops to 20°C. Find the resulting pressure.
+- **Steps**:
+    - Use Boyle's Law to calculate the new pressure at the given temperature.
+- **Solution**:
+    - Perform the calculation using the appropriate gas laws.
+
+---
+
+### Exercise 12: Charles’ Law Calculation
+- **Sequence**: Using Charles’ Law, calculate how the volume of a gas changes when the temperature changes, assuming constant pressure.
+- **Solution**:
+    - Apply the equation: $V_1 / T_1 = V_2 / T_2$ and solve for the unknown volume.
+
+---
+
+### Exercise 13: Using Boyle’s and Charles’ Laws Together
+- **Sequence**: Calculate the changes in volume and pressure when a gas undergoes a temperature and pressure change, using Boyle’s and Charles’ laws.
+- **Steps**:
+    - Use the appropriate equations and assumptions for a combined process (adiabatic or isothermal).
+- **Solution**:
+    - Solve the equations using the given values for pressure, volume, and temperature.
+
+---
+
+### Exercise 1: Pneumatic Circuit Functioning Diagram
+- **Sequence**: A+ B+ A- B-
+- **Steps**:
+    1. A grabs the piece.
+    2. B starts the stamping.
+    3. B finishes the stamping.
+    4. A releases the piece.
+- **Solution**:
+    - Draw the sequence and space-phase diagram.
+
+---
+
+### Exercise 2: Obtain Sequence
+- **Sequence**: A+ B+ A- B-
+- **Steps**:
+    - Create the sequence for the operation.
+    - Suggest an alternate possible sequence.
+- **Solution**:
+    - Identify and display the sequence diagram.
+
+---
+
+### Exercise 3: Sequence of Three Movements
+- **Sequence**: A+ B+ A- C+ B- C-
+- **Steps**:
+    - Group 1: A+
+    - Group 2: B+
+    - Group 3: A-
+    - Group 4: C+
+    - Group 5: B-
+    - Group 6: C-
+- **Solution**:
+    - Obtain the sequence and diagram the transitions.
+
+---
+
+### Exercise 4: Sequence with Three Groups
+- **Sequence**: A+ B+ C+ A- B- C-
+- **Steps**:
+    - Group 1: A+ B+
+    - Group 2: C+
+    - Group 3: A-
+    - Group 4: B-
+    - Group 5: C-
+- **Solution**:
+    - Create the pneumatic circuit with appropriate timing and valve logic.
+
+---
+
+### Exercise 5: Pneumatic Circuit Design
+- **Sequence**: Design a pneumatic circuit with three cylinders.
+- **Steps**:
+    - Group 1: A+
+    - Group 2: B+
+    - Group 3: C+
+    - Group 4: A-
+    - Group 5: B-
+    - Group 6: C-
+- **Solution**:
+    - Create a detailed pneumatic circuit diagram showing the flow and control logic.
+
+---
+
+### Exercise 6: Functioning Diagram for Pneumatic Pressing-Stamping-Expulsion Process
+- **Sequence**: A+ B+ C+
+- **Steps**:
+    1. A feeds and holds the piece.
+    2. B starts the stamping.
+    3. B finishes the stamping.
+    4. A releases the piece.
+    5. C expels the piece.
+    6. C returns to its initial position.
+- **Solution**:
+    - Draw the sequence and space-phase diagram.
+    - Provide the functional diagram for the entire process.
+
+---
+
+### Exercise 7: Sequence with Simultaneous Movements
+- **Sequence**: A+ B+ C+
+- **Steps**:
+    - Group 1: A+ B+
+    - Group 2: C+
+    - Solution:
+    - Diagram of simultaneous movements and analysis.
+
+---
+
+### Exercise 8: Apply Maximum Step-by-Step Method
+- **Sequence**: A+ A- B+ B-
+- **Steps**:
+    - Group 1: A+
+    - Group 2: A-
+    - Group 3: B+
+    - Group 4: B-
+- **Solution**:
+    - Identify and design the sequence using the maximum step-by-step method.
+
+---
+
+### Exercise 9: Apply Cascade Method for a Simple Sequence
+- **Sequence**: A+ A- B+ B-
+- **Steps**:
+    - Group 1: A+
+    - Group 2: A-
+    - Group 3: B+
+    - Group 4: B-
+- **Solution**:
+    - Design the sequence with the cascade method.
+
+---
+
+### Exercise 10: Control Sequence with Pneumatic System and Multiple Cylinders
+- **Sequence**: A+ B+ C+ A- B- C-
+- **Steps**:
+    - Group 1: A+
+    - Group 2: B+
+    - Group 3: C+
+    - Group 4: A-
+    - Group 5: B-
+    - Group 6: C-
+- **Solution**:
+    - Design a pneumatic system with multiple cylinders in a controlled sequence.
