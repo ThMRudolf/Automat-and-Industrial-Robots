@@ -9,14 +9,39 @@ editor: visual
 
 A Programmable Logic Controller (PLC) is a specialized microprocessor-based controller designed for industrial automation. It stores programmed instructions to execute logical, arithmetic, and sequential functions. Unlike general-purpose computers, PLCs are optimized for real-time control tasks and operate reliably in harsh environments.
 
-### Key Features of PLCs
+### What is a PLC?
 
--   **Robustness**: Designed to withstand vibrations, temperature variations, humidity, and electrical noise.
--   **Easy Programming**: Uses intuitive programming languages such as Ladder Logic.
--   **Interfacing Capabilities**: Provides input/output (I/O) interfaces to communicate with sensors and actuators.
--   **Memory Storage**: Stores user programs and data.
+A PLC (Programmable Logic Controller) is a ruggedized digital computer used to control industrial processes, machines, and automation systems.\
+It is designed to **reliably operate in harsh environments** (temperature, vibration, electrical noise).
 
-![](figures/Captura%20de%20pantalla%202025-02-19%20231722.png)
+A typical PLC consists of:
+
+-    **CPU** (logic execution, program memory, communication handling)
+
+-    **I/O modules** (digital & analog, to connect sensors and actuators)
+
+-   **Power supply**
+
+-    **Programming environment**
+
+-   **Network interfaces** (Ethernet/IP, Profinet, etc.)
+
+-   **Diagnostics tools**
+
+| Feature | Importance / Advantage | Challenges |
+|----|----|----|
+| **Modularity & Scalability** | Easy to expand with more I/O, CPUs, or communication modules → adaptable for small and large systems. | Compatibility and configuration management can get complex. |
+| **Robustness & Reliability** | Designed for 24/7 operation in industrial environments with high noise, vibration, and temperature. | Higher cost compared to microcontrollers or simple relays. |
+| **I/O Flexibility** | Supports both digital and analog inputs/outputs; also high-speed counters, motion modules, etc. | Wiring effort, calibration, and complexity with fast I/O. |
+| **Communication Protocols** | Modern PLCs support Ethernet/IP, Profinet, Profibus, Modbus, OPC UA, etc. → critical for integration with SCADA/HMI/Cloud. | Vendor lock-in and protocol compatibility issues can occur. |
+| **Programming Languages** | IEC 61131-3 languages (Ladder Logic, Function Block Diagram, Structured Text, SFC, Instruction List). | Steep learning curve; different languages better for different tasks. |
+| **Diagnostics & Monitoring** | Self-diagnostics, error codes, communication monitoring, module failure alerts → reduces downtime. | Requires proper configuration; debugging distributed systems is complex. |
+| **Safety Features** | Safety PLCs include safe I/O modules, emergency stop functions, redundancy, watchdog timers. | Certification and compliance can increase project cost. |
+| **Real-time Performance** | Deterministic scan cycles (ms or µs range) required for process & motion control. | More complex programs can slow scan times; synchronization becomes critical. |
+
+![](images/clipboard-3655842568.png)
+
+![](images/clipboard-2288048911.png)
 
 ## Hardware Components of a PLC
 

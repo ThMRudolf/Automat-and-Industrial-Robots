@@ -240,114 +240,6 @@
     ]
   },
   {
-    "objectID": "chapter01.html",
-    "href": "chapter01.html",
-    "title": "Introduction to Automation and Process Control",
-    "section": "",
-    "text": "Replacement of the human operator by an artificial operator, in the execution of a previously programmed physical or mental task. One has to control the system in order to automate it.",
-    "crumbs": [
-      "Home",
-      "Chapter 1",
-      "Introduction to Automation and Process Control"
-    ]
-  },
-  {
-    "objectID": "chapter01.html#definition-of-automation",
-    "href": "chapter01.html#definition-of-automation",
-    "title": "Introduction to Automation and Process Control",
-    "section": "",
-    "text": "Replacement of the human operator by an artificial operator, in the execution of a previously programmed physical or mental task. One has to control the system in order to automate it.",
-    "crumbs": [
-      "Home",
-      "Chapter 1",
-      "Introduction to Automation and Process Control"
-    ]
-  },
-  {
-    "objectID": "chapter01.html#types-of-control-schemes",
-    "href": "chapter01.html#types-of-control-schemes",
-    "title": "Introduction to Automation and Process Control",
-    "section": "Types of control schemes",
-    "text": "Types of control schemes\nThere are basically two types of control: Open Loop and Closed Loop\nThe open loop has the following structure. It receives a command or reference signal. The controller calulates an input signal for the actuator. The output of the actuator starts manipulating the system. Since the controler does not receives any feedback on how the systems reacts on the command the results might be different from the desired behaviour. Examples for the application of open loop control are: A tennis player who hits the ball, if you turn on a light in you room or a DC motor without sensors.\n\n\n\nfig. 1.1: general structure of a open loop control\n\n\nTo improve the resulting behaviour and be able to correct possible differences between the commad value and the resulting value, one can implement sensors that observe the resulting behaviour of the systems or process. This sensors return the current behaviour to the controller and the controller can correct the input signal to the actuator. The following figure shows the general structure of a close loop control.\n\n\n\nfig. 1.2: general structure of a close loop control",
-    "crumbs": [
-      "Home",
-      "Chapter 1",
-      "Introduction to Automation and Process Control"
-    ]
-  },
-  {
-    "objectID": "chapter01.html#industrial-process",
-    "href": "chapter01.html#industrial-process",
-    "title": "Introduction to Automation and Process Control",
-    "section": "Industrial Process",
-    "text": "Industrial Process\nAn industrial Process is a set of actions for transporting and transforming raw materials to obtain a final product.",
-    "crumbs": [
-      "Home",
-      "Chapter 1",
-      "Introduction to Automation and Process Control"
-    ]
-  },
-  {
-    "objectID": "chapter01.html#types-of-industrial-processes",
-    "href": "chapter01.html#types-of-industrial-processes",
-    "title": "Introduction to Automation and Process Control",
-    "section": "Types of Industrial Processes",
-    "text": "Types of Industrial Processes\nThere are different types of proceses within industrial processes: Continuous Processes, Discrete and Processes Non-continouse Processes by batches. Each type will be explained shortly.\n\nContinuous Processes:\n\nUninterrupted process over time in which analog variables (temperature, speed, etc.) are manipulated.\nProcess in which raw materials are constantly entering at one end of the system, while at the other end a finished product is continuously obtained.\n\nExample: Heating System Someone defines the requiered temperature in the room. The input value can be done by different types of devices, digital or analogue inputs, for example. At the same time, the current room temperature is measured and compared to the reference. The difference between these two values are the input to the controller and the controller calculates the new opening value for a valve that opens the gas flow to the burner. The room gets warmer (or not) and a new temparature is measured. This new temparature value is then compared again to the reference value.\n\n\n\nfig. 1.3 Heating System\n\n\n\n\n\nfig. 1.4 representation of a heating System in blocks\n\n\n\n\nDiscrete Processes\n\nProcesses that involve variables that can take a finite number of possible values or states.\nProcesses in which the output product is obtained through a series of operations.\n\nExample: Production of metalic pieces\nSteps:\n\nCut the piece\nTransport the piece\nDrilling A\nDrilling B\nTake the piece out\n\n\n\n\nfig. 1.5 example of the production of a metalic product",
-    "crumbs": [
-      "Home",
-      "Chapter 1",
-      "Introduction to Automation and Process Control"
-    ]
-  },
-  {
-    "objectID": "chapter01.html#non-continuous-processes-by-batches",
-    "href": "chapter01.html#non-continuous-processes-by-batches",
-    "title": "Introduction to Automation and Process Control",
-    "section": "Non-continuous Processes by batches",
-    "text": "Non-continuous Processes by batches\nProcesses where the final product is made up of different components.\nSteps:\n\nPosition pieces C, D and E\nPosition piece B\nPosition piece A\nReturn cylinders pieces C, D and E\n\n\n\n\nfig. 1.6 Assembly process\n\n\nBox Stacker:\n\n\n\nfig. 1.7 process of box positioning for further transport.",
-    "crumbs": [
-      "Home",
-      "Chapter 1",
-      "Introduction to Automation and Process Control"
-    ]
-  },
-  {
-    "objectID": "chapter01.html#resume-types-of-processes-and-types-of-control",
-    "href": "chapter01.html#resume-types-of-processes-and-types-of-control",
-    "title": "Introduction to Automation and Process Control",
-    "section": "Resume: Types of processes and types of control",
-    "text": "Resume: Types of processes and types of control\n\n\n\nfig. 1.8 resume of processes and control types",
-    "crumbs": [
-      "Home",
-      "Chapter 1",
-      "Introduction to Automation and Process Control"
-    ]
-  },
-  {
-    "objectID": "chapter01.html#industrial-automation",
-    "href": "chapter01.html#industrial-automation",
-    "title": "Introduction to Automation and Process Control",
-    "section": "Industrial Automation",
-    "text": "Industrial Automation\nTotal (or partial) elimination of human intervention in manufacturing processes, carrying out calculation and decision functions.\nTypical examples with pneumatic application can be found in the food and drug industry (example) or in the textil industry (example).",
-    "crumbs": [
-      "Home",
-      "Chapter 1",
-      "Introduction to Automation and Process Control"
-    ]
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Thomas M. Rudolf",
-    "section": "",
-    "text": "Biography\nHe is currently an full professor and researcher at ITAM. He completed his engineering studies with a specialization in Mechatronics at the University of Darmstadt. During his studies, he focused on the fundamentals of control theory, identification of systems and mechanics. After his studies in Darmstadt, he started working as a research assistant at the Laboratory of Machine Tools at the University of Aachen, RWTH Aachen.\nDuring the following six years at the RWTH, he worked as a scientific assistant and development engineer. During this time, he worked on his doctoral investigation. Besides the investigation, his responsibilities also included the coordination and management of investigation projects. His doctoral thesis (Adaptable parametrization of diagnostic systems by using digital drive signals for process monitoring) was defended on the 11th of March 2014 with a presentation about “Systems Engineering for Medical Devices”.\nHe continued his professional carrier at Roche Diagnostics as a Systems Engineer with a focus on simulation and computation. His primary task was the physical modeling and calculation of insulin delivery systems in order to define technical requirements as well as to verify changes of specifications. This task also included DoE in order to find the most relevant system parameters, the tolerance analysis, and statistical evaluations applying Six Sigma methods, e.g. to evaluate the risks of new consumable products for medical devices. He also applied the methods of Six Sigma to develop a quality gate for the selection of sterile consumable products for medical devices.\nHe lectures Control Engineering, Manufacturing of Components, Computer Integrated Manufacturing, as well as a Solid Mechanics, Design of Robotics Mechanisms, and Mechatronics Systems. He published several articles in international journals about diagnostics and monitoring of manufacturing processes.",
-    "crumbs": [
-      "Home",
-      "About",
-      "Thomas M. Rudolf"
-    ]
-  },
-  {
     "objectID": "chapter00.html",
     "href": "chapter00.html",
     "title": "About the Lecture",
@@ -444,51 +336,111 @@
     ]
   },
   {
-    "objectID": "chapter02.html",
-    "href": "chapter02.html",
-    "title": "Pneumatic and Electro-pnneumatic Automatization",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Thomas M. Rudolf",
     "section": "",
-    "text": "The word ‘Pneumatics’ is derived from the Greek ‘neuma’ (air or breath). Originally, the term pneumatics designated the science of the movement and properties of air. This is the branch of engineering that deals with the study and application of compressed air, its generation, transmission and control.\nThe design of devices that used air energy dates back to the 18th century (with the pneumatic rifle). “Modern” devices: pneumatic rock drill, pneumatic brakes. “Modern” pneumatics was born in the 1950s, when techniques and forms of air energy control were introduced in industrial processes.\n\n\n\nIt is abundant. It is available in unlimited quantities.\nIt is transportable. It is easily transported through pipes.\nIt is storable. It is easily stored in tanks where pressure is maintained.\nIt is transmitted relatively quickly.\nIt is clean. In case of stagnation, it does not produce dirt.\n\n\n\n\n\nComparison with other technologies\n\n\n\n\n\n\n\n\n\n========================== Leaks\n\n\nPollution\n\nApart from energy loss, no disadvantages.\n\n\n\n\n\n\n\n\n\n\nEnvironmental influences\nExplosion hazard in certain environments; relatively sensitive to temperature.\nSensitive to temperature fluctuations; Fire hazard in case of leaks.\nDoes not cause explosions; Insensitive to temperatures.\n\n\n\nEnergy storage\nDifficult and only in small quantities using batteries\nWithin certain limits, using gases\nEasy\n\n\n\nEnergy transport\nUnlimited, but with energy loss\nUp to 100 m with flow velocity of v = 2-6 m/s, signal velocity up to 1000 m/s.\nUp to 1000 m with flow velocity v = 20-40 m/s, signal velocity 20-40 m/s.\n\n\n\nWorking speed\n\nv = 0.5 m/s\nv = 1.5 m/s\n\n\n\n\nAdvantages of pneumatic energy over hydraulic energy\nAir density is significantly smaller than that of oil (used in hydraulics). Therefore, the inertia effect is smaller. Air can be discharged into the atmosphere after a task. Pneumatic systems are more economical. Pneumatic systems are less toxic and cleaner. Pneumatic systems are lighter, easier to transport.\n\n\n\n\n\n\n\nAdvantages\nDisadvantage\n\n\n\n\n\nAir is available in unlimited quantities\nAir (compressed) can be easily transported in pipes\nIt does not require any treatment for its elimination. It is simply thrown into the atmosphere.\nCompressed air is insensitive to fluctuations in temperature\nCompressed air is clean, therefore used in the food and pharmaceutical industries\nCompressed air allows operation at high speeds\nThe tools and operating elements are safe, when they are overloaded they simply stop working.\n\n\nIt is relatively expensive to transport. The high costs are offset by the cheapness of the elements and the simple and more compact nature of its equipment.\nCompressed air requires conditioning to remove dust and moisture.\nIt is difficult to achieve uniform piston speeds with compressed air.\nNoise levels in the operation of pneumatic systems are high due to air leakage.\nLubricated air (with oil) can escape into the atmosphere and cause pollution.\nDue to its low conductivity, it cannot dissipate heat as easily as oil would.\n\n\n\n\n\n\n\nComposition: Types of gases that make up the air under consideration. Example: dry air at sea level is composed mainly of Nitrogen (78%) and Oxygen (20.99%). Shape and volume: They have no defined shape or volume. They acquire the shape and volume of the tank that contains them. Cost (Flow): It is the quantity of fluid that circulates through a section of the duct per unit of time.\nThe relative humidity is the amount of water vapor contained in volume of air. It depends on the air temperature and pressure. When the air is saturated, it means that the relative humidity is at 100%.\nConsider the behavior of air with water under defined circumstances: temperature 20°C and a relative humidity of 50%. This means that it contains 8.7g of water which is the half of the maximum 17.4g.\nWhen the compressor compresses the 4 \\(𝑚^3\\). to form 1 \\(𝑚^3\\), the \\(4×8.7=34.8 g\\) of water cannot hold in it. The \\(𝑚^3\\) can hold at most 17.4 g of water. The other \\(2×8.7=17.4g\\) fall as drops.\n\n\n\nfig. 2.1 effect on air with relative humidity when compressed\n\n\nConclusion: When air is compressed, water \\(H_2O\\) liquefies from gaseous state to liquid state. The water vapor in the air is also compressed and the result is similar to squeezing a sponge. The compressed air reaches a saturation of 100% relative humidity inside the tank. The separated water can be drained via a drainage system.\nThe flow is defined as the quantity of fluid that circulates through a section of duct per unit of time. Generally the letter \\(Q\\) is used. \\(Q = \\frac{V}{t}=\\frac{A s}{t}\\) wit \\(s\\) as displacement, \\(A\\) as areaof the cross section and \\(t\\) as time. Considering that \\(\\frac{s}{t}\\)displacement per time unit is velocity, one can rewrite \\(Q=Av\\). The standard units of the variables are as follows:\n\n\\([Q] = [ \\frac{m^3}{s}]\\)\n\\([A] = [m^2]\\)\n\\([v] = [\\frac{m}{s}]\\)\n\n\n\nFig. 2.2 graphical description of flow $Q$\n\n\n\nGas pressure and gas laws: The relation between force \\(F\\) and pressure \\(p\\) is related by its contact cross section area A: \\(F=pA\\). The unit in Pascal \\([Pa]=[\\frac{N}{m^2}]\\)in the international system (SI) and it is \\([psi]=[\\frac{lb}{in^2}]\\) in english units. For many industrial aplications, one uses \\(bar\\). The relation between \\(bar\\) and \\(Pa\\) is \\(1 bar = 10^5 Pa =100kPa\\). The pressure that air exerts “naturally” on the Earth’s surface due to its weight is called atmospheric pressure (Atm): \\(1 atm = 1.01325 bar = 101,325 P\\). Due to the weight of the air column above: it decreases at higher altitudes and increases at lower altitudes.\n\n\n\nfig. 2.3 pressure defined by force and cross section\n\n\nGauge pressure (relative pressure) indicated by the manometers ($bar$ or \\(ps\\)). It is the excess of air pressure with respect to atmospheric pressure. It is abbreviated \\(p_m\\) (\\(p_g\\) in English).\n\\(p_{absolute}=p_m+1.01325 bar (1 atm)\\)\nFor simlification, one aproximates \\(1 atm \\propto 1 bar\\)\nAnother unit of pressure measurement is the \\(torr\\) or \\(mmHg\\). It is equivalent to the pressure exerted by a one millimeter column of mercury. However, we won´t use this units in our course.\n\nThe gas behaviour can be explained by several laws, explained as follows with \\(V\\) as volume and \\(T\\) as temperature:\n\nPascal’s law: \\(p_{in} = \\frac{F_{in}}{A_{in}} = \\frac{F_{out}}{A_{out}}=p_{out}\\), with in as input and out as output\nFluid pressure is transmitted equally in all directions. The force exerted by a piston is equal to the product of the effective area times the air pressure: Example of a Hydraulic Press:\n\n\n\n\n\n\n\nBoyle’s law: \\(V_1 p_1 = V_2 p_2\\) or \\(Vp=constant\\) and \\(V \\propto \\frac{1}{p}\\), with constant temperature \\(T\\)\nCharles’ law: \\(\\frac{V}{T}=constant\\), with constant pressure \\(p\\)\nGay-Lussac’s law: \\(\\frac{p}{T}=constant\\), with constant volume \\(V\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCascade method\nStep by step method.",
+    "text": "Biography\nHe is currently an full professor and researcher at ITAM. He completed his engineering studies with a specialization in Mechatronics at the University of Darmstadt. During his studies, he focused on the fundamentals of control theory, identification of systems and mechanics. After his studies in Darmstadt, he started working as a research assistant at the Laboratory of Machine Tools at the University of Aachen, RWTH Aachen.\nDuring the following six years at the RWTH, he worked as a scientific assistant and development engineer. During this time, he worked on his doctoral investigation. Besides the investigation, his responsibilities also included the coordination and management of investigation projects. His doctoral thesis (Adaptable parametrization of diagnostic systems by using digital drive signals for process monitoring) was defended on the 11th of March 2014 with a presentation about “Systems Engineering for Medical Devices”.\nHe continued his professional carrier at Roche Diagnostics as a Systems Engineer with a focus on simulation and computation. His primary task was the physical modeling and calculation of insulin delivery systems in order to define technical requirements as well as to verify changes of specifications. This task also included DoE in order to find the most relevant system parameters, the tolerance analysis, and statistical evaluations applying Six Sigma methods, e.g. to evaluate the risks of new consumable products for medical devices. He also applied the methods of Six Sigma to develop a quality gate for the selection of sterile consumable products for medical devices.\nHe lectures Control Engineering, Manufacturing of Components, Computer Integrated Manufacturing, as well as a Solid Mechanics, Design of Robotics Mechanisms, and Mechatronics Systems. He published several articles in international journals about diagnostics and monitoring of manufacturing processes.",
     "crumbs": [
       "Home",
-      "Chapter 2",
-      "Pneumatic and Electro-pnneumatic Automatization"
+      "About",
+      "Thomas M. Rudolf"
     ]
   },
   {
-    "objectID": "chapter02.html#elements-of-a-pneumatic-circuit",
-    "href": "chapter02.html#elements-of-a-pneumatic-circuit",
-    "title": "Pneumatic and Electro-pnneumatic Automatization",
+    "objectID": "chapter01.html",
+    "href": "chapter01.html",
+    "title": "Introduction to Automation and Process Control",
     "section": "",
-    "text": "The word ‘Pneumatics’ is derived from the Greek ‘neuma’ (air or breath). Originally, the term pneumatics designated the science of the movement and properties of air. This is the branch of engineering that deals with the study and application of compressed air, its generation, transmission and control.\nThe design of devices that used air energy dates back to the 18th century (with the pneumatic rifle). “Modern” devices: pneumatic rock drill, pneumatic brakes. “Modern” pneumatics was born in the 1950s, when techniques and forms of air energy control were introduced in industrial processes.\n\n\n\nIt is abundant. It is available in unlimited quantities.\nIt is transportable. It is easily transported through pipes.\nIt is storable. It is easily stored in tanks where pressure is maintained.\nIt is transmitted relatively quickly.\nIt is clean. In case of stagnation, it does not produce dirt.\n\n\n\n\n\nComparison with other technologies\n\n\n\n\n\n\n\n\n\n========================== Leaks\n\n\nPollution\n\nApart from energy loss, no disadvantages.\n\n\n\n\n\n\n\n\n\n\nEnvironmental influences\nExplosion hazard in certain environments; relatively sensitive to temperature.\nSensitive to temperature fluctuations; Fire hazard in case of leaks.\nDoes not cause explosions; Insensitive to temperatures.\n\n\n\nEnergy storage\nDifficult and only in small quantities using batteries\nWithin certain limits, using gases\nEasy\n\n\n\nEnergy transport\nUnlimited, but with energy loss\nUp to 100 m with flow velocity of v = 2-6 m/s, signal velocity up to 1000 m/s.\nUp to 1000 m with flow velocity v = 20-40 m/s, signal velocity 20-40 m/s.\n\n\n\nWorking speed\n\nv = 0.5 m/s\nv = 1.5 m/s\n\n\n\n\nAdvantages of pneumatic energy over hydraulic energy\nAir density is significantly smaller than that of oil (used in hydraulics). Therefore, the inertia effect is smaller. Air can be discharged into the atmosphere after a task. Pneumatic systems are more economical. Pneumatic systems are less toxic and cleaner. Pneumatic systems are lighter, easier to transport.\n\n\n\n\n\n\n\nAdvantages\nDisadvantage\n\n\n\n\n\nAir is available in unlimited quantities\nAir (compressed) can be easily transported in pipes\nIt does not require any treatment for its elimination. It is simply thrown into the atmosphere.\nCompressed air is insensitive to fluctuations in temperature\nCompressed air is clean, therefore used in the food and pharmaceutical industries\nCompressed air allows operation at high speeds\nThe tools and operating elements are safe, when they are overloaded they simply stop working.\n\n\nIt is relatively expensive to transport. The high costs are offset by the cheapness of the elements and the simple and more compact nature of its equipment.\nCompressed air requires conditioning to remove dust and moisture.\nIt is difficult to achieve uniform piston speeds with compressed air.\nNoise levels in the operation of pneumatic systems are high due to air leakage.\nLubricated air (with oil) can escape into the atmosphere and cause pollution.\nDue to its low conductivity, it cannot dissipate heat as easily as oil would.\n\n\n\n\n\n\n\nComposition: Types of gases that make up the air under consideration. Example: dry air at sea level is composed mainly of Nitrogen (78%) and Oxygen (20.99%). Shape and volume: They have no defined shape or volume. They acquire the shape and volume of the tank that contains them. Cost (Flow): It is the quantity of fluid that circulates through a section of the duct per unit of time.\nThe relative humidity is the amount of water vapor contained in volume of air. It depends on the air temperature and pressure. When the air is saturated, it means that the relative humidity is at 100%.\nConsider the behavior of air with water under defined circumstances: temperature 20°C and a relative humidity of 50%. This means that it contains 8.7g of water which is the half of the maximum 17.4g.\nWhen the compressor compresses the 4 \\(𝑚^3\\). to form 1 \\(𝑚^3\\), the \\(4×8.7=34.8 g\\) of water cannot hold in it. The \\(𝑚^3\\) can hold at most 17.4 g of water. The other \\(2×8.7=17.4g\\) fall as drops.\n\n\n\nfig. 2.1 effect on air with relative humidity when compressed\n\n\nConclusion: When air is compressed, water \\(H_2O\\) liquefies from gaseous state to liquid state. The water vapor in the air is also compressed and the result is similar to squeezing a sponge. The compressed air reaches a saturation of 100% relative humidity inside the tank. The separated water can be drained via a drainage system.\nThe flow is defined as the quantity of fluid that circulates through a section of duct per unit of time. Generally the letter \\(Q\\) is used. \\(Q = \\frac{V}{t}=\\frac{A s}{t}\\) wit \\(s\\) as displacement, \\(A\\) as areaof the cross section and \\(t\\) as time. Considering that \\(\\frac{s}{t}\\)displacement per time unit is velocity, one can rewrite \\(Q=Av\\). The standard units of the variables are as follows:\n\n\\([Q] = [ \\frac{m^3}{s}]\\)\n\\([A] = [m^2]\\)\n\\([v] = [\\frac{m}{s}]\\)\n\n\n\nFig. 2.2 graphical description of flow $Q$\n\n\n\nGas pressure and gas laws: The relation between force \\(F\\) and pressure \\(p\\) is related by its contact cross section area A: \\(F=pA\\). The unit in Pascal \\([Pa]=[\\frac{N}{m^2}]\\)in the international system (SI) and it is \\([psi]=[\\frac{lb}{in^2}]\\) in english units. For many industrial aplications, one uses \\(bar\\). The relation between \\(bar\\) and \\(Pa\\) is \\(1 bar = 10^5 Pa =100kPa\\). The pressure that air exerts “naturally” on the Earth’s surface due to its weight is called atmospheric pressure (Atm): \\(1 atm = 1.01325 bar = 101,325 P\\). Due to the weight of the air column above: it decreases at higher altitudes and increases at lower altitudes.\n\n\n\nfig. 2.3 pressure defined by force and cross section\n\n\nGauge pressure (relative pressure) indicated by the manometers ($bar$ or \\(ps\\)). It is the excess of air pressure with respect to atmospheric pressure. It is abbreviated \\(p_m\\) (\\(p_g\\) in English).\n\\(p_{absolute}=p_m+1.01325 bar (1 atm)\\)\nFor simlification, one aproximates \\(1 atm \\propto 1 bar\\)\nAnother unit of pressure measurement is the \\(torr\\) or \\(mmHg\\). It is equivalent to the pressure exerted by a one millimeter column of mercury. However, we won´t use this units in our course.\n\nThe gas behaviour can be explained by several laws, explained as follows with \\(V\\) as volume and \\(T\\) as temperature:\n\nPascal’s law: \\(p_{in} = \\frac{F_{in}}{A_{in}} = \\frac{F_{out}}{A_{out}}=p_{out}\\), with in as input and out as output\nFluid pressure is transmitted equally in all directions. The force exerted by a piston is equal to the product of the effective area times the air pressure: Example of a Hydraulic Press:\n\n\n\n\n\n\n\nBoyle’s law: \\(V_1 p_1 = V_2 p_2\\) or \\(Vp=constant\\) and \\(V \\propto \\frac{1}{p}\\), with constant temperature \\(T\\)\nCharles’ law: \\(\\frac{V}{T}=constant\\), with constant pressure \\(p\\)\nGay-Lussac’s law: \\(\\frac{p}{T}=constant\\), with constant volume \\(V\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCascade method\nStep by step method.",
+    "text": "Replacement of the human operator by an artificial operator, in the execution of a previously programmed physical or mental task. One has to control the system in order to automate it.",
     "crumbs": [
       "Home",
-      "Chapter 2",
-      "Pneumatic and Electro-pnneumatic Automatization"
+      "Chapter 1",
+      "Introduction to Automation and Process Control"
     ]
   },
   {
-    "objectID": "chapter02.html#elements-of-a-electic-circuit-electrical-acutators-and-control-elements",
-    "href": "chapter02.html#elements-of-a-electic-circuit-electrical-acutators-and-control-elements",
-    "title": "Pneumatic and Electro-pnneumatic Automatization",
-    "section": "Elements of a electic circuit, electrical acutators and control elements",
-    "text": "Elements of a electic circuit, electrical acutators and control elements",
+    "objectID": "chapter01.html#definition-of-automation",
+    "href": "chapter01.html#definition-of-automation",
+    "title": "Introduction to Automation and Process Control",
+    "section": "",
+    "text": "Replacement of the human operator by an artificial operator, in the execution of a previously programmed physical or mental task. One has to control the system in order to automate it.",
     "crumbs": [
       "Home",
-      "Chapter 2",
-      "Pneumatic and Electro-pnneumatic Automatization"
+      "Chapter 1",
+      "Introduction to Automation and Process Control"
     ]
   },
   {
-    "objectID": "chapter02.html#automatization-of-pneumatic-and-electro-pneumatic-sequences",
-    "href": "chapter02.html#automatization-of-pneumatic-and-electro-pneumatic-sequences",
-    "title": "Pneumatic and Electro-pnneumatic Automatization",
-    "section": "Automatization of pneumatic and electro-pneumatic sequences",
-    "text": "Automatization of pneumatic and electro-pneumatic sequences",
+    "objectID": "chapter01.html#types-of-control-schemes",
+    "href": "chapter01.html#types-of-control-schemes",
+    "title": "Introduction to Automation and Process Control",
+    "section": "Types of control schemes",
+    "text": "Types of control schemes\nThere are basically two types of control: Open Loop and Closed Loop\nThe open loop has the following structure. It receives a command or reference signal. The controller calulates an input signal for the actuator. The output of the actuator starts manipulating the system. Since the controler does not receives any feedback on how the systems reacts on the command the results might be different from the desired behaviour. Examples for the application of open loop control are: A tennis player who hits the ball, if you turn on a light in you room or a DC motor without sensors.\n\n\n\nfig. 1.1: general structure of a open loop control\n\n\nTo improve the resulting behaviour and be able to correct possible differences between the commad value and the resulting value, one can implement sensors that observe the resulting behaviour of the systems or process. This sensors return the current behaviour to the controller and the controller can correct the input signal to the actuator. The following figure shows the general structure of a close loop control.\n\n\n\nfig. 1.2: general structure of a close loop control",
     "crumbs": [
       "Home",
-      "Chapter 2",
-      "Pneumatic and Electro-pnneumatic Automatization"
+      "Chapter 1",
+      "Introduction to Automation and Process Control"
+    ]
+  },
+  {
+    "objectID": "chapter01.html#industrial-process",
+    "href": "chapter01.html#industrial-process",
+    "title": "Introduction to Automation and Process Control",
+    "section": "Industrial Process",
+    "text": "Industrial Process\nAn industrial Process is a set of actions for transporting and transforming raw materials to obtain a final product.",
+    "crumbs": [
+      "Home",
+      "Chapter 1",
+      "Introduction to Automation and Process Control"
+    ]
+  },
+  {
+    "objectID": "chapter01.html#types-of-industrial-processes",
+    "href": "chapter01.html#types-of-industrial-processes",
+    "title": "Introduction to Automation and Process Control",
+    "section": "Types of Industrial Processes",
+    "text": "Types of Industrial Processes\nThere are different types of proceses within industrial processes: Continuous Processes, Discrete and Processes Non-continouse Processes by batches. Each type will be explained shortly.\n\nContinuous Processes:\n\nUninterrupted process over time in which analog variables (temperature, speed, etc.) are manipulated.\nProcess in which raw materials are constantly entering at one end of the system, while at the other end a finished product is continuously obtained.\n\nExample: Heating System Someone defines the requiered temperature in the room. The input value can be done by different types of devices, digital or analogue inputs, for example. At the same time, the current room temperature is measured and compared to the reference. The difference between these two values are the input to the controller and the controller calculates the new opening value for a valve that opens the gas flow to the burner. The room gets warmer (or not) and a new temparature is measured. This new temparature value is then compared again to the reference value.\n\n\n\nfig. 1.3 Heating System\n\n\n\n\n\nfig. 1.4 representation of a heating System in blocks\n\n\n\n\nDiscrete Processes\n\nProcesses that involve variables that can take a finite number of possible values or states.\nProcesses in which the output product is obtained through a series of operations.\n\nExample: Production of metalic pieces\nSteps:\n\nCut the piece\nTransport the piece\nDrilling A\nDrilling B\nTake the piece out\n\n\n\n\nfig. 1.5 example of the production of a metalic product",
+    "crumbs": [
+      "Home",
+      "Chapter 1",
+      "Introduction to Automation and Process Control"
+    ]
+  },
+  {
+    "objectID": "chapter01.html#non-continuous-processes-by-batches",
+    "href": "chapter01.html#non-continuous-processes-by-batches",
+    "title": "Introduction to Automation and Process Control",
+    "section": "Non-continuous Processes by batches",
+    "text": "Non-continuous Processes by batches\nProcesses where the final product is made up of different components.\nSteps:\n\nPosition pieces C, D and E\nPosition piece B\nPosition piece A\nReturn cylinders pieces C, D and E\n\n\n\n\nfig. 1.6 Assembly process\n\n\nBox Stacker:\n\n\n\nfig. 1.7 process of box positioning for further transport.",
+    "crumbs": [
+      "Home",
+      "Chapter 1",
+      "Introduction to Automation and Process Control"
+    ]
+  },
+  {
+    "objectID": "chapter01.html#resume-types-of-processes-and-types-of-control",
+    "href": "chapter01.html#resume-types-of-processes-and-types-of-control",
+    "title": "Introduction to Automation and Process Control",
+    "section": "Resume: Types of processes and types of control",
+    "text": "Resume: Types of processes and types of control\n\n\n\nfig. 1.8 resume of processes and control types",
+    "crumbs": [
+      "Home",
+      "Chapter 1",
+      "Introduction to Automation and Process Control"
+    ]
+  },
+  {
+    "objectID": "chapter01.html#industrial-automation",
+    "href": "chapter01.html#industrial-automation",
+    "title": "Introduction to Automation and Process Control",
+    "section": "Industrial Automation",
+    "text": "Industrial Automation\nTotal (or partial) elimination of human intervention in manufacturing processes, carrying out calculation and decision functions.\nTypical examples with pneumatic application can be found in the food and drug industry (example) or in the textil industry (example).",
+    "crumbs": [
+      "Home",
+      "Chapter 1",
+      "Introduction to Automation and Process Control"
     ]
   },
   {
