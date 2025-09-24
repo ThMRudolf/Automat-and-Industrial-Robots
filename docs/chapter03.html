@@ -324,15 +324,77 @@ ul.task-list li input[type="checkbox"] {
 <section id="introduction-to-plcs" class="level2">
 <h2 class="anchored" data-anchor-id="introduction-to-plcs">Introduction to PLCs</h2>
 <p>A Programmable Logic Controller (PLC) is a specialized microprocessor-based controller designed for industrial automation. It stores programmed instructions to execute logical, arithmetic, and sequential functions. Unlike general-purpose computers, PLCs are optimized for real-time control tasks and operate reliably in harsh environments.</p>
-<section id="key-features-of-plcs" class="level3">
-<h3 class="anchored" data-anchor-id="key-features-of-plcs">Key Features of PLCs</h3>
+<section id="what-is-a-plc" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-a-plc">What is a PLC?</h3>
+<p>A PLC (Programmable Logic Controller) is a ruggedized digital computer used to control industrial processes, machines, and automation systems.<br>
+It is designed to <strong>reliably operate in harsh environments</strong> (temperature, vibration, electrical noise).</p>
+<p>A typical PLC consists of:</p>
 <ul>
-<li><strong>Robustness</strong>: Designed to withstand vibrations, temperature variations, humidity, and electrical noise.</li>
-<li><strong>Easy Programming</strong>: Uses intuitive programming languages such as Ladder Logic.</li>
-<li><strong>Interfacing Capabilities</strong>: Provides input/output (I/O) interfaces to communicate with sensors and actuators.</li>
-<li><strong>Memory Storage</strong>: Stores user programs and data.</li>
+<li><p><strong>CPU</strong> (logic execution, program memory, communication handling)</p></li>
+<li><p><strong>I/O modules</strong> (digital &amp; analog, to connect sensors and actuators)</p></li>
+<li><p><strong>Power supply</strong></p></li>
+<li><p><strong>Programming environment</strong></p></li>
+<li><p><strong>Network interfaces</strong> (Ethernet/IP, Profinet, etc.)</p></li>
+<li><p><strong>Diagnostics tools</strong></p></li>
 </ul>
-<p><img src="figures/Captura de pantalla 2025-02-19 231722.png" class="img-fluid"></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>Importance / Advantage</th>
+<th>Challenges</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Modularity &amp; Scalability</strong></td>
+<td>Easy to expand with more I/O, CPUs, or communication modules → adaptable for small and large systems.</td>
+<td>Compatibility and configuration management can get complex.</td>
+</tr>
+<tr class="even">
+<td><strong>Robustness &amp; Reliability</strong></td>
+<td>Designed for 24/7 operation in industrial environments with high noise, vibration, and temperature.</td>
+<td>Higher cost compared to microcontrollers or simple relays.</td>
+</tr>
+<tr class="odd">
+<td><strong>I/O Flexibility</strong></td>
+<td>Supports both digital and analog inputs/outputs; also high-speed counters, motion modules, etc.</td>
+<td>Wiring effort, calibration, and complexity with fast I/O.</td>
+</tr>
+<tr class="even">
+<td><strong>Communication Protocols</strong></td>
+<td>Modern PLCs support Ethernet/IP, Profinet, Profibus, Modbus, OPC UA, etc. → critical for integration with SCADA/HMI/Cloud.</td>
+<td>Vendor lock-in and protocol compatibility issues can occur.</td>
+</tr>
+<tr class="odd">
+<td><strong>Programming Languages</strong></td>
+<td>IEC 61131-3 languages (Ladder Logic, Function Block Diagram, Structured Text, SFC, Instruction List).</td>
+<td>Steep learning curve; different languages better for different tasks.</td>
+</tr>
+<tr class="even">
+<td><strong>Diagnostics &amp; Monitoring</strong></td>
+<td>Self-diagnostics, error codes, communication monitoring, module failure alerts → reduces downtime.</td>
+<td>Requires proper configuration; debugging distributed systems is complex.</td>
+</tr>
+<tr class="odd">
+<td><strong>Safety Features</strong></td>
+<td>Safety PLCs include safe I/O modules, emergency stop functions, redundancy, watchdog timers.</td>
+<td>Certification and compliance can increase project cost.</td>
+</tr>
+<tr class="even">
+<td><strong>Real-time Performance</strong></td>
+<td>Deterministic scan cycles (ms or µs range) required for process &amp; motion control.</td>
+<td>More complex programs can slow scan times; synchronization becomes critical.</td>
+</tr>
+</tbody>
+</table>
+<p><img src="images/clipboard-3655842568.png" class="img-fluid"></p>
+<p><img src="images/clipboard-2288048911.png" class="img-fluid"></p>
 </section>
 </section>
 <section id="hardware-components-of-a-plc" class="level2">
