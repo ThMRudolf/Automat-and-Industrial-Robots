@@ -16,13 +16,13 @@ It is designed to **reliably operate in harsh environments** (temperature, vibra
 
 A typical PLC consists of:
 
--    **CPU** (logic execution, program memory, communication handling)
+-   **CPU** (logic execution, program memory, communication handling)
 
--    **I/O modules** (digital & analog, to connect sensors and actuators)
+-   **I/O modules** (digital & analog, to connect sensors and actuators)
 
 -   **Power supply**
 
--    **Programming environment**
+-   **Programming environment**
 
 -   **Network interfaces** (Ethernet/IP, Profinet, etc.)
 

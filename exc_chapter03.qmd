@@ -8,149 +8,165 @@ editor: visual
 ## Exercises
 
 ### Exercise 1: Prender foco
-- **Sequence**: 1 input, 1 output
-- **Steps**: 
-    - Turn on the light.
-- **Solution**:
-    - Program a direct control with an ON command to turn on the light.
 
----
+-   **Sequence**: 1 input, 1 output
+-   **Steps**:
+    -   Turn on the light.
+-   **Solution**:
+    -   Program a direct control with an ON command to turn on the light.
+
+------------------------------------------------------------------------
 
 ### Exercise 2: Autorretención
-- **Sequence**: 2 inputs, 1 output
-- **Steps**:
-    - Turn on the light (LAMP).
-    - Turn off the light with another condition.
-- **Solution**:
-    - Program direct control with a latch (latching) function.
 
----
+-   **Sequence**: 2 inputs, 1 output
+-   **Steps**:
+    -   Turn on the light (LAMP).
+    -   Turn off the light with another condition.
+-   **Solution**:
+    -   Program direct control with a latch (latching) function.
+
+------------------------------------------------------------------------
 
 ### Exercise 3: Secuencia A+ A-
-- **Sequence**: Execute the following sequence:
-    - A+ A-
-- **Steps**:
-    - Program with 2 inputs and 2 outputs.
-- **Solution**:
-    - Create a program that executes the sequence.
 
----
+-   **Sequence**: Execute the following sequence:
+    -   A+ A-
+-   **Steps**:
+    -   Program with 2 inputs and 2 outputs.
+-   **Solution**:
+    -   Create a program that executes the sequence.
+
+------------------------------------------------------------------------
 
 ### Exercise 4: Secuencia A+ A- B+ B-
-- **Sequence**: Execute the following sequence:
-    - A+ A- B+ B-
-- **Steps**:
-    - Program with 5 inputs and 4 outputs.
-- **Solution**:
-    - Create a program to execute the sequence.
 
----
+-   **Sequence**: Execute the following sequence:
+    -   A+ A- B+ B-
+-   **Steps**:
+    -   Program with 5 inputs and 4 outputs.
+-   **Solution**:
+    -   Create a program to execute the sequence.
+
+------------------------------------------------------------------------
 
 ### Exercise 5: Temporizador TON
-- **Sequence**: Turn on a light for a certain time (3 seconds).
-- **Steps**:
-    - Use a TON (on-delay timer) to turn on the light for 3 seconds.
-- **Solution**:
-    - Program using the TON timer.
 
----
+-   **Sequence**: Turn on a light for a certain time (3 seconds).
+-   **Steps**:
+    -   Use a TON (on-delay timer) to turn on the light for 3 seconds.
+-   **Solution**:
+    -   Program using the TON timer.
+
+------------------------------------------------------------------------
 
 ### Exercise 6: Temporizador TOF
-- **Sequence**: Use an off-delay timer (TOF).
-- **Steps**:
-    - Program a 5-second delay before turning off the light.
-- **Solution**:
-    - Use the TOF timer to delay the turning off of the light for 5 seconds.
 
----
+-   **Sequence**: Use an off-delay timer (TOF).
+-   **Steps**:
+    -   Program a 5-second delay before turning off the light.
+-   **Solution**:
+    -   Use the TOF timer to delay the turning off of the light for 5 seconds.
+
+------------------------------------------------------------------------
 
 ### Exercise 7: Semáforo con TOF
-- **Sequence**: Implement a traffic light system with TOF.
-- **Steps**:
-    - Use timers to manage the changing of lights every 3 seconds.
-    - The cycle repeats while the "INICIO" button is pressed.
-- **Solution**:
-    - Program a semáforo (traffic light) using TOF timers and start the cycle with the "INICIO" button.
 
----
+-   **Sequence**: Implement a traffic light system with TOF.
+-   **Steps**:
+    -   Use timers to manage the changing of lights every 3 seconds.
+    -   The cycle repeats while the "INICIO" button is pressed.
+-   **Solution**:
+    -   Program a semáforo (traffic light) using TOF timers and start the cycle with the "INICIO" button.
+
+------------------------------------------------------------------------
 
 ### Exercise 8: Sucesión ascendente/descendente
-- **Sequence**: Design a program that generates a sequence from 0 to 60 and then back down to 0, with a change in value every second.
-- **Steps**:
-    - Use CTU (up-counter) and CTD (down-counter) with TON timer.
-- **Solution**:
-    - Program the counter and timer to create the up-down counting sequence.
 
----
+-   **Sequence**: Design a program that generates a sequence from 0 to 60 and then back down to 0, with a change in value every second.
+-   **Steps**:
+    -   Use CTU (up-counter) and CTD (down-counter) with TON timer.
+-   **Solution**:
+    -   Program the counter and timer to create the up-down counting sequence.
+
+------------------------------------------------------------------------
 
 ### Exercise 9: Cronómetro
-- **Sequence**: Create a stopwatch that counts up to 60 seconds.
-- **Steps**:
-    - The stopwatch must store seconds in register N7:8 and milliseconds in N7:9.
-- **Solution**:
-    - Program the stopwatch functionality using the required registers.
 
----
+-   **Sequence**: Create a stopwatch that counts up to 60 seconds.
+-   **Steps**:
+    -   The stopwatch must store seconds in register N7:8 and milliseconds in N7:9.
+-   **Solution**:
+    -   Program the stopwatch functionality using the required registers.
+
+------------------------------------------------------------------------
 
 ### Exercise 10: Usar ADD como CTU
-- **Sequence**: Use the ADD instruction to function as a CTU (up-counter).
-- **Steps**:
-    - Program using the ADD function to count and increment.
-- **Solution**:
-    - Configure ADD to behave as a CTU counter and connect it to a control input.
 
----
+-   **Sequence**: Use the ADD instruction to function as a CTU (up-counter).
+-   **Steps**:
+    -   Program using the ADD function to count and increment.
+-   **Solution**:
+    -   Configure ADD to behave as a CTU counter and connect it to a control input.
+
+------------------------------------------------------------------------
 
 ### Exercise 11: Saltos a etiquetas
-- **Sequence**: Implement jump instructions (to labels) in your program.
-- **Steps**:
-    - Use jump instructions to navigate between different steps in the program.
-- **Solution**:
-    - Program jump instructions to manage the flow of the sequence.
 
----
+-   **Sequence**: Implement jump instructions (to labels) in your program.
+-   **Steps**:
+    -   Use jump instructions to navigate between different steps in the program.
+-   **Solution**:
+    -   Program jump instructions to manage the flow of the sequence.
+
+------------------------------------------------------------------------
 
 ### Exercise 12: Usar instrucciones ONS (One-Shot Rising)
-- **Sequence**: Turn on/off a light using ONS.
-- **Steps**:
-    - Program a light control using One-Shot Rising instructions to ensure it only activates once.
-- **Solution**:
-    - Create a program using ONS to control the light switching.
 
----
+-   **Sequence**: Turn on/off a light using ONS.
+-   **Steps**:
+    -   Program a light control using One-Shot Rising instructions to ensure it only activates once.
+-   **Solution**:
+    -   Create a program using ONS to control the light switching.
+
+------------------------------------------------------------------------
 
 ### Exercise 13: Secuenciador
-- **Sequence**: Implement a sequencer that controls a series of steps (steps 1 to 6).
-- **Steps**:
-    - Use the sequencer to control a set of actuators in a defined sequence.
-- **Solution**:
-    - Program the sequencer to manage the sequence of steps for the given process.
 
----
+-   **Sequence**: Implement a sequencer that controls a series of steps (steps 1 to 6).
+-   **Steps**:
+    -   Use the sequencer to control a set of actuators in a defined sequence.
+-   **Solution**:
+    -   Program the sequencer to manage the sequence of steps for the given process.
+
+------------------------------------------------------------------------
 
 ### Exercise 14: Control de Grúa
-- **Sequence**: Control a crane with two motors (horizontal and vertical).
-- **Steps**:
-    - Program the crane to move based on sensors (S1, S2, S3, S4).
-- **Solution**:
-    - Use sensors and actuators to control the crane's movement.
 
----
+-   **Sequence**: Control a crane with two motors (horizontal and vertical).
+-   **Steps**:
+    -   Program the crane to move based on sensors (S1, S2, S3, S4).
+-   **Solution**:
+    -   Use sensors and actuators to control the crane's movement.
+
+------------------------------------------------------------------------
 
 ### Exercise 15: Estacionamiento
-- **Sequence**: Control a parking barrier with two sensors (A and B) and a semaphore.
-- **Steps**:
-    - Program the barrier to open when sensor A is active and the semaphore is green.
-    - Close the barrier when sensor B is active.
-- **Solution**:
-    - Implement the program to manage the parking barrier using the sensors and semaphore logic.
 
----
+-   **Sequence**: Control a parking barrier with two sensors (A and B) and a semaphore.
+-   **Steps**:
+    -   Program the barrier to open when sensor A is active and the semaphore is green.
+    -   Close the barrier when sensor B is active.
+-   **Solution**:
+    -   Implement the program to manage the parking barrier using the sensors and semaphore logic.
+
+------------------------------------------------------------------------
 
 ### Exercise 16: Movimiento de Móvil
-- **Sequence**: Program a mobile unit to move left and right based on sensor feedback.
-- **Steps**:
-    - Move the mobile unit to the right when "INICIO" is active.
-    - Move the unit to the left when it reaches the sensor "Fi" and reset when "INICIO" is pressed again.
-- **Solution**:
-    - Create a control program for the mobile unit using sensor feedback and manual control.
+
+-   **Sequence**: Program a mobile unit to move left and right based on sensor feedback.
+-   **Steps**:
+    -   Move the mobile unit to the right when "INICIO" is active.
+    -   Move the unit to the left when it reaches the sensor "Fi" and reset when "INICIO" is pressed again.
+-   **Solution**:
+    -   Create a control program for the mobile unit using sensor feedback and manual control.
