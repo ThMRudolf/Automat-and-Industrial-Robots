@@ -30,11 +30,11 @@ website:
       - section: Chapter 2
         contents: 
           - chapter02.qmd
-          - exc_chapter02.qmd
+          - #exc_chapter02.qmd
       - section: Chapter 3
         contents: 
           - chapter03.qmd
-          - chapter03.qmd #exc_chapter03.qmd
+          - #chapter03.qmd #exc_chapter03.qmd
       - section: Chapter 4
         contents: 
           - chapter04.qmd
