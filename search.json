@@ -2,386 +2,511 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Automation and Process Control",
+    "title": "HOME",
     "section": "",
-    "text": "Introduction\n\nDefinition of Automation\nProcess Control\nTypes of different Industrial Processes\n\n\n\nPneumatic and Electro-pneumatic Automatization\n\nElements of a neumatic circuit\nElements of a electic circuit, electrical acutators and control elements\nAutomatization of neumatic and electroneumatic sequences\n\n\n\nProgramable Logical Control (PLC)\n\nLogical Operations with ladder diagram\nInput and output variables, internal registers of PLC\nDifferent componentens and instructions of PLC programation\n\n\n\nGRAFCET - Funcional Graph of Stage-Transition Control\n\nStages and transition conditions\nRules to develope a GRAFCET\nTransformation of a GRAFCET into a ladder diagram lenguaje Ladder\n\n\n\nState flow\n\nIntroduction to state flow in Matlab\nStates and transitions\nControl a simulation enviroment with state flow\nControl a plant with state flow\n\n\n\nIndustrial Robots (optional)\n\nIntroductions to industrial robots\nSecurity topics for usage of industrial robots",
+    "text": "1 Introduction\n\nDefinition of Automation\nProcess Control\nTypes of different Industrial Processes\n\n\n\n2 Pneumatic and Electro-pneumatic Automatization\n\nElements of a neumatic circuit\nElements of a electic circuit, electrical acutators and control elements\nAutomatization of neumatic and electroneumatic sequences\n\n\n\n3 Programable Logical Control (PLC)\n\nLogical Operations with ladder diagram\nInput and output variables, internal registers of PLC\nDifferent componentens and instructions of PLC programation\n\n\n\n4 GRAFCET - Funcional Graph of Stage-Transition Control\n\nStages and transition conditions\nRules to develope a GRAFCET\nTransformation of a GRAFCET into a ladder diagram lenguaje Ladder\n\n\n\n5 State flow\n\nIntroduction to state flow in Matlab\nStates and transitions\nControl a simulation enviroment with state flow\nControl a plant with state flow\n\n\n\n6 Industrial Robots (optional)\n\nIntroductions to industrial robots\nSecurity topics for usage of industrial robots",
     "crumbs": [
-      "Automation and Process Control",
-      "Index (2024-3)"
-    ]
-  },
-  {
-    "objectID": "chapter05.html#states-and-transitions",
-    "href": "chapter05.html#states-and-transitions",
-    "title": "State flow",
-    "section": "States and transitions",
-    "text": "States and transitions",
-    "crumbs": [
-      "Automation and Process Control",
-      "Chapter 5"
-    ]
-  },
-  {
-    "objectID": "chapter05.html#control-a-simulation-enviroment-with-state-flow",
-    "href": "chapter05.html#control-a-simulation-enviroment-with-state-flow",
-    "title": "State flow",
-    "section": "Control a simulation enviroment with state flow",
-    "text": "Control a simulation enviroment with state flow",
-    "crumbs": [
-      "Automation and Process Control",
-      "Chapter 5"
-    ]
-  },
-  {
-    "objectID": "chapter05.html#control-a-plant-with-state-flow",
-    "href": "chapter05.html#control-a-plant-with-state-flow",
-    "title": "State flow",
-    "section": "Control a plant with state flow",
-    "text": "Control a plant with state flow",
-    "crumbs": [
-      "Automation and Process Control",
-      "Chapter 5"
-    ]
-  },
-  {
-    "objectID": "chapter03.html",
-    "href": "chapter03.html",
-    "title": "Programable Logical Control (PLC)",
-    "section": "",
-    "text": "GRAFCET (Graphical Functional Control Step Transition) emerged in the 70s through collaboration between PLC manufacturers and official organizations like AFCET and ADEPA. It is a graphical tool used to describe deterministic control behavior.\nInsert Image *_*TEST*_*\n\n\nINSERT IMAGE",
-    "crumbs": [
-      "Automation and Process Control",
-      "Chapter 3"
-    ]
-  },
-  {
-    "objectID": "chapter03.html#logical-operations-with-ladder-diagram",
-    "href": "chapter03.html#logical-operations-with-ladder-diagram",
-    "title": "Programable Logical Control (PLC)",
-    "section": "",
-    "text": "GRAFCET (Graphical Functional Control Step Transition) emerged in the 70s through collaboration between PLC manufacturers and official organizations like AFCET and ADEPA. It is a graphical tool used to describe deterministic control behavior.\nInsert Image *_*TEST*_*\n\n\nINSERT IMAGE",
-    "crumbs": [
-      "Automation and Process Control",
-      "Chapter 3"
-    ]
-  },
-  {
-    "objectID": "chapter03.html#input-and-output-variables-internal-registers-of-plc",
-    "href": "chapter03.html#input-and-output-variables-internal-registers-of-plc",
-    "title": "Programable Logical Control (PLC)",
-    "section": "Input and Output Variables, Internal Registers of PLC",
-    "text": "Input and Output Variables, Internal Registers of PLC\nGRAFCET allows modeling the sequential behavior of an automated system. It describes process evolution, indicating the actions required and the information triggering them.\n\nElements of GRAFCET\n\nStages: Each stage corresponds to a specific process step.\nTransitions: Define the conditions to move between stages.\nLinks: Connect different process parts.\nInterpretation Elements: Conditions necessary for process transitions.\n\nInsert Image\n\n\nINSERT IMAGE",
-    "crumbs": [
-      "Automation and Process Control",
-      "Chapter 3"
-    ]
-  },
-  {
-    "objectID": "chapter03.html#different-components-and-instructions-of-plc-programming",
-    "href": "chapter03.html#different-components-and-instructions-of-plc-programming",
-    "title": "Programable Logical Control (PLC)",
-    "section": "Different Components and Instructions of PLC Programming",
-    "text": "Different Components and Instructions of PLC Programming\nA sequential process executes an action based on the result of the previous action. Transition conditions must be met to move from one stage to another.\n\nTransition Conditions\n\nActive Condition (CT[i] = F1): Activates stage i when signal F1 is active.\nInactive Condition (CT[i] = F1’): Activates stage i when signal F1 is inactive.\nTime Condition (CT[i] = t/i/10 sec): Activates stage i after a time delay.\nLogical Condition (CT[i] = F1·F2’·F3): Activates when specific signals are met.\nUnconditional Condition (CT[i] = 1): Always activates the next stage.\n\n\n\nProcess Evolution Example\n\nStep 1: The part reaches position B (sensor detects it).\nStep 2: Conveyor moves part from A to B.\nStep 3: Robot picks up the part.\nStep 4: Drilling process begins.\nStep 5: Finished part is detected and removed.\n\nInsert Image\n\n\nINSERT IMAGE",
-    "crumbs": [
-      "Automation and Process Control",
-      "Chapter 3"
-    ]
-  },
-  {
-    "objectID": "chapter03.html#conversion-from-grafcet-to-ladder-diagram",
-    "href": "chapter03.html#conversion-from-grafcet-to-ladder-diagram",
-    "title": "Programable Logical Control (PLC)",
-    "section": "Conversion from GRAFCET to Ladder Diagram",
-    "text": "Conversion from GRAFCET to Ladder Diagram\n\nEach stage corresponds to an internal PLC bit (B3).\nStages are activated and deactivated using Latch and Unlatch commands.\nLeft side conditions define activation and deactivation logic.\n\n\nExample: Traffic Light Control Using Timers\n\nStart Button: Initiates the sequence.\nRed Light: Turns on for a specified duration.\nGreen Light: Turns on after Red Light.\nYellow Light: Activates before Red.\nCycle Restarts.\n\nInsert Image\n\n\nINSERT IMAGE",
-    "crumbs": [
-      "Automation and Process Control",
-      "Chapter 3"
-    ]
-  },
-  {
-    "objectID": "chapter03.html#common-errors-in-grafcet-implementation",
-    "href": "chapter03.html#common-errors-in-grafcet-implementation",
-    "title": "Programable Logical Control (PLC)",
-    "section": "Common Errors in GRAFCET Implementation",
-    "text": "Common Errors in GRAFCET Implementation\n\nIncorrect transition conditions leading to improper process evolution.\nSimultaneous sequence start/end issues.\nNested simultaneous sequences causing execution conflicts.\nSkipping intermediate stages unintentionally.",
-    "crumbs": [
-      "Automation and Process Control",
-      "Chapter 3"
-    ]
-  },
-  {
-    "objectID": "chapter03.html#practical-exercises",
-    "href": "chapter03.html#practical-exercises",
-    "title": "Programable Logical Control (PLC)",
-    "section": "Practical Exercises",
-    "text": "Practical Exercises\n\nExercise 1: Convert the Following Sequence to Ladder Diagram\n\nSequence: B+ → A+ → A- → A+ → B- → A-\n\n\n\nExercise 2: Crane Control System\n\nFour limit switches: Two for horizontal movement (S3, S4) and two for vertical (S1, S2).\nMotors: Two dual-direction motors controlling crane movement.\nProcess Flow:\n\nMove crane to pickup position.\nLift part using vertical motor.\nTransport to destination.\nLower and release part.\n\n\nInsert Image\n\n\nINSERT IMAGE\n\nNote: Replace INSERT IMAGE with actual images related to each section.",
-    "crumbs": [
-      "Automation and Process Control",
-      "Chapter 3"
-    ]
-  },
-  {
-    "objectID": "chapter01.html",
-    "href": "chapter01.html",
-    "title": "Introduction to Automation and Process Control",
-    "section": "",
-    "text": "Replacement of the human operator by an artificial operator, in the execution of a previously programmed physical or mental task. One has to control the system in order to automate it.",
-    "crumbs": [
-      "Automation and Process Control",
-      "Chapter 1"
-    ]
-  },
-  {
-    "objectID": "chapter01.html#definition-of-automation",
-    "href": "chapter01.html#definition-of-automation",
-    "title": "Introduction to Automation and Process Control",
-    "section": "",
-    "text": "Replacement of the human operator by an artificial operator, in the execution of a previously programmed physical or mental task. One has to control the system in order to automate it.",
-    "crumbs": [
-      "Automation and Process Control",
-      "Chapter 1"
-    ]
-  },
-  {
-    "objectID": "chapter01.html#types-of-control-schemes",
-    "href": "chapter01.html#types-of-control-schemes",
-    "title": "Introduction to Automation and Process Control",
-    "section": "Types of control schemes",
-    "text": "Types of control schemes\nThere are basically two types of control: Open Loop and Closed Loop\nThe open loop has the following structure. It receives a command or reference signal. The controller calulates an input signal for the actuator. The output of the actuator starts manipulating the system. Since the controler does not receives any feedback on how the systems reacts on the command the results might be different from the desired behaviour. Examples for the application of open loop control are: A tennis player who hits the ball, if you turn on a light in you room or a DC motor without sensors.\n\n\n\nfig. 1.1: general structure of a open loop control\n\n\nTo improve the resulting behaviour and be able to correct possible differences between the commad value and the resulting value, one can implement sensors that observe the resulting behaviour of the systems or process. This sensors return the current behaviour to the controller and the controller can correct the input signal to the actuator. The following figure shows the general structure of a close loop control.\n\n\n\nfig. 1.2: general structure of a close loop control",
-    "crumbs": [
-      "Automation and Process Control",
-      "Chapter 1"
-    ]
-  },
-  {
-    "objectID": "chapter01.html#industrial-process",
-    "href": "chapter01.html#industrial-process",
-    "title": "Introduction to Automation and Process Control",
-    "section": "Industrial Process",
-    "text": "Industrial Process\nAn industrial Process is a set of actions for transporting and transforming raw materials to obtain a final product.",
-    "crumbs": [
-      "Automation and Process Control",
-      "Chapter 1"
-    ]
-  },
-  {
-    "objectID": "chapter01.html#types-of-industrial-processes",
-    "href": "chapter01.html#types-of-industrial-processes",
-    "title": "Introduction to Automation and Process Control",
-    "section": "Types of Industrial Processes",
-    "text": "Types of Industrial Processes\nThere are different types of proceses within industrial processes: Continuous Processes, Discrete and Processes Non-continouse Processes by batches. Each type will be explained shortly.\n\nContinuous Processes:\n\nUninterrupted process over time in which analog variables (temperature, speed, etc.) are manipulated.\nProcess in which raw materials are constantly entering at one end of the system, while at the other end a finished product is continuously obtained.\n\nExample: Heating System Someone defines the requiered temperature in the room. The input value can be done by different types of devices, digital or analogue inputs, for example. At the same time, the current room temperature is measured and compared to the reference. The difference between these two values are the input to the controller and the controller calculates the new opening value for a valve that opens the gas flow to the burner. The room gets warmer (or not) and a new temparature is measured. This new temparature value is then compared again to the reference value.\n\n\n\nfig. 1.3 Heating System\n\n\n\n\n\nfig. 1.4 representation of a heating System in blocks\n\n\n\n\nDiscrete Processes\n\nProcesses that involve variables that can take a finite number of possible values or states.\nProcesses in which the output product is obtained through a series of operations.\n\nExample: Production of metalic pieces\nSteps:\n\nCut the piece\nTransport the piece\nDrilling A\nDrilling B\nTake the piece out\n\n\n\n\nfig. 1.5 example of the production of a metalic product",
-    "crumbs": [
-      "Automation and Process Control",
-      "Chapter 1"
-    ]
-  },
-  {
-    "objectID": "chapter01.html#non-continuous-processes-by-batches",
-    "href": "chapter01.html#non-continuous-processes-by-batches",
-    "title": "Introduction to Automation and Process Control",
-    "section": "Non-continuous Processes by batches",
-    "text": "Non-continuous Processes by batches\nProcesses where the final product is made up of different components.\nSteps:\n\nPosition pieces C, D and E\nPosition piece B\nPosition piece A\nReturn cylinders pieces C, D and E\n\n\n\n\nfig. 1.6 Assembly process\n\n\nBox Stacker:\n\n\n\nfig. 1.7 process of box positioning for further transport.",
-    "crumbs": [
-      "Automation and Process Control",
-      "Chapter 1"
-    ]
-  },
-  {
-    "objectID": "chapter01.html#resume-types-of-processes-and-types-of-control",
-    "href": "chapter01.html#resume-types-of-processes-and-types-of-control",
-    "title": "Introduction to Automation and Process Control",
-    "section": "Resume: Types of processes and types of control",
-    "text": "Resume: Types of processes and types of control\n\n\n\nfig. 1.8 resume of processes and control types",
-    "crumbs": [
-      "Automation and Process Control",
-      "Chapter 1"
-    ]
-  },
-  {
-    "objectID": "chapter01.html#industrial-automation",
-    "href": "chapter01.html#industrial-automation",
-    "title": "Introduction to Automation and Process Control",
-    "section": "Industrial Automation",
-    "text": "Industrial Automation\nTotal (or partial) elimination of human intervention in manufacturing processes, carrying out calculation and decision functions.\nTypical examples with pneumatic application can be found in the food and drug industry (example) or in the textil industry (example).",
-    "crumbs": [
-      "Automation and Process Control",
-      "Chapter 1"
-    ]
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Thomas M. Rudolf",
-    "section": "",
-    "text": "Biography\nHe is currently an full professor and researcher at ITAM. He completed his engineering studies with a specialization in Mechatronics at the University of Darmstadt. During his studies, he focused on the fundamentals of control theory, identification of systems and mechanics. After his studies in Darmstadt, he started working as a research assistant at the Laboratory of Machine Tools at the University of Aachen, RWTH Aachen.\nDuring the following six years at the RWTH, he worked as a scientific assistant and development engineer. During this time, he worked on his doctoral investigation. Besides the investigation, his responsibilities also included the coordination and management of investigation projects. His doctoral thesis (Adaptable parametrization of diagnostic systems by using digital drive signals for process monitoring) was defended on the 11th of March 2014 with a presentation about “Systems Engineering for Medical Devices”.\nHe continued his professional carrier at Roche Diagnostics as a Systems Engineer with a focus on simulation and computation. His primary task was the physical modeling and calculation of insulin delivery systems in order to define technical requirements as well as to verify changes of specifications. This task also included DoE in order to find the most relevant system parameters, the tolerance analysis, and statistical evaluations applying Six Sigma methods, e.g. to evaluate the risks of new consumable products for medical devices. He also applied the methods of Six Sigma to develop a quality gate for the selection of sterile consumable products for medical devices.\nHe lectures Control Engineering, Manufacturing of Components, Computer Integrated Manufacturing, as well as a Solid Mechanics, Design of Robotics Mechanisms, and Mechatronics Systems. He published several articles in international journals about diagnostics and monitoring of manufacturing processes.",
-    "crumbs": [
-      "Automation and Process Control",
-      "about"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Automation and Process Control</span>"
     ]
   },
   {
     "objectID": "chapter00.html",
     "href": "chapter00.html",
-    "title": "About the Lecture",
+    "title": "2  About the Lecture",
     "section": "",
-    "text": "Theory: Mon / Wed, 12:30-14:00 hrs\nLaboratory:\n\nG001 Fri 11:00-14:00 hrs\nG002 Fri 16:00-19:00 hrs\n\n\n\n\n\n\nProf. Thomas M. Rudolf (theory)\nProf. Claudia Victoria Olivar Jiménez (laboratory)\n\n\n\n\n\nAula LMINT",
+    "text": "2.1 General Information about the lecture",
     "crumbs": [
-      "Automation and Process Control",
-      "About the lecture"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>About the Lecture</span>"
     ]
   },
   {
     "objectID": "chapter00.html#general-information-about-the-lecture",
     "href": "chapter00.html#general-information-about-the-lecture",
-    "title": "About the Lecture",
+    "title": "2  About the Lecture",
     "section": "",
-    "text": "Theory: Mon / Wed, 12:30-14:00 hrs\nLaboratory:\n\nG001 Fri 11:00-14:00 hrs\nG002 Fri 16:00-19:00 hrs\n\n\n\n\n\n\nProf. Thomas M. Rudolf (theory)\nProf. Claudia Victoria Olivar Jiménez (laboratory)\n\n\n\n\n\nAula LMINT",
+    "text": "2.1.1 Schedules\n\nTheory: Mon / Wed, 12:30-14:00 hrs\nLaboratory:\n\nG001 Fri 11:00-14:00 hrs\nG002 Fri 16:00-19:00 hrs\n\n\n\n\n2.1.2 Lecturers\n\nProf. Thomas M. Rudolf (theory)\nProf. Claudia Victoria Olivar Jiménez (laboratory)\n\n\n\n2.1.3 Location\n\nAula LMINT",
     "crumbs": [
-      "Automation and Process Control",
-      "About the lecture"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>About the Lecture</span>"
     ]
   },
   {
     "objectID": "chapter00.html#description-and-objetives",
     "href": "chapter00.html#description-and-objetives",
-    "title": "About the Lecture",
-    "section": "Description and Objetives",
-    "text": "Description and Objetives\n\nAddress concepts related to Industrial Automation systems.\nControl methods applied mainly to sequential processes and the theory related to Grafcet will also be studied.\nApplication of emerging technologies to automate industrial processes. The structure and programming logic for Programmable Logic Controllers (PLC) will be studied.",
+    "title": "2  About the Lecture",
+    "section": "2.2 Description and Objetives",
+    "text": "2.2 Description and Objetives\n\nAddress concepts related to Industrial Automation systems.\nControl methods applied mainly to sequential processes and the theory related to Grafcet will also be studied.\nApplication of emerging technologies to automate industrial processes. The structure and programming logic for Programmable Logic Controllers (PLC) will be studied.",
     "crumbs": [
-      "Automation and Process Control",
-      "About the lecture"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>About the Lecture</span>"
     ]
   },
   {
     "objectID": "chapter00.html#what-is-covered-in-this-lecture",
     "href": "chapter00.html#what-is-covered-in-this-lecture",
-    "title": "About the Lecture",
-    "section": "What is covered in this lecture:",
-    "text": "What is covered in this lecture:",
+    "title": "2  About the Lecture",
+    "section": "2.3 What is covered in this lecture:",
+    "text": "2.3 What is covered in this lecture:",
     "crumbs": [
-      "Automation and Process Control",
-      "About the lecture"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>About the Lecture</span>"
     ]
   },
   {
     "objectID": "chapter00.html#what-is-not-covered-in-this-lecture",
     "href": "chapter00.html#what-is-not-covered-in-this-lecture",
-    "title": "About the Lecture",
-    "section": "What is not covered in this lecture:",
-    "text": "What is not covered in this lecture:\n\nIt is not a lectur about pneumatics nor hydraulics.\nIt is not a fluid dynamics lecture.",
+    "title": "2  About the Lecture",
+    "section": "2.4 What is not covered in this lecture:",
+    "text": "2.4 What is not covered in this lecture:\n\nIt is not a lectur about pneumatics nor hydraulics.\nIt is not a fluid dynamics lecture.",
     "crumbs": [
-      "Automation and Process Control",
-      "About the lecture"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>About the Lecture</span>"
     ]
   },
   {
     "objectID": "chapter00.html#evaluation",
     "href": "chapter00.html#evaluation",
-    "title": "About the Lecture",
-    "section": "Evaluation",
-    "text": "Evaluation\n\n\n\n\n\n\n\nType\npercentage\n\n\n\n\n2 Parcials:\n\n1st partial: 30/09/2024 or 02/10/2024 (1 hr, 20 min)\n2nd partial: 04/11/2024 or 06/11/2024 (1 hr, 20 min)\n\n25 % each\n\n\nFinal Project (Exam final: tbd (LMINT))\n30%\n\n\nLaboratory\n20%",
+    "title": "2  About the Lecture",
+    "section": "2.5 Evaluation",
+    "text": "2.5 Evaluation\n\n\n\n\n\n\n\nType\npercentage\n\n\n\n\n2 Parcials:\n\n1st partial: 30/09/2024 or 02/10/2024 (1 hr, 20 min)\n2nd partial: 04/11/2024 or 06/11/2024 (1 hr, 20 min)\n\n25 % each\n\n\nFinal Project (Exam final: tbd (LMINT))\n30%\n\n\nLaboratory\n20%",
     "crumbs": [
-      "Automation and Process Control",
-      "About the lecture"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>About the Lecture</span>"
     ]
   },
   {
     "objectID": "chapter00.html#course-rules",
     "href": "chapter00.html#course-rules",
-    "title": "About the Lecture",
-    "section": "Course rules",
-    "text": "Course rules\n\nMaximum 10 minutes delay.\nNO re-examinations.\nSanction for plagiarism according to the regulations\nFood is not allowed in the lab",
+    "title": "2  About the Lecture",
+    "section": "2.6 Course rules",
+    "text": "2.6 Course rules\n\nMaximum 10 minutes delay.\nNO re-examinations.\nSanction for plagiarism according to the regulations\nFood is not allowed in the lab",
     "crumbs": [
-      "Automation and Process Control",
-      "About the lecture"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>About the Lecture</span>"
     ]
   },
   {
     "objectID": "chapter00.html#topics",
     "href": "chapter00.html#topics",
-    "title": "About the Lecture",
-    "section": "Topics",
-    "text": "Topics\n\nIntroduction to automation\nPneumatic and Electro-pneumatic Automatization\nPLC programmable controllers\nGrafcet\nState Flow\nIndustrial Robots (optional)",
+    "title": "2  About the Lecture",
+    "section": "2.7 Topics",
+    "text": "2.7 Topics\n\nIntroduction to automation\nPneumatic and Electro-pneumatic Automatization\nPLC programmable controllers\nGrafcet\nState Flow\nIndustrial Robots (optional)",
     "crumbs": [
-      "Automation and Process Control",
-      "About the lecture"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>About the Lecture</span>"
+    ]
+  },
+  {
+    "objectID": "chapter01.html",
+    "href": "chapter01.html",
+    "title": "3  Introduction to Automation and Process Control",
+    "section": "",
+    "text": "3.1 Definition of Automation\nReplacement of the human operator by an artificial operator, in the execution of a previously programmed physical or mental task. One has to control the system in order to automate it.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Introduction to Automation and Process Control</span>"
+    ]
+  },
+  {
+    "objectID": "chapter01.html#types-of-control-schemes",
+    "href": "chapter01.html#types-of-control-schemes",
+    "title": "3  Introduction to Automation and Process Control",
+    "section": "3.2 Types of control schemes",
+    "text": "3.2 Types of control schemes\nThere are basically two types of control: Open Loop and Closed Loop\nThe open loop has the following structure. It receives a command or reference signal. The controller calulates an input signal for the actuator. The output of the actuator starts manipulating the system. Since the controler does not receives any feedback on how the systems reacts on the command the results might be different from the desired behaviour. Examples for the application of open loop control are: A tennis player who hits the ball, if you turn on a light in you room or a DC motor without sensors.\n\n\n\nfig. 1.1: general structure of a open loop control\n\n\nTo improve the resulting behaviour and be able to correct possible differences between the commad value and the resulting value, one can implement sensors that observe the resulting behaviour of the systems or process. This sensors return the current behaviour to the controller and the controller can correct the input signal to the actuator. The following figure shows the general structure of a close loop control.\n\n\n\nfig. 1.2: general structure of a close loop control",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Introduction to Automation and Process Control</span>"
+    ]
+  },
+  {
+    "objectID": "chapter01.html#industrial-process",
+    "href": "chapter01.html#industrial-process",
+    "title": "3  Introduction to Automation and Process Control",
+    "section": "3.3 Industrial Process",
+    "text": "3.3 Industrial Process\nAn industrial Process is a set of actions for transporting and transforming raw materials to obtain a final product.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Introduction to Automation and Process Control</span>"
+    ]
+  },
+  {
+    "objectID": "chapter01.html#types-of-industrial-processes",
+    "href": "chapter01.html#types-of-industrial-processes",
+    "title": "3  Introduction to Automation and Process Control",
+    "section": "3.4 Types of Industrial Processes",
+    "text": "3.4 Types of Industrial Processes\nThere are different types of proceses within industrial processes: Continuous Processes, Discrete and Processes Non-continouse Processes by batches. Each type will be explained shortly.\n\n3.4.1 Continuous Processes:\n\nUninterrupted process over time in which analog variables (temperature, speed, etc.) are manipulated.\nProcess in which raw materials are constantly entering at one end of the system, while at the other end a finished product is continuously obtained.\n\nExample: Heating System Someone defines the requiered temperature in the room. The input value can be done by different types of devices, digital or analogue inputs, for example. At the same time, the current room temperature is measured and compared to the reference. The difference between these two values are the input to the controller and the controller calculates the new opening value for a valve that opens the gas flow to the burner. The room gets warmer (or not) and a new temparature is measured. This new temparature value is then compared again to the reference value.\n\n\n\nfig. 1.3 Heating System\n\n\n\n\n\nfig. 1.4 representation of a heating System in blocks\n\n\n\n\n3.4.2 Discrete Processes\n\nProcesses that involve variables that can take a finite number of possible values or states.\nProcesses in which the output product is obtained through a series of operations.\n\nExample: Production of metalic pieces\nSteps:\n\nCut the piece\nTransport the piece\nDrilling A\nDrilling B\nTake the piece out\n\n\n\n\nfig. 1.5 example of the production of a metalic product",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Introduction to Automation and Process Control</span>"
+    ]
+  },
+  {
+    "objectID": "chapter01.html#non-continuous-processes-by-batches",
+    "href": "chapter01.html#non-continuous-processes-by-batches",
+    "title": "3  Introduction to Automation and Process Control",
+    "section": "3.5 Non-continuous Processes by batches",
+    "text": "3.5 Non-continuous Processes by batches\nProcesses where the final product is made up of different components.\nSteps:\n\nPosition pieces C, D and E\nPosition piece B\nPosition piece A\nReturn cylinders pieces C, D and E\n\n\n\n\nfig. 1.6 Assembly process\n\n\nBox Stacker:\n\n\n\nfig. 1.7 process of box positioning for further transport.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Introduction to Automation and Process Control</span>"
+    ]
+  },
+  {
+    "objectID": "chapter01.html#resume-types-of-processes-and-types-of-control",
+    "href": "chapter01.html#resume-types-of-processes-and-types-of-control",
+    "title": "3  Introduction to Automation and Process Control",
+    "section": "3.6 Resume: Types of processes and types of control",
+    "text": "3.6 Resume: Types of processes and types of control\n\n\n\nfig. 1.8 resume of processes and control types",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Introduction to Automation and Process Control</span>"
+    ]
+  },
+  {
+    "objectID": "chapter01.html#industrial-automation",
+    "href": "chapter01.html#industrial-automation",
+    "title": "3  Introduction to Automation and Process Control",
+    "section": "3.7 Industrial Automation",
+    "text": "3.7 Industrial Automation\nTotal (or partial) elimination of human intervention in manufacturing processes, carrying out calculation and decision functions.\nTypical examples with pneumatic application can be found in the food and drug industry (example) or in the textil industry (example).",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Introduction to Automation and Process Control</span>"
     ]
   },
   {
     "objectID": "chapter02.html",
     "href": "chapter02.html",
-    "title": "Pneumatic and Electro-pneumatic Automatization",
+    "title": "4  editor: visual",
     "section": "",
-    "text": "The word ‘Pneumatics’ is derived from the Greek ‘neuma’ (air or breath). Originally, the term pneumatics designated the science of the movement and properties of air. This is the branch of engineering that deals with the study and application of compressed air, its generation, transmission and control.\nThe design of devices that used air energy dates back to the 18th century (with the pneumatic rifle). “Modern” devices: pneumatic rock drill, pneumatic brakes. “Modern” pneumatics was born in the 1950s, when techniques and forms of air energy control were introduced in industrial processes.\n\n\n\nIt is abundant. It is available in unlimited quantities.\nIt is transportable. It is easily transported through pipes.\nIt is storable. It is easily stored in tanks where pressure is maintained.\nIt is transmitted relatively quickly.\nIt is clean. In case of stagnation, it does not produce dirt.\n\n\n\n\n\nComparison with other technologies\n\n\n\n\n\n\n\n\n\n\n\n\nPollution\n\nApart from energy loss, no disadvantages.\n\n\n\n\n\n\n\n\n\n\nEnvironmental influences\nExplosion hazard in certain environments; relatively sensitive to temperature.\nSensitive to temperature fluctuations; Fire hazard in case of leaks.\nDoes not cause explosions; Insensitive to temperatures.\n\n\n\nEnergy storage\nDifficult and only in small quantities using batteries\nWithin certain limits, using gases\nEasy\n\n\n\nEnergy transport\nUnlimited, but with energy loss\nUp to 100 m with flow velocity of v = 2-6 m/s, signal velocity up to 1000 m/s.\nUp to 1000 m with flow velocity v = 20-40 m/s, signal velocity 20-40 m/s.\n\n\n\nWorking speed\n\nv = 0.5 m/s\nv = 1.5 m/s\n\n\n\n\nAdvantages of pneumatic energy over hydraulic energy\nAir density is significantly smaller than that of oil (used in hydraulics). Therefore, the inertia effect is smaller. Air can be discharged into the atmosphere after a task. Pneumatic systems are more economical. Pneumatic systems are less toxic and cleaner. Pneumatic systems are lighter, easier to transport.\n\n\n\n\n\n\n\nAdvantages\nDisadvantage\n\n\n\n\n\nAir is available in unlimited quantities\nAir (compressed) can be easily transported in pipes\nIt does not require any treatment for its elimination. It is simply thrown into the atmosphere.\nCompressed air is insensitive to fluctuations in temperature\nCompressed air is clean, therefore used in the food and pharmaceutical industries\nCompressed air allows operation at high speeds\nThe tools and operating elements are safe, when they are overloaded they simply stop working.\n\n\nIt is relatively expensive to transport. The high costs are offset by the cheapness of the elements and the simple and more compact nature of its equipment.\nCompressed air requires conditioning to remove dust and moisture.\nIt is difficult to achieve uniform piston speeds with compressed air.\nNoise levels in the operation of pneumatic systems are high due to air leakage.\nLubricated air (with oil) can escape into the atmosphere and cause pollution.\nDue to its low conductivity, it cannot dissipate heat as easily as oil would.\n\n\n\n\n\n\n\nComposition: Types of gases that make up the air under consideration. Example: dry air at sea level is composed mainly of Nitrogen (78%) and Oxygen (20.99%). Shape and volume: They have no defined shape or volume. They acquire the shape and volume of the tank that contains them. Cost (Flow): It is the quantity of fluid that circulates through a section of the duct per unit of time.\nThe relative humidity is the amount of water vapor contained in volume of air. It depends on the air temperature and pressure. When the air is saturated, it means that the relative humidity is at 100%.\nConsider the behavior of air with water under defined circumstances: temperature 20°C and a relative humidity of 50%. This means that it contains 8.7g of water which is the half of the maximum 17.4g.\nWhen the compressor compresses the 4 \\(𝑚^3\\). to form 1 \\(𝑚^3\\), the \\(4×8.7=34.8 g\\) of water cannot hold in it. The \\(𝑚^3\\) can hold at most 17.4 g of water. The other \\(2×8.7=17.4g\\) fall as drops.\n\n\n\nfig. 2.1 effect on air with relative humidity when compressed\n\n\nConclusion: When air is compressed, water \\(H_2O\\) liquefies from gaseous state to liquid state. The water vapor in the air is also compressed and the result is similar to squeezing a sponge. The compressed air reaches a saturation of 100% relative humidity inside the tank. The separated water can be drained via a drainage system.\nThe flow is defined as the quantity of fluid that circulates through a section of duct per unit of time. Generally the letter \\(Q\\) is used. \\(Q = \\frac{V}{t}=\\frac{A s}{t}\\) wit \\(s\\) as displacement, \\(A\\) as areaof the cross section and \\(t\\) as time. Considering that \\(\\frac{s}{t}\\)displacement per time unit is velocity, one can rewrite \\(Q=Av\\). The standard units of the variables are as follows:\n\n\\([Q] = [ \\frac{m^3}{s}]\\)\n\\([A] = [m^2]\\)\n\\([v] = [\\frac{m}{s}]\\)\n\n\n\nFig. 2.2 graphical description of flow $Q$\n\n\n\nGas pressure and gas laws: The relation between force \\(F\\) and pressure \\(p\\) is related by its contact cross section area A: \\(F=pA\\). The unit in Pascal \\([Pa]=[\\frac{N}{m^2}]\\)in the international system (SI) and it is \\([psi]=[\\frac{lb}{in^2}]\\) in english units. For many industrial aplications, one uses \\(bar\\). The relation between \\(bar\\) and \\(Pa\\) is \\(1 bar = 10^5 Pa =100kPa\\). The pressure that air exerts “naturally” on the Earth’s surface due to its weight is called atmospheric pressure (Atm): \\(1 atm = 1.01325 bar = 101,325 P\\). Due to the weight of the air column above: it decreases at higher altitudes and increases at lower altitudes.\n\n\n\nfig. 2.3 pressure defined by force and cross section\n\n\nGauge pressure (relative pressure) indicated by the manometers ($bar$ or \\(ps\\)). It is the excess of air pressure with respect to atmospheric pressure. It is abbreviated \\(p_m\\) (\\(p_g\\) in English).\n\\(p_{absolute}=p_m+1.01325 bar (1 atm)\\)\nFor simplification, one approximates \\(1 atm \\propto 1 bar\\)\nAnother unit of pressure measurement is the \\(torr\\) or \\(mmHg\\). It is equivalent to the pressure exerted by a one millimeter column of mercury. However, we won´t use this units in our course.\n\n\\(Equivalences\\):\n\nThe gas behaviour can be explained by several laws, explained as follows with \\(V\\) as volume and \\(T\\) as temperature:\n\nPascal’s law: \\(p_{in} = \\frac{F_{in}}{A_{in}} = \\frac{F_{out}}{A_{out}}=p_{out}\\), with in as input and out as output\nFluid pressure is transmitted equally in all directions. The force exerted by a piston is equal to the product of the effective area times the air pressure: Example of a Hydraulic Press:\n\n\n\n\n\n\n\n\n\nThey describe the relationships between pressure, volume and temperature: they describe how two of them are related when the other remains constant:\n\n\n\\(V_1 p_1 = V_2 p_2\\) or \\(Vp=constant\\) and \\(V \\propto \\frac{1}{p}\\), with constant temperature \\(T\\)\n“At constant temperature, the volume of gas is inversely proportional to its pressure”.\n\nBoyle’s Law is valid as long as the temperature does not vary. Normally, when a gas is compressed, energy is dissipated in the form of heat, that is, its temperature increases. Processes with these characteristics are known as adiabatic. Otherwise, if the temperature does not change, it is known as an isothermal process. To be possible, the process must be slow\n\n\n\n“At constant pressure, the volume of gas is proportional to its temperature”\n\\(\\frac{V}{T}=constant\\), with constant pressure \\(p\\)\n\n\n\n\n“At constant volume, the absolute temperature of a gas is proportional to its absolute pressure”\n\\(\\frac{p}{T}=constant\\), with constant volume \\(V\\)\n\n\n\n\nIt measures the amount of water vapor in the air compared to the maximum amount of water vapor it could contain before precipitation. Relative humidity (RH) varies with air temperature.\n\nRelative humidity (RH) is a dimensionless ratio, expressed as a percentage, that quantifies the amount of water vapor present in the air relative to the maximum amount the air can hold at a given temperature before reaching saturation. Mathematically, it is defined as:\n\\(\\text{RH} = \\left( \\frac{e}{e_s} \\right) \\times 100\\)\nWhere:\n- \\(e\\) is the actual vapor pressure of water in the air.\n\n\\(e_s\\) is the saturation vapor pressure at the same temperature.\n\n\n\nThe saturation vapor pressure \\(e_s\\) increases exponentially with temperature due to the enhanced kinetic energy of water molecules. This means:\n- Warm air can hold significantly more water vapor before becoming saturated.\n- Cool air has a lower capacity for water vapor, so RH increases as temperature drops (assuming constant moisture content). This relationship is governed by the Clausius-Clapeyron equation, which describes how vapor pressure changes with temperature:\n\\(\\frac{d \\ln e_s}{dT} = \\frac{L}{R_v T^2}\\)\nWhere:\n- \\(L\\) is the latent heat of vaporization,\n\n\\(R_v\\) is the specific gas constant for water vapor,\n\n- \\(T\\) is the absolute temperature in Kelvin.\n\n\n\n- When RH reaches 100%, the air is saturated, and condensation occurs -leading to dew, fog, or precipitation.\n- RH is a crucial parameter in meteorology, climate science, and HVAC engineering, influencing thermal comfort, cloud formation, and heat transfer processes\n\n\n\n\n\nThe follwoing part explains the components required to use pneumatic systems. The structure is composed of 5 main components: Power Supply, Actuators, Conductors, Control valves and Air conditioning.\n\n\n\n\n\n\n\nStructure\nExample\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStructure\n\nPower supply (pneumatic): Energy source\n\nThis is typically an air compressor that draws in atmospheric air and compresses it to a usable pressure level (commonly 60–120 PSI, 4.1 to 8.3 bar).\nThe compressed air is stored in a receiver tank, which acts as a reservoir to stabilize pressure and meet demand spikes.\nThe energy in the form of pressurized air is the driving force behind all pneumatic operations\n\nActuators: They do the work of the system\n\nActuators convert the energy of compressed air into mechanical motion.\nCommon types include:\n\nCylinders (linear motion)\n\nRotary actuators (rotational motion)\nThese components perform tasks like pushing, pulling, lifting, clamping, or rotating—depending on the application.\n\nConductors: They distribute the air\n\nThese are the pipes, hoses, and tubes that transport compressed air from the power supply to the actuators and control valves.\nMaterials vary (e.g., polyurethane, nylon, copper) depending on pressure, flexibility, and environmental conditions.\nProper sizing and layout are crucial to minimize pressure drops and ensure efficient delivery.\n\nControl valves: Control the flow/direction of air\n\nValves regulate the flow rate, pressure, and direction of air.\nTypes include:\n\nDirectional control valves (e.g., 2/2, 3/2, 5/2 valves)\n\nFlow control valves (adjust speed of actuators)\nPressure regulators (maintain safe operating pressure)\nThese are often controlled manually, electrically, or via PLCs in automated systems.\n\nAir conditioning: They purify the air\n\nFilters – remove dust and particulates\nDryers – eliminate moisture to prevent corrosion and freezing\nLubricators – add a fine mist of oil to reduce friction in moving parts\nThese components are often grouped into FRL units (Filter-Regulator-Lubricator).\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCascade method\nStep by step method.",
+    "text": "4.1 Elements of a pneumatic circuit\nThe word ‘Pneumatics’ is derived from the Greek ‘neuma’ (air or breath). Originally, the term pneumatics designated the science of the movement and properties of air. This is the branch of engineering that deals with the study and application of compressed air, its generation, transmission and control.\nThe design of devices that used air energy dates back to the 18th century (with the pneumatic rifle). “Modern” devices: pneumatic rock drill, pneumatic brakes. “Modern” pneumatics was born in the 1950s, when techniques and forms of air energy control were introduced in industrial processes.",
     "crumbs": [
-      "Automation and Process Control",
-      "Chapter 2"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Pneumatic and Electro-pneumatic Automatization</span>"
     ]
   },
   {
     "objectID": "chapter02.html#elements-of-a-pneumatic-circuit",
     "href": "chapter02.html#elements-of-a-pneumatic-circuit",
-    "title": "Pneumatic and Electro-pneumatic Automatization",
+    "title": "4  editor: visual",
     "section": "",
-    "text": "The word ‘Pneumatics’ is derived from the Greek ‘neuma’ (air or breath). Originally, the term pneumatics designated the science of the movement and properties of air. This is the branch of engineering that deals with the study and application of compressed air, its generation, transmission and control.\nThe design of devices that used air energy dates back to the 18th century (with the pneumatic rifle). “Modern” devices: pneumatic rock drill, pneumatic brakes. “Modern” pneumatics was born in the 1950s, when techniques and forms of air energy control were introduced in industrial processes.\n\n\n\nIt is abundant. It is available in unlimited quantities.\nIt is transportable. It is easily transported through pipes.\nIt is storable. It is easily stored in tanks where pressure is maintained.\nIt is transmitted relatively quickly.\nIt is clean. In case of stagnation, it does not produce dirt.\n\n\n\n\n\nComparison with other technologies\n\n\n\n\n\n\n\n\n\n\n\n\nPollution\n\nApart from energy loss, no disadvantages.\n\n\n\n\n\n\n\n\n\n\nEnvironmental influences\nExplosion hazard in certain environments; relatively sensitive to temperature.\nSensitive to temperature fluctuations; Fire hazard in case of leaks.\nDoes not cause explosions; Insensitive to temperatures.\n\n\n\nEnergy storage\nDifficult and only in small quantities using batteries\nWithin certain limits, using gases\nEasy\n\n\n\nEnergy transport\nUnlimited, but with energy loss\nUp to 100 m with flow velocity of v = 2-6 m/s, signal velocity up to 1000 m/s.\nUp to 1000 m with flow velocity v = 20-40 m/s, signal velocity 20-40 m/s.\n\n\n\nWorking speed\n\nv = 0.5 m/s\nv = 1.5 m/s\n\n\n\n\nAdvantages of pneumatic energy over hydraulic energy\nAir density is significantly smaller than that of oil (used in hydraulics). Therefore, the inertia effect is smaller. Air can be discharged into the atmosphere after a task. Pneumatic systems are more economical. Pneumatic systems are less toxic and cleaner. Pneumatic systems are lighter, easier to transport.\n\n\n\n\n\n\n\nAdvantages\nDisadvantage\n\n\n\n\n\nAir is available in unlimited quantities\nAir (compressed) can be easily transported in pipes\nIt does not require any treatment for its elimination. It is simply thrown into the atmosphere.\nCompressed air is insensitive to fluctuations in temperature\nCompressed air is clean, therefore used in the food and pharmaceutical industries\nCompressed air allows operation at high speeds\nThe tools and operating elements are safe, when they are overloaded they simply stop working.\n\n\nIt is relatively expensive to transport. The high costs are offset by the cheapness of the elements and the simple and more compact nature of its equipment.\nCompressed air requires conditioning to remove dust and moisture.\nIt is difficult to achieve uniform piston speeds with compressed air.\nNoise levels in the operation of pneumatic systems are high due to air leakage.\nLubricated air (with oil) can escape into the atmosphere and cause pollution.\nDue to its low conductivity, it cannot dissipate heat as easily as oil would.\n\n\n\n\n\n\n\nComposition: Types of gases that make up the air under consideration. Example: dry air at sea level is composed mainly of Nitrogen (78%) and Oxygen (20.99%). Shape and volume: They have no defined shape or volume. They acquire the shape and volume of the tank that contains them. Cost (Flow): It is the quantity of fluid that circulates through a section of the duct per unit of time.\nThe relative humidity is the amount of water vapor contained in volume of air. It depends on the air temperature and pressure. When the air is saturated, it means that the relative humidity is at 100%.\nConsider the behavior of air with water under defined circumstances: temperature 20°C and a relative humidity of 50%. This means that it contains 8.7g of water which is the half of the maximum 17.4g.\nWhen the compressor compresses the 4 \\(𝑚^3\\). to form 1 \\(𝑚^3\\), the \\(4×8.7=34.8 g\\) of water cannot hold in it. The \\(𝑚^3\\) can hold at most 17.4 g of water. The other \\(2×8.7=17.4g\\) fall as drops.\n\n\n\nfig. 2.1 effect on air with relative humidity when compressed\n\n\nConclusion: When air is compressed, water \\(H_2O\\) liquefies from gaseous state to liquid state. The water vapor in the air is also compressed and the result is similar to squeezing a sponge. The compressed air reaches a saturation of 100% relative humidity inside the tank. The separated water can be drained via a drainage system.\nThe flow is defined as the quantity of fluid that circulates through a section of duct per unit of time. Generally the letter \\(Q\\) is used. \\(Q = \\frac{V}{t}=\\frac{A s}{t}\\) wit \\(s\\) as displacement, \\(A\\) as areaof the cross section and \\(t\\) as time. Considering that \\(\\frac{s}{t}\\)displacement per time unit is velocity, one can rewrite \\(Q=Av\\). The standard units of the variables are as follows:\n\n\\([Q] = [ \\frac{m^3}{s}]\\)\n\\([A] = [m^2]\\)\n\\([v] = [\\frac{m}{s}]\\)\n\n\n\nFig. 2.2 graphical description of flow $Q$\n\n\n\nGas pressure and gas laws: The relation between force \\(F\\) and pressure \\(p\\) is related by its contact cross section area A: \\(F=pA\\). The unit in Pascal \\([Pa]=[\\frac{N}{m^2}]\\)in the international system (SI) and it is \\([psi]=[\\frac{lb}{in^2}]\\) in english units. For many industrial aplications, one uses \\(bar\\). The relation between \\(bar\\) and \\(Pa\\) is \\(1 bar = 10^5 Pa =100kPa\\). The pressure that air exerts “naturally” on the Earth’s surface due to its weight is called atmospheric pressure (Atm): \\(1 atm = 1.01325 bar = 101,325 P\\). Due to the weight of the air column above: it decreases at higher altitudes and increases at lower altitudes.\n\n\n\nfig. 2.3 pressure defined by force and cross section\n\n\nGauge pressure (relative pressure) indicated by the manometers ($bar$ or \\(ps\\)). It is the excess of air pressure with respect to atmospheric pressure. It is abbreviated \\(p_m\\) (\\(p_g\\) in English).\n\\(p_{absolute}=p_m+1.01325 bar (1 atm)\\)\nFor simplification, one approximates \\(1 atm \\propto 1 bar\\)\nAnother unit of pressure measurement is the \\(torr\\) or \\(mmHg\\). It is equivalent to the pressure exerted by a one millimeter column of mercury. However, we won´t use this units in our course.\n\n\\(Equivalences\\):\n\nThe gas behaviour can be explained by several laws, explained as follows with \\(V\\) as volume and \\(T\\) as temperature:\n\nPascal’s law: \\(p_{in} = \\frac{F_{in}}{A_{in}} = \\frac{F_{out}}{A_{out}}=p_{out}\\), with in as input and out as output\nFluid pressure is transmitted equally in all directions. The force exerted by a piston is equal to the product of the effective area times the air pressure: Example of a Hydraulic Press:\n\n\n\n\n\n\n\n\n\nThey describe the relationships between pressure, volume and temperature: they describe how two of them are related when the other remains constant:\n\n\n\\(V_1 p_1 = V_2 p_2\\) or \\(Vp=constant\\) and \\(V \\propto \\frac{1}{p}\\), with constant temperature \\(T\\)\n“At constant temperature, the volume of gas is inversely proportional to its pressure”.\n\nBoyle’s Law is valid as long as the temperature does not vary. Normally, when a gas is compressed, energy is dissipated in the form of heat, that is, its temperature increases. Processes with these characteristics are known as adiabatic. Otherwise, if the temperature does not change, it is known as an isothermal process. To be possible, the process must be slow\n\n\n\n“At constant pressure, the volume of gas is proportional to its temperature”\n\\(\\frac{V}{T}=constant\\), with constant pressure \\(p\\)\n\n\n\n\n“At constant volume, the absolute temperature of a gas is proportional to its absolute pressure”\n\\(\\frac{p}{T}=constant\\), with constant volume \\(V\\)\n\n\n\n\nIt measures the amount of water vapor in the air compared to the maximum amount of water vapor it could contain before precipitation. Relative humidity (RH) varies with air temperature.\n\nRelative humidity (RH) is a dimensionless ratio, expressed as a percentage, that quantifies the amount of water vapor present in the air relative to the maximum amount the air can hold at a given temperature before reaching saturation. Mathematically, it is defined as:\n\\(\\text{RH} = \\left( \\frac{e}{e_s} \\right) \\times 100\\)\nWhere:\n- \\(e\\) is the actual vapor pressure of water in the air.\n\n\\(e_s\\) is the saturation vapor pressure at the same temperature.\n\n\n\nThe saturation vapor pressure \\(e_s\\) increases exponentially with temperature due to the enhanced kinetic energy of water molecules. This means:\n- Warm air can hold significantly more water vapor before becoming saturated.\n- Cool air has a lower capacity for water vapor, so RH increases as temperature drops (assuming constant moisture content). This relationship is governed by the Clausius-Clapeyron equation, which describes how vapor pressure changes with temperature:\n\\(\\frac{d \\ln e_s}{dT} = \\frac{L}{R_v T^2}\\)\nWhere:\n- \\(L\\) is the latent heat of vaporization,\n\n\\(R_v\\) is the specific gas constant for water vapor,\n\n- \\(T\\) is the absolute temperature in Kelvin.\n\n\n\n- When RH reaches 100%, the air is saturated, and condensation occurs -leading to dew, fog, or precipitation.\n- RH is a crucial parameter in meteorology, climate science, and HVAC engineering, influencing thermal comfort, cloud formation, and heat transfer processes\n\n\n\n\n\nThe follwoing part explains the components required to use pneumatic systems. The structure is composed of 5 main components: Power Supply, Actuators, Conductors, Control valves and Air conditioning.\n\n\n\n\n\n\n\nStructure\nExample\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStructure\n\nPower supply (pneumatic): Energy source\n\nThis is typically an air compressor that draws in atmospheric air and compresses it to a usable pressure level (commonly 60–120 PSI, 4.1 to 8.3 bar).\nThe compressed air is stored in a receiver tank, which acts as a reservoir to stabilize pressure and meet demand spikes.\nThe energy in the form of pressurized air is the driving force behind all pneumatic operations\n\nActuators: They do the work of the system\n\nActuators convert the energy of compressed air into mechanical motion.\nCommon types include:\n\nCylinders (linear motion)\n\nRotary actuators (rotational motion)\nThese components perform tasks like pushing, pulling, lifting, clamping, or rotating—depending on the application.\n\nConductors: They distribute the air\n\nThese are the pipes, hoses, and tubes that transport compressed air from the power supply to the actuators and control valves.\nMaterials vary (e.g., polyurethane, nylon, copper) depending on pressure, flexibility, and environmental conditions.\nProper sizing and layout are crucial to minimize pressure drops and ensure efficient delivery.\n\nControl valves: Control the flow/direction of air\n\nValves regulate the flow rate, pressure, and direction of air.\nTypes include:\n\nDirectional control valves (e.g., 2/2, 3/2, 5/2 valves)\n\nFlow control valves (adjust speed of actuators)\nPressure regulators (maintain safe operating pressure)\nThese are often controlled manually, electrically, or via PLCs in automated systems.\n\nAir conditioning: They purify the air\n\nFilters – remove dust and particulates\nDryers – eliminate moisture to prevent corrosion and freezing\nLubricators – add a fine mist of oil to reduce friction in moving parts\nThese components are often grouped into FRL units (Filter-Regulator-Lubricator).\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCascade method\nStep by step method.",
+    "text": "4.1.0.1 Why compressed air?\n\nIt is abundant. It is available in unlimited quantities.\nIt is transportable. It is easily transported through pipes.\nIt is storable. It is easily stored in tanks where pressure is maintained.\nIt is transmitted relatively quickly.\nIt is clean. In case of stagnation, it does not produce dirt.\n\n\n\n4.1.0.2 Comparison with other technologies\n\nComparison with other technologies\n\n\n\n\n\n\n\n\n\n4.1.1 Leaks\n4.1.2 Electricity\n4.1.3 Hydraulic\nPollution\n4.1.4 Pneumatic\nApart from energy loss, no disadvantages.\n\n\n\n\n\n\n\n\n\n\nEnvironmental influences\nExplosion hazard in certain environments; relatively sensitive to temperature.\nSensitive to temperature fluctuations; Fire hazard in case of leaks.\nDoes not cause explosions; Insensitive to temperatures.\n\n\n\nEnergy storage\nDifficult and only in small quantities using batteries\nWithin certain limits, using gases\nEasy\n\n\n\nEnergy transport\nUnlimited, but with energy loss\nUp to 100 m with flow velocity of v = 2-6 m/s, signal velocity up to 1000 m/s.\nUp to 1000 m with flow velocity v = 20-40 m/s, signal velocity 20-40 m/s.\n\n\n\nWorking speed\n\nv = 0.5 m/s\nv = 1.5 m/s\n\n\n\n\nAdvantages of pneumatic energy over hydraulic energy\nAir density is significantly smaller than that of oil (used in hydraulics). Therefore, the inertia effect is smaller. Air can be discharged into the atmosphere after a task. Pneumatic systems are more economical. Pneumatic systems are less toxic and cleaner. Pneumatic systems are lighter, easier to transport.\n\n\n\n\n\n\n\nAdvantages\nDisadvantage\n\n\n\n\n\nAir is available in unlimited quantities\nAir (compressed) can be easily transported in pipes\nIt does not require any treatment for its elimination. It is simply thrown into the atmosphere.\nCompressed air is insensitive to fluctuations in temperature\nCompressed air is clean, therefore used in the food and pharmaceutical industries\nCompressed air allows operation at high speeds\nThe tools and operating elements are safe, when they are overloaded they simply stop working.\n\n\nIt is relatively expensive to transport. The high costs are offset by the cheapness of the elements and the simple and more compact nature of its equipment.\nCompressed air requires conditioning to remove dust and moisture.\nIt is difficult to achieve uniform piston speeds with compressed air.\nNoise levels in the operation of pneumatic systems are high due to air leakage.\nLubricated air (with oil) can escape into the atmosphere and cause pollution.\nDue to its low conductivity, it cannot dissipate heat as easily as oil would.\n\n\n\n\n\n\n4.1.5 Basic physical characteristics of gases\nComposition: Types of gases that make up the air under consideration. Example: dry air at sea level is composed mainly of Nitrogen (78%) and Oxygen (20.99%). Shape and volume: They have no defined shape or volume. They acquire the shape and volume of the tank that contains them. Cost (Flow): It is the quantity of fluid that circulates through a section of the duct per unit of time.\nThe relative humidity is the amount of water vapor contained in volume of air. It depends on the air temperature and pressure. When the air is saturated, it means that the relative humidity is at 100%.\nConsider the behavior of air with water under defined circumstances: temperature 20°C and a relative humidity of 50%. This means that it contains 8.7g of water which is the half of the maximum 17.4g.\nWhen the compressor compresses the 4 \\(𝑚^3\\). to form 1 \\(𝑚^3\\), the \\(4×8.7=34.8 g\\) of water cannot hold in it. The \\(𝑚^3\\) can hold at most 17.4 g of water. The other \\(2×8.7=17.4g\\) fall as drops.\n\n\n\nfig. 2.1 effect on air with relative humidity when compressed\n\n\nConclusion: When air is compressed, water \\(H_2O\\) liquefies from gaseous state to liquid state. The water vapor in the air is also compressed and the result is similar to squeezing a sponge. The compressed air reaches a saturation of 100% relative humidity inside the tank. The separated water can be drained via a drainage system.\nThe flow is defined as the quantity of fluid that circulates through a section of duct per unit of time. Generally the letter \\(Q\\) is used. \\(Q = \\frac{V}{t}=\\frac{A s}{t}\\) wit \\(s\\) as displacement, \\(A\\) as areaof the cross section and \\(t\\) as time. Considering that \\(\\frac{s}{t}\\)displacement per time unit is velocity, one can rewrite \\(Q=Av\\). The standard units of the variables are as follows:\n\n\\([Q] = [ \\frac{m^3}{s}]\\)\n\\([A] = [m^2]\\)\n\\([v] = [\\frac{m}{s}]\\)\n\n\n\nFig. 2.2 graphical description of flow $Q$\n\n\n\nGas pressure and gas laws: The relation between force \\(F\\) and pressure \\(p\\) is related by its contact cross section area A: \\(F=pA\\). The unit in Pascal \\([Pa]=[\\frac{N}{m^2}]\\)in the international system (SI) and it is \\([psi]=[\\frac{lb}{in^2}]\\) in english units. For many industrial aplications, one uses \\(bar\\). The relation between \\(bar\\) and \\(Pa\\) is \\(1 bar = 10^5 Pa =100kPa\\). The pressure that air exerts “naturally” on the Earth’s surface due to its weight is called atmospheric pressure (Atm): \\(1 atm = 1.01325 bar = 101,325 P\\). Due to the weight of the air column above: it decreases at higher altitudes and increases at lower altitudes.\n\n\n\nfig. 2.3 pressure defined by force and cross section\n\n\nGauge pressure (relative pressure) indicated by the manometers ($bar$ or \\(ps\\)). It is the excess of air pressure with respect to atmospheric pressure. It is abbreviated \\(p_m\\) (\\(p_g\\) in English).\n\\(p_{absolute}=p_m+1.01325 bar (1 atm)\\)\nFor simplification, one approximates \\(1 atm \\propto 1 bar\\)\nAnother unit of pressure measurement is the \\(torr\\) or \\(mmHg\\). It is equivalent to the pressure exerted by a one millimeter column of mercury. However, we won´t use this units in our course.\n\n\\(Equivalences\\):\n\nThe gas behaviour can be explained by several laws, explained as follows with \\(V\\) as volume and \\(T\\) as temperature:\n\nPascal’s law: \\(p_{in} = \\frac{F_{in}}{A_{in}} = \\frac{F_{out}}{A_{out}}=p_{out}\\), with in as input and out as output\nFluid pressure is transmitted equally in all directions. The force exerted by a piston is equal to the product of the effective area times the air pressure: Example of a Hydraulic Press:\n\n\n\n\n\n\n\n\n4.1.6 Gas Law´s\nThey describe the relationships between pressure, volume and temperature: they describe how two of them are related when the other remains constant:\n\n4.1.6.1 Boyle’s law\n\\(V_1 p_1 = V_2 p_2\\) or \\(Vp=constant\\) and \\(V \\propto \\frac{1}{p}\\), with constant temperature \\(T\\)\n“At constant temperature, the volume of gas is inversely proportional to its pressure”.\n\nBoyle’s Law is valid as long as the temperature does not vary. Normally, when a gas is compressed, energy is dissipated in the form of heat, that is, its temperature increases. Processes with these characteristics are known as adiabatic. Otherwise, if the temperature does not change, it is known as an isothermal process. To be possible, the process must be slow\n\n\n4.1.6.2 Charles’ law:\n“At constant pressure, the volume of gas is proportional to its temperature”\n\\(\\frac{V}{T}=constant\\), with constant pressure \\(p\\)\n\n\n\n4.1.6.3 Gay-Lussac’s law\n“At constant volume, the absolute temperature of a gas is proportional to its absolute pressure”\n\\(\\frac{p}{T}=constant\\), with constant volume \\(V\\)\n\n\n\n4.1.6.4 Relative Humidity: A Thermodynamic Perspective\nIt measures the amount of water vapor in the air compared to the maximum amount of water vapor it could contain before precipitation. Relative humidity (RH) varies with air temperature.\n\nRelative humidity (RH) is a dimensionless ratio, expressed as a percentage, that quantifies the amount of water vapor present in the air relative to the maximum amount the air can hold at a given temperature before reaching saturation. Mathematically, it is defined as:\n\\(\\text{RH} = \\left( \\frac{e}{e_s} \\right) \\times 100\\)\nWhere:\n- \\(e\\) is the actual vapor pressure of water in the air.\n\n\\(e_s\\) is the saturation vapor pressure at the same temperature.\n\n\n4.1.6.4.1 Temperature Dependence\nThe saturation vapor pressure \\(e_s\\) increases exponentially with temperature due to the enhanced kinetic energy of water molecules. This means:\n- Warm air can hold significantly more water vapor before becoming saturated.\n- Cool air has a lower capacity for water vapor, so RH increases as temperature drops (assuming constant moisture content). This relationship is governed by the Clausius-Clapeyron equation, which describes how vapor pressure changes with temperature:\n\\(\\frac{d \\ln e_s}{dT} = \\frac{L}{R_v T^2}\\)\nWhere:\n- \\(L\\) is the latent heat of vaporization,\n\n\\(R_v\\) is the specific gas constant for water vapor,\n\n- \\(T\\) is the absolute temperature in Kelvin.\n\n\n4.1.6.4.2 Practical Implications\n- When RH reaches 100%, the air is saturated, and condensation occurs -leading to dew, fog, or precipitation.\n- RH is a crucial parameter in meteorology, climate science, and HVAC engineering, influencing thermal comfort, cloud formation, and heat transfer processes\n\n\n\n\n4.1.7 Pneumatic Installations\nThe follwoing part explains the components required to use pneumatic systems. The structure is composed of 5 main components: Power Supply, Actuators, Conductors, Control valves and Air conditioning.\n\n\n\n\n\n\n\nStructure\nExample\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStructure\n\nPower supply (pneumatic): Energy source\n\nThis is typically an air compressor that draws in atmospheric air and compresses it to a usable pressure level (commonly 60–120 PSI, 4.1 to 8.3 bar).\nThe compressed air is stored in a receiver tank, which acts as a reservoir to stabilize pressure and meet demand spikes.\nThe energy in the form of pressurized air is the driving force behind all pneumatic operations\n\nActuators: They do the work of the system\n\nActuators convert the energy of compressed air into mechanical motion.\nCommon types include:\n\nCylinders (linear motion)\n\nRotary actuators (rotational motion)\nThese components perform tasks like pushing, pulling, lifting, clamping, or rotating—depending on the application.\n\nConductors: They distribute the air\n\nThese are the pipes, hoses, and tubes that transport compressed air from the power supply to the actuators and control valves.\nMaterials vary (e.g., polyurethane, nylon, copper) depending on pressure, flexibility, and environmental conditions.\nProper sizing and layout are crucial to minimize pressure drops and ensure efficient delivery.\n\nControl valves: Control the flow/direction of air\n\nValves regulate the flow rate, pressure, and direction of air.\nTypes include:\n\nDirectional control valves (e.g., 2/2, 3/2, 5/2 valves)\n\nFlow control valves (adjust speed of actuators)\nPressure regulators (maintain safe operating pressure)\nThese are often controlled manually, electrically, or via PLCs in automated systems.\n\nAir conditioning: They purify the air\n\nFilters – remove dust and particulates\nDryers – eliminate moisture to prevent corrosion and freezing\nLubricators – add a fine mist of oil to reduce friction in moving parts\nThese components are often grouped into FRL units (Filter-Regulator-Lubricator).\n\n\n\n\n4.1.8 Types of Compressors in Pneumatic Systems\nIn pneumatic automation, compressors are the primary energy source, converting atmospheric air into pressurized air that powers actuators and control systems. The selection of a compressor depends on factors like required pressure, flow rate, duty cycle, and application environment. Compressors are broadly categorized into positive displacement and dynamic types, each with distinct operating principles.\n\n4.1.8.1 Reciprocating Compressors (Positive Displacement)\n- Operate using pistons driven by a crankshaft.\n- Air is drawn into a cylinder and compressed by the piston’s motion.\n\nCommon in small-scale applications and intermittent use.\nCan be single-stage (for low pressure) or multi-stage (for higher pressure).\n\nExample: Used in automotive workshops and small pneumatic tools.\n\n\n4.1.8.2 Rotary Screw Compressors (Positive Displacement)\n\nUse two intermeshing helical screws to compress air continuously.\n\n- Efficient for continuous operation and high-volume air delivery.\n- Low maintenance and quieter than reciprocating types.\nExample: Ideal for industrial automation lines and manufacturing plants.\n\n\n4.1.8.3 Vane Compressors (Positive Displacement)\n- Feature a rotor with sliding vanes inside an eccentric housing.\n- As the rotor turns, vanes slide in and out, trapping and compressing air.\n- Compact and suitable for moderate pressure applications.\nExample: Used in packaging machinery and small automation systems.\n\n\n4.1.8.4 Centrifugal Compressors (Dynamic)\n- Use a high-speed impeller to accelerate air outward.\n- Air pressure increases as velocity is converted into pressure via a diffuser.\n- Suitable for large-scale, high-flow applications.\nExample: Found in HVAC systems and large industrial plants.\n\n\n4.1.8.5 Axial Compressors (Dynamic)\n- Air flows parallel to the axis through multiple rotor and stator stages.\n- Extremely efficient at high flow rates and pressures.\n- Typically used in aerospace and gas turbines, not common in standard pneumatics.\nSummary Table: Compressor Types\n\n\n\n4.1.9 Pneumatic actuators.\nA pneumatic actuator is a device that converts compressed air energy into mechanical motion. They are widely used in automation, manufacturing, robotics, and process industries.\nThe most common types are linear actuators (cylinders) and rotary actuators.\nThe operating principle: compressed air enters a chamber, builds pressure, and moves a piston (linear) or vanes/rotors (rotary), generating force and motion.\nControl is usually done via valves, sensors, and PLCs.\nPneumatic actuators are attractive because they are simple, robust, and cost-effective for many industrial tasks like clamping, lifting, pushing, or positioning.\nAdvantages of Pneumatic Actuators\n\n\n\n\n\n\n\nAdvantage\nExplanation\n\n\n\n\nSimplicity & Reliability\nFew moving parts → easy to maintain, long service life.\n\n\nHigh Speed\nCan achieve rapid response times; suitable for pick-and-place, packaging, etc.\n\n\nCost-Effective\nComponents (cylinders, valves, fittings) are relatively inexpensive compared to electric or hydraulic actuators.\n\n\nClean Operation\nAir is non-contaminating, suitable for food, pharma, or cleanroom applications.\n\n\nSafety\nNo risk of sparks (compared to electric actuators) → usable in explosive environments.\n\n\nForce-to-Weight Ratio\nPneumatics can generate relatively large forces for their size.\n\n\nOverload Tolerance\nCan stall without damage (unlike many electric motors).\n\n\nEasy Integration\nCompatible with various control systems (manual, PLC, etc.).\n\n\n\nRisks and Limitations of Pneumatic Actuators\n\n\n\n\n\n\n\nLimitation / Risk\nExplanation\n\n\n\n\nCompressibility of Air\nAir is compressible → motion control is less precise, positioning is not as accurate as with electric or hydraulic systems.\n\n\nEnergy Inefficiency\nCompressing air consumes a lot of energy; leaks waste power → high operational cost if system is not well maintained.\n\n\nNoise\nExhaust air and compressors generate noise, which may require mitigation.\n\n\nForce Limitations\nWhile strong for size, pneumatics cannot achieve the extremely high forces that hydraulics can.\n\n\nSpeed Variability\nSpeed depends on air pressure, line length, leaks, and load → consistency can be a challenge.\n\n\nMaintenance Needs\nLeaks are common; require regular inspection of seals, hoses, and fittings.\n\n\nLimited Stroke Length\nLinear cylinders are typically limited to ~2–3 meters max; longer travel requires other technologies.\n\n\nSafety Hazards\nSudden release of compressed air can cause injury; uncontrolled movement may occur if air supply is lost.\n\n\n\n\n\n4.1.10 Pneumatic valves.\n\n\n4.1.11 Pneumatic sequences.\n\nCascade method\nStep by step method.",
     "crumbs": [
-      "Automation and Process Control",
-      "Chapter 2"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Pneumatic and Electro-pneumatic Automatization</span>"
     ]
   },
   {
     "objectID": "chapter02.html#elements-of-a-electic-circuit-electrical-acutators-and-control-elements",
     "href": "chapter02.html#elements-of-a-electic-circuit-electrical-acutators-and-control-elements",
-    "title": "Pneumatic and Electro-pneumatic Automatization",
-    "section": "Elements of a electic circuit, electrical acutators and control elements",
-    "text": "Elements of a electic circuit, electrical acutators and control elements",
+    "title": "4  editor: visual",
+    "section": "4.2 Elements of a electic circuit, electrical acutators and control elements",
+    "text": "4.2 Elements of a electic circuit, electrical acutators and control elements",
     "crumbs": [
-      "Automation and Process Control",
-      "Chapter 2"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Pneumatic and Electro-pneumatic Automatization</span>"
     ]
   },
   {
     "objectID": "chapter02.html#automatization-of-pneumatic-and-electro-pneumatic-sequences",
     "href": "chapter02.html#automatization-of-pneumatic-and-electro-pneumatic-sequences",
-    "title": "Pneumatic and Electro-pneumatic Automatization",
-    "section": "Automatization of pneumatic and electro-pneumatic sequences",
-    "text": "Automatization of pneumatic and electro-pneumatic sequences",
+    "title": "4  editor: visual",
+    "section": "4.3 Automatization of pneumatic and electro-pneumatic sequences",
+    "text": "4.3 Automatization of pneumatic and electro-pneumatic sequences",
     "crumbs": [
-      "Automation and Process Control",
-      "Chapter 2"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Pneumatic and Electro-pneumatic Automatization</span>"
+    ]
+  },
+  {
+    "objectID": "chapter03.html",
+    "href": "chapter03.html",
+    "title": "5  Programmable Logic Control (PLC)",
+    "section": "",
+    "text": "5.1 Introduction to PLCs\nA Programmable Logic Controller (PLC) is a specialized microprocessor-based controller designed for industrial automation. It stores programmed instructions to execute logical, arithmetic, and sequential functions. Unlike general-purpose computers, PLCs are optimized for real-time control tasks and operate reliably in harsh environments.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Programmable Logic Control (PLC)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter03.html#introduction-to-plcs",
+    "href": "chapter03.html#introduction-to-plcs",
+    "title": "5  Programmable Logic Control (PLC)",
+    "section": "",
+    "text": "5.1.1 What is a PLC?\nA PLC (Programmable Logic Controller) is a ruggedized digital computer used to control industrial processes, machines, and automation systems.\nIt is designed to reliably operate in harsh environments (temperature, vibration, electrical noise).\nA typical PLC consists of:\n\nCPU (logic execution, program memory, communication handling)\nI/O modules (digital & analog, to connect sensors and actuators)\nPower supply\nProgramming environment\nNetwork interfaces (Ethernet/IP, Profinet, etc.)\nDiagnostics tools\n\n\n\n\n\n\n\n\n\nFeature\nImportance / Advantage\nChallenges\n\n\n\n\nModularity & Scalability\nEasy to expand with more I/O, CPUs, or communication modules → adaptable for small and large systems.\nCompatibility and configuration management can get complex.\n\n\nRobustness & Reliability\nDesigned for 24/7 operation in industrial environments with high noise, vibration, and temperature.\nHigher cost compared to microcontrollers or simple relays.\n\n\nI/O Flexibility\nSupports both digital and analog inputs/outputs; also high-speed counters, motion modules, etc.\nWiring effort, calibration, and complexity with fast I/O.\n\n\nCommunication Protocols\nModern PLCs support Ethernet/IP, Profinet, Profibus, Modbus, OPC UA, etc. → critical for integration with SCADA/HMI/Cloud.\nVendor lock-in and protocol compatibility issues can occur.\n\n\nProgramming Languages\nIEC 61131-3 languages (Ladder Logic, Function Block Diagram, Structured Text, SFC, Instruction List).\nSteep learning curve; different languages better for different tasks.\n\n\nDiagnostics & Monitoring\nSelf-diagnostics, error codes, communication monitoring, module failure alerts → reduces downtime.\nRequires proper configuration; debugging distributed systems is complex.\n\n\nSafety Features\nSafety PLCs include safe I/O modules, emergency stop functions, redundancy, watchdog timers.\nCertification and compliance can increase project cost.\n\n\nReal-time Performance\nDeterministic scan cycles (ms or µs range) required for process & motion control.\nMore complex programs can slow scan times; synchronization becomes critical.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Programmable Logic Control (PLC)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter03.html#hardware-components-of-a-plc",
+    "href": "chapter03.html#hardware-components-of-a-plc",
+    "title": "5  Programmable Logic Control (PLC)",
+    "section": "5.2 Hardware Components of a PLC",
+    "text": "5.2 Hardware Components of a PLC\nA PLC consists of several key components: 1. CPU (Central Processing Unit): Executes control logic based on input signals. 2. Power Supply Unit: Converts AC voltage to DC to power the CPU and I/O modules. 3. Programming Device: A computer or dedicated device used to write and monitor programs. 4. Memory Unit: Stores user programs and operational data. 5. Input/Output (I/O) Modules: Interfaces between the PLC and external devices.\n\n5.2.1 Types of PLCs\n\nCompact PLC: A single unit containing all essential components.\nModular PLC: Allows separate modules for power, processing, and I/O, providing flexibility.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Programmable Logic Control (PLC)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter03.html#plc-scan-cycle",
+    "href": "chapter03.html#plc-scan-cycle",
+    "title": "5  Programmable Logic Control (PLC)",
+    "section": "5.3 PLC Scan Cycle",
+    "text": "5.3 PLC Scan Cycle\nA PLC operates in a repetitive cycle: 1. Input Scan: Reads the status of input devices. 2. Program Execution: Processes logic based on the input conditions. 3. Output Scan: Updates the status of output devices. 4. Housekeeping: Manages internal operations such as diagnostics and communication.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Programmable Logic Control (PLC)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter03.html#programming-a-plc",
+    "href": "chapter03.html#programming-a-plc",
+    "title": "5  Programmable Logic Control (PLC)",
+    "section": "5.4 Programming a PLC",
+    "text": "5.4 Programming a PLC\n\n5.4.1 Programming Languages\n\nMachine Code\nAssembly Language\nHigh-Level Languages (C, Pascal, BASIC)\nLadder Logic (Most Common)\n\n\n\n5.4.2 Ladder Logic\n\nVertical rails: Represent the power supply.\nHorizontal rungs: Define logical operations.\nContacts and coils: Represent input conditions and outputs.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Programmable Logic Control (PLC)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter03.html#logical-operations-with-ladder-diagram",
+    "href": "chapter03.html#logical-operations-with-ladder-diagram",
+    "title": "5  Programmable Logic Control (PLC)",
+    "section": "5.5 Logical Operations with Ladder Diagram",
+    "text": "5.5 Logical Operations with Ladder Diagram\nGRAFCET (Graphical Functional Control Step Transition) is a graphical tool for modeling deterministic control behavior. It describes process evolution, indicating required actions and triggering information.\n\n5.5.1 Elements of GRAFCET\n\nStages: Define specific process steps.\nTransitions: Determine movement conditions between stages.\nLinks: Connect different process elements.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Programmable Logic Control (PLC)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter03.html#timers-and-counters-in-plcs",
+    "href": "chapter03.html#timers-and-counters-in-plcs",
+    "title": "5  Programmable Logic Control (PLC)",
+    "section": "5.6 Timers and Counters in PLCs",
+    "text": "5.6 Timers and Counters in PLCs\n\n5.6.1 Timer Functions\n\nOn-Delay Timer (TON): Delays activation after an input signal.\nOff-Delay Timer (TOF): Delays deactivation after an input signal.\nRetentive Timer (RTO): Holds accumulated time value.\n\n\n\n\n5.6.2 Counter Functions\n\nUp-Counter (CTU): Increments when an event occurs.\nDown-Counter (CTD): Decrements when an event occurs.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Programmable Logic Control (PLC)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter03.html#latch-and-unlatch-instructions",
+    "href": "chapter03.html#latch-and-unlatch-instructions",
+    "title": "5  Programmable Logic Control (PLC)",
+    "section": "5.7 Latch and Unlatch Instructions",
+    "text": "5.7 Latch and Unlatch Instructions\nLatch (Set) and Unlatch (Reset) instructions are used to maintain a state in a PLC.\n\nLatch (Set): When activated, the output remains ON until an Unlatch is triggered.\nUnlatch (Reset): Turns off the latched output.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Programmable Logic Control (PLC)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter03.html#sequencers-in-plcs",
+    "href": "chapter03.html#sequencers-in-plcs",
+    "title": "5  Programmable Logic Control (PLC)",
+    "section": "5.8 Sequencers in PLCs",
+    "text": "5.8 Sequencers in PLCs\nSequencers allow executing predefined step-based operations. Each step triggers an output sequence, commonly used in manufacturing processes.\n\nStep-Based Execution\nMemory Storage for Steps\nTiming Control for Sequential Execution",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Programmable Logic Control (PLC)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter03.html#subroutines-in-plcs",
+    "href": "chapter03.html#subroutines-in-plcs",
+    "title": "5  Programmable Logic Control (PLC)",
+    "section": "5.9 Subroutines in PLCs",
+    "text": "5.9 Subroutines in PLCs\nSubroutines allow modular programming by dividing a large program into smaller, reusable blocks.\n\nEfficiency Improvement\nCode Reusability\nSimplified Debugging",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Programmable Logic Control (PLC)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter03.html#rslogix-and-plc-programming-software",
+    "href": "chapter03.html#rslogix-and-plc-programming-software",
+    "title": "5  Programmable Logic Control (PLC)",
+    "section": "5.10 RSLogix and PLC Programming Software",
+    "text": "5.10 RSLogix and PLC Programming Software\n\n5.10.1 Software Tools for PLC Programming\n\nRSLinx: Manages communication between a PLC and a PC.\nRSLogix 500: Software for editing, verifying, and simulating PLC programs.\nRSLogix Emulate 500: Allows for program testing without a physical PLC.\n\nGetting Started with RSLinx\n\nRun RSLinx.\nMenu:\nCommunications &gt; Configure drivers.\nIn Available Driver Types:\nSLC 500 (DH485) Emulator Driver.\nClick on Add and leave the default name.\nStation Number: 00\nClick OK.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Programmable Logic Control (PLC)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter03.html#example-programs-in-ladder-logic",
+    "href": "chapter03.html#example-programs-in-ladder-logic",
+    "title": "5  Programmable Logic Control (PLC)",
+    "section": "5.11 Example Programs in Ladder Logic",
+    "text": "5.11 Example Programs in Ladder Logic\n\n5.11.1 Example 1: Simple Ladder Logic Program\n\nObjective: Implement an AND gate logic using ladder diagram.\nInputs: Two push buttons (X1, X2)\nOutput: A lamp (Y1) that turns on when both buttons are pressed.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Programmable Logic Control (PLC)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter03.html#troubleshooting-and-debugging-in-plcs",
+    "href": "chapter03.html#troubleshooting-and-debugging-in-plcs",
+    "title": "5  Programmable Logic Control (PLC)",
+    "section": "5.12 Troubleshooting and Debugging in PLCs",
+    "text": "5.12 Troubleshooting and Debugging in PLCs\n\n5.12.1 Common Errors\n\nIncorrect transition conditions: Leads to improper process evolution.\nSimultaneous sequence start/end issues.\nNested simultaneous sequences causing execution conflicts.\nSkipping intermediate stages unintentionally.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Programmable Logic Control (PLC)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter03.html#conclusion",
+    "href": "chapter03.html#conclusion",
+    "title": "5  Programmable Logic Control (PLC)",
+    "section": "5.13 Conclusion",
+    "text": "5.13 Conclusion\nPLCs are essential in industrial automation, offering robustness, flexibility, and efficiency in process control. By mastering programming techniques and logical operations, engineers can optimize automation systems and improve productivity.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Programmable Logic Control (PLC)</span>"
+    ]
+  },
+  {
+    "objectID": "chapter04.html",
+    "href": "chapter04.html",
+    "title": "6  GRAFCET - Funcional Graph of Stage-Transition Control",
+    "section": "",
+    "text": "6.1 Stages and transition conditions",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>GRAFCET - Funcional Graph of Stage-Transition Control</span>"
     ]
   },
   {
     "objectID": "chapter04.html#rules-to-develope-a-grafcet",
     "href": "chapter04.html#rules-to-develope-a-grafcet",
-    "title": "GRAFCET - Funcional Graph of Stage-Transition Control",
-    "section": "Rules to develope a GRAFCET",
-    "text": "Rules to develope a GRAFCET",
+    "title": "6  GRAFCET - Funcional Graph of Stage-Transition Control",
+    "section": "6.2 Rules to develope a GRAFCET",
+    "text": "6.2 Rules to develope a GRAFCET",
     "crumbs": [
-      "Automation and Process Control",
-      "Chapter 4"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>GRAFCET - Funcional Graph of Stage-Transition Control</span>"
     ]
   },
   {
     "objectID": "chapter04.html#transformation-of-a-grafcet-into-a-ladder-diagram-lenguaje-ladder",
     "href": "chapter04.html#transformation-of-a-grafcet-into-a-ladder-diagram-lenguaje-ladder",
-    "title": "GRAFCET - Funcional Graph of Stage-Transition Control",
-    "section": "Transformation of a GRAFCET into a ladder diagram lenguaje Ladder",
-    "text": "Transformation of a GRAFCET into a ladder diagram lenguaje Ladder",
+    "title": "6  GRAFCET - Funcional Graph of Stage-Transition Control",
+    "section": "6.3 Transformation of a GRAFCET into a ladder diagram lenguaje Ladder",
+    "text": "6.3 Transformation of a GRAFCET into a ladder diagram lenguaje Ladder",
     "crumbs": [
-      "Automation and Process Control",
-      "Chapter 4"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>GRAFCET - Funcional Graph of Stage-Transition Control</span>"
     ]
   },
   {
-    "objectID": "chapter06.html#security-topics-for-usage-of-industrial-robots",
-    "href": "chapter06.html#security-topics-for-usage-of-industrial-robots",
-    "title": "Industrial Robots",
-    "section": "Security topics for usage of industrial robots",
-    "text": "Security topics for usage of industrial robots",
+    "objectID": "chapter05.html",
+    "href": "chapter05.html",
+    "title": "7  State flow",
+    "section": "",
+    "text": "7.1 Introduction to state flow in Matlab",
     "crumbs": [
-      "Automation and Process Control",
-      "Chapter 6"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>State flow</span>"
+    ]
+  },
+  {
+    "objectID": "chapter05.html#states-and-transitions",
+    "href": "chapter05.html#states-and-transitions",
+    "title": "7  State flow",
+    "section": "7.2 States and transitions",
+    "text": "7.2 States and transitions",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>State flow</span>"
+    ]
+  },
+  {
+    "objectID": "chapter05.html#control-a-simulation-enviroment-with-state-flow",
+    "href": "chapter05.html#control-a-simulation-enviroment-with-state-flow",
+    "title": "7  State flow",
+    "section": "7.3 Control a simulation enviroment with state flow",
+    "text": "7.3 Control a simulation enviroment with state flow",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>State flow</span>"
+    ]
+  },
+  {
+    "objectID": "chapter05.html#control-a-plant-with-state-flow",
+    "href": "chapter05.html#control-a-plant-with-state-flow",
+    "title": "7  State flow",
+    "section": "7.4 Control a plant with state flow",
+    "text": "7.4 Control a plant with state flow",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>State flow</span>"
+    ]
+  },
+  {
+    "objectID": "chapter06.html",
+    "href": "chapter06.html",
+    "title": "8  Industrial Robots",
+    "section": "",
+    "text": "8.1 1. Introduction\nThe kinematic analysis of a robot is performed using the Denavit-Hartenberg convention. This method is essential for describing the transformations of the joints and links of an industrial robot. In this material, we discuss how the coordinate system is defined for each joint and how transformations are applied to calculate the position of the TCP (Tool Center Point).",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Industrial Robots</span>"
+    ]
+  },
+  {
+    "objectID": "chapter06.html#coordinate-systems",
+    "href": "chapter06.html#coordinate-systems",
+    "title": "8  Industrial Robots",
+    "section": "8.2 2. Coordinate Systems",
+    "text": "8.2 2. Coordinate Systems\n\nBase Coordinate System\nImage: insert image of the base coordinate system setup for the robot\nJoint Coordinate System\nImage: insert image of the joint coordinate system for the robot\nCartesian Coordinate System\nImage: insert image of the Cartesian coordinate system used in the robot",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Industrial Robots</span>"
+    ]
+  },
+  {
+    "objectID": "chapter06.html#forward-and-inverse-kinematics",
+    "href": "chapter06.html#forward-and-inverse-kinematics",
+    "title": "8  Industrial Robots",
+    "section": "8.3 3. Forward and Inverse Kinematics",
+    "text": "8.3 3. Forward and Inverse Kinematics\nForward kinematics describes how the position and orientation of the TCP depend on the joint variables (angles and displacements). On the other hand, inverse kinematics involves calculating the joint angles from a desired TCP position.\nImage: insert image showing the forward kinematics and inverse kinematics process",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Industrial Robots</span>"
+    ]
+  },
+  {
+    "objectID": "chapter06.html#homogeneous-transformations",
+    "href": "chapter06.html#homogeneous-transformations",
+    "title": "8  Industrial Robots",
+    "section": "8.4 4. Homogeneous Transformations",
+    "text": "8.4 4. Homogeneous Transformations\nHomogeneous transformations are used to describe the position and orientation of links in three-dimensional space using 4x4 matrices. Below are examples of transformations.\n\n8.4.1 Displacement and Rotation\nImage: insert image of homogeneous transformation matrix for displacement and rotation",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Industrial Robots</span>"
+    ]
+  },
+  {
+    "objectID": "chapter06.html#denavit-hartenberg-parameters",
+    "href": "chapter06.html#denavit-hartenberg-parameters",
+    "title": "8  Industrial Robots",
+    "section": "8.5 5. Denavit-Hartenberg Parameters",
+    "text": "8.5 5. Denavit-Hartenberg Parameters\nThe Denavit-Hartenberg parameterization uses four parameters to describe each link of the robot:\n1. ( n ) - Angle between the axes ( x{n-1} ) and ( x_n ), rotated about ( z_{n-1} ). 2. ( d_n ) - Distance between the origins ( O_n ) and ( O_{n-1} ) along the ( z_{n-1} ) axis. 3. ( a_n ) - Perpendicular distance between the ( z_{n-1} ) and ( z_n ) axes. 4. ( n ) - Angle between the ( z{n-1} ) and ( z_n ) axes, rotated about ( x_n ).\nImage: insert image of Denavit-Hartenberg parameters with graphical representation of the robot’s joints",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Industrial Robots</span>"
+    ]
+  },
+  {
+    "objectID": "chapter06.html#mathematical-model-of-a-6-dof-robot",
+    "href": "chapter06.html#mathematical-model-of-a-6-dof-robot",
+    "title": "8  Industrial Robots",
+    "section": "8.6 6. Mathematical Model of a 6-DOF Robot",
+    "text": "8.6 6. Mathematical Model of a 6-DOF Robot\nThe model of a 6-degree-of-freedom robot is described by the transformations of each link, applying the Denavit-Hartenberg parameters to obtain the TCP position in the global coordinate system.\nImage: insert image showing the transformation of the 6-DOF robot with all links and joints represented",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Industrial Robots</span>"
+    ]
+  },
+  {
+    "objectID": "chapter06.html#inverse-kinematics-ambiguities",
+    "href": "chapter06.html#inverse-kinematics-ambiguities",
+    "title": "8  Industrial Robots",
+    "section": "8.7 7. Inverse Kinematics Ambiguities",
+    "text": "8.7 7. Inverse Kinematics Ambiguities\nWhen solving inverse kinematics, multiple solutions for the joint angles can arise. These ambiguities occur because the positions of the higher axes depend on the positions of the lower axes. Approximation procedures exist for conventional robots.\nImage: insert image showing inverse kinematics ambiguities and multiple solutions",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Industrial Robots</span>"
+    ]
+  },
+  {
+    "objectID": "chapter06.html#denavit-hartenberg-transformation-exercise",
+    "href": "chapter06.html#denavit-hartenberg-transformation-exercise",
+    "title": "8  Industrial Robots",
+    "section": "8.8 8. Denavit-Hartenberg Transformation Exercise",
+    "text": "8.8 8. Denavit-Hartenberg Transformation Exercise\nAn exercise is presented to calculate the Denavit-Hartenberg transformation for a 6-DOF robot.\nImage: insert image showing the Denavit-Hartenberg transformation calculation steps for a 6-DOF robot",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Industrial Robots</span>"
+    ]
+  },
+  {
+    "objectID": "chapter06.html#conclusion",
+    "href": "chapter06.html#conclusion",
+    "title": "8  Industrial Robots",
+    "section": "8.9 9. Conclusion",
+    "text": "8.9 9. Conclusion\nKinematic analysis is essential for robot control and simulation. Using the Denavit-Hartenberg model, the position and orientation of the TCP can be efficiently calculated. Additionally, inverse kinematics is crucial for determining the joint angles in practical applications.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Industrial Robots</span>"
+    ]
+  },
+  {
+    "objectID": "chapter06.html#references",
+    "href": "chapter06.html#references",
+    "title": "8  Industrial Robots",
+    "section": "8.10 References",
+    "text": "8.10 References\n\nCorke, Peter. “Robotics, Vision and Control”.\n\nKUKA Robotics.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Industrial Robots</span>"
     ]
   }
 ]

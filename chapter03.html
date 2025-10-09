@@ -8,7 +8,7 @@
 
 <meta name="author" content="Thomas M. Rudolf">
 
-<title>Programable Logical Control (PLC) – HOME</title>
+<title>5&nbsp; Programmable Logic Control (PLC) – HOME</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,6 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./chapter04.html" rel="next">
+<link href="./chapter02.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -41,11 +43,11 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
+  "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
+  "panel-placement": "start",
+  "type": "textbox",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
@@ -72,39 +74,16 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="nav-sidebar docked nav-fixed fullcontent">
+<body class="nav-sidebar floating fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">HOME</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
-<span class="menu-text">Automation and Process Control</span></a>
-  </li>  
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
-</div>
-      </div> <!-- /container-fluid -->
-    </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter03.html">Chapter 3</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter03.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Programmable Logic Control (PLC)</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -114,9 +93,14 @@ ul.task-list li input[type="checkbox"] {
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">HOME</a> 
+    </div>
+      </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
@@ -124,159 +108,54 @@ ul.task-list li input[type="checkbox"] {
         </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Index (2024-3)</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Automation and Process Control</span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Automation and Process Control</span></span></a>
   </div>
 </li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="./chapter00.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">About the lecture</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter00.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">About the Lecture</span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">About the Lecture</span></span></a>
   </div>
 </li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="./chapter01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 1</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to Automation and Process Control</span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Introduction to Automation and Process Control</span></span></a>
   </div>
 </li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="./chapter02.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 2</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter02.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Pneumatic and Electro-pneumatic Automatization</span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Pneumatic and Electro-pneumatic Automatization</span></span></a>
   </div>
 </li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="./chapter03.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Chapter 3</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter03.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Programable Logical Control (PLC)</span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Programmable Logic Control (PLC)</span></span></a>
   </div>
 </li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="./chapter04.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 4</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter04.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">GRAFCET - Funcional Graph of Stage-Transition Control</span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">GRAFCET - Funcional Graph of Stage-Transition Control</span></span></a>
   </div>
 </li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="./chapter05.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 5</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter05.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">State flow</span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">State flow</span></span></a>
   </div>
 </li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="./chapter06.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 6</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter06.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Industrial Robots</span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Industrial Robots</span></span></a>
   </div>
 </li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="./about.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">about</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./about.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Thomas M. Rudolf</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
     </ul>
     </div>
     
@@ -289,7 +168,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Programable Logical Control (PLC)</h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Programmable Logic Control (PLC)</span></h1>
 </div>
 
 
@@ -312,124 +191,234 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="logical-operations-with-ladder-diagram" class="level2">
-<h2 class="anchored" data-anchor-id="logical-operations-with-ladder-diagram">Logical Operations with Ladder Diagram</h2>
-<p>GRAFCET (Graphical Functional Control Step Transition) emerged in the 70s through collaboration between PLC manufacturers and official organizations like AFCET and ADEPA. It is a graphical tool used to describe deterministic control behavior.</p>
-<p><strong>Insert Image *_*TEST</strong>*_*<br>
-</p>
-<div style="color: red; font-weight: bold;">
-<p>INSERT IMAGE</p>
-</div>
-</section>
-<section id="input-and-output-variables-internal-registers-of-plc" class="level2">
-<h2 class="anchored" data-anchor-id="input-and-output-variables-internal-registers-of-plc">Input and Output Variables, Internal Registers of PLC</h2>
-<p>GRAFCET allows modeling the sequential behavior of an automated system. It describes process evolution, indicating the actions required and the information triggering them.</p>
-<section id="elements-of-grafcet" class="level3">
-<h3 class="anchored" data-anchor-id="elements-of-grafcet">Elements of GRAFCET</h3>
+<section id="introduction-to-plcs" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="introduction-to-plcs"><span class="header-section-number">5.1</span> Introduction to PLCs</h2>
+<p>A Programmable Logic Controller (PLC) is a specialized microprocessor-based controller designed for industrial automation. It stores programmed instructions to execute logical, arithmetic, and sequential functions. Unlike general-purpose computers, PLCs are optimized for real-time control tasks and operate reliably in harsh environments.</p>
+<section id="what-is-a-plc" class="level3" data-number="5.1.1">
+<h3 data-number="5.1.1" class="anchored" data-anchor-id="what-is-a-plc"><span class="header-section-number">5.1.1</span> What is a PLC?</h3>
+<p>A PLC (Programmable Logic Controller) is a ruggedized digital computer used to control industrial processes, machines, and automation systems.<br>
+It is designed to <strong>reliably operate in harsh environments</strong> (temperature, vibration, electrical noise).</p>
+<p>A typical PLC consists of:</p>
 <ul>
-<li><strong>Stages</strong>: Each stage corresponds to a specific process step.</li>
-<li><strong>Transitions</strong>: Define the conditions to move between stages.</li>
-<li><strong>Links</strong>: Connect different process parts.</li>
-<li><strong>Interpretation Elements</strong>: Conditions necessary for process transitions.</li>
+<li><p><strong>CPU</strong> (logic execution, program memory, communication handling)</p></li>
+<li><p><strong>I/O modules</strong> (digital &amp; analog, to connect sensors and actuators)</p></li>
+<li><p><strong>Power supply</strong></p></li>
+<li><p><strong>Programming environment</strong></p></li>
+<li><p><strong>Network interfaces</strong> (Ethernet/IP, Profinet, etc.)</p></li>
+<li><p><strong>Diagnostics tools</strong></p></li>
 </ul>
-<p><strong>Insert Image</strong><br>
-</p>
-<div style="color: red; font-weight: bold;">
-<p>INSERT IMAGE</p>
-</div>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>Importance / Advantage</th>
+<th>Challenges</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Modularity &amp; Scalability</strong></td>
+<td>Easy to expand with more I/O, CPUs, or communication modules → adaptable for small and large systems.</td>
+<td>Compatibility and configuration management can get complex.</td>
+</tr>
+<tr class="even">
+<td><strong>Robustness &amp; Reliability</strong></td>
+<td>Designed for 24/7 operation in industrial environments with high noise, vibration, and temperature.</td>
+<td>Higher cost compared to microcontrollers or simple relays.</td>
+</tr>
+<tr class="odd">
+<td><strong>I/O Flexibility</strong></td>
+<td>Supports both digital and analog inputs/outputs; also high-speed counters, motion modules, etc.</td>
+<td>Wiring effort, calibration, and complexity with fast I/O.</td>
+</tr>
+<tr class="even">
+<td><strong>Communication Protocols</strong></td>
+<td>Modern PLCs support Ethernet/IP, Profinet, Profibus, Modbus, OPC UA, etc. → critical for integration with SCADA/HMI/Cloud.</td>
+<td>Vendor lock-in and protocol compatibility issues can occur.</td>
+</tr>
+<tr class="odd">
+<td><strong>Programming Languages</strong></td>
+<td>IEC 61131-3 languages (Ladder Logic, Function Block Diagram, Structured Text, SFC, Instruction List).</td>
+<td>Steep learning curve; different languages better for different tasks.</td>
+</tr>
+<tr class="even">
+<td><strong>Diagnostics &amp; Monitoring</strong></td>
+<td>Self-diagnostics, error codes, communication monitoring, module failure alerts → reduces downtime.</td>
+<td>Requires proper configuration; debugging distributed systems is complex.</td>
+</tr>
+<tr class="odd">
+<td><strong>Safety Features</strong></td>
+<td>Safety PLCs include safe I/O modules, emergency stop functions, redundancy, watchdog timers.</td>
+<td>Certification and compliance can increase project cost.</td>
+</tr>
+<tr class="even">
+<td><strong>Real-time Performance</strong></td>
+<td>Deterministic scan cycles (ms or µs range) required for process &amp; motion control.</td>
+<td>More complex programs can slow scan times; synchronization becomes critical.</td>
+</tr>
+</tbody>
+</table>
+<p><img src="images/clipboard-3655842568.png" class="img-fluid"></p>
+<p><img src="images/clipboard-2288048911.png" class="img-fluid"></p>
 </section>
 </section>
-<section id="different-components-and-instructions-of-plc-programming" class="level2">
-<h2 class="anchored" data-anchor-id="different-components-and-instructions-of-plc-programming">Different Components and Instructions of PLC Programming</h2>
-<p>A sequential process executes an action based on the result of the previous action. Transition conditions must be met to move from one stage to another.</p>
-<section id="transition-conditions" class="level3">
-<h3 class="anchored" data-anchor-id="transition-conditions">Transition Conditions</h3>
+<section id="hardware-components-of-a-plc" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="hardware-components-of-a-plc"><span class="header-section-number">5.2</span> Hardware Components of a PLC</h2>
+<p>A PLC consists of several key components: 1. <strong>CPU (Central Processing Unit)</strong>: Executes control logic based on input signals. 2. <strong>Power Supply Unit</strong>: Converts AC voltage to DC to power the CPU and I/O modules. 3. <strong>Programming Device</strong>: A computer or dedicated device used to write and monitor programs. 4. <strong>Memory Unit</strong>: Stores user programs and operational data. 5. <strong>Input/Output (I/O) Modules</strong>: Interfaces between the PLC and external devices.</p>
+<section id="types-of-plcs" class="level3" data-number="5.2.1">
+<h3 data-number="5.2.1" class="anchored" data-anchor-id="types-of-plcs"><span class="header-section-number">5.2.1</span> Types of PLCs</h3>
 <ul>
-<li><strong>Active Condition (CT[i] = F1)</strong>: Activates stage <em>i</em> when signal F1 is active.</li>
-<li><strong>Inactive Condition (CT[i] = F1’)</strong>: Activates stage <em>i</em> when signal F1 is inactive.</li>
-<li><strong>Time Condition (CT[i] = t/i/10 sec)</strong>: Activates stage <em>i</em> after a time delay.</li>
-<li><strong>Logical Condition (CT[i] = F1·F2’·F3)</strong>: Activates when specific signals are met.</li>
-<li><strong>Unconditional Condition (CT[i] = 1)</strong>: Always activates the next stage.</li>
+<li><strong>Compact PLC</strong>: A single unit containing all essential components.</li>
+<li><strong>Modular PLC</strong>: Allows separate modules for power, processing, and I/O, providing flexibility.</li>
+</ul>
+<p><img src="figures/Captura de pantalla 2025-02-19 230523.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="plc-scan-cycle" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="plc-scan-cycle"><span class="header-section-number">5.3</span> PLC Scan Cycle</h2>
+<p>A PLC operates in a repetitive cycle: 1. <strong>Input Scan</strong>: Reads the status of input devices. 2. <strong>Program Execution</strong>: Processes logic based on the input conditions. 3. <strong>Output Scan</strong>: Updates the status of output devices. 4. <strong>Housekeeping</strong>: Manages internal operations such as diagnostics and communication.</p>
+<p><img src="figures/Captura de pantalla 2025-02-19 232122.png" class="img-fluid"></p>
+</section>
+<section id="programming-a-plc" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="programming-a-plc"><span class="header-section-number">5.4</span> Programming a PLC</h2>
+<section id="programming-languages" class="level3" data-number="5.4.1">
+<h3 data-number="5.4.1" class="anchored" data-anchor-id="programming-languages"><span class="header-section-number">5.4.1</span> Programming Languages</h3>
+<ul>
+<li><strong>Machine Code</strong></li>
+<li><strong>Assembly Language</strong></li>
+<li><strong>High-Level Languages (C, Pascal, BASIC)</strong></li>
+<li><strong>Ladder Logic (Most Common)</strong></li>
 </ul>
 </section>
-<section id="process-evolution-example" class="level3">
-<h3 class="anchored" data-anchor-id="process-evolution-example">Process Evolution Example</h3>
+<section id="ladder-logic" class="level3" data-number="5.4.2">
+<h3 data-number="5.4.2" class="anchored" data-anchor-id="ladder-logic"><span class="header-section-number">5.4.2</span> Ladder Logic</h3>
+<ul>
+<li><strong>Vertical rails</strong>: Represent the power supply.</li>
+<li><strong>Horizontal rungs</strong>: Define logical operations.</li>
+<li><strong>Contacts and coils</strong>: Represent input conditions and outputs.</li>
+</ul>
+<p><img src="figures/Captura de pantalla 2025-02-19 230747.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="logical-operations-with-ladder-diagram" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="logical-operations-with-ladder-diagram"><span class="header-section-number">5.5</span> Logical Operations with Ladder Diagram</h2>
+<p>GRAFCET (Graphical Functional Control Step Transition) is a graphical tool for modeling deterministic control behavior. It describes process evolution, indicating required actions and triggering information.</p>
+<section id="elements-of-grafcet" class="level3" data-number="5.5.1">
+<h3 data-number="5.5.1" class="anchored" data-anchor-id="elements-of-grafcet"><span class="header-section-number">5.5.1</span> Elements of GRAFCET</h3>
+<ul>
+<li><p><strong>Stages</strong>: Define specific process steps.</p></li>
+<li><p><strong>Transitions</strong>: Determine movement conditions between stages.</p></li>
+<li><p><strong>Links</strong>: Connect different process elements.</p>
+<p><br>
+<img src="figures/Captura de pantalla 2025-02-19 230001.png" class="img-fluid"></p></li>
+</ul>
+</section>
+</section>
+<section id="timers-and-counters-in-plcs" class="level2" data-number="5.6">
+<h2 data-number="5.6" class="anchored" data-anchor-id="timers-and-counters-in-plcs"><span class="header-section-number">5.6</span> Timers and Counters in PLCs</h2>
+<section id="timer-functions" class="level3" data-number="5.6.1">
+<h3 data-number="5.6.1" class="anchored" data-anchor-id="timer-functions"><span class="header-section-number">5.6.1</span> Timer Functions</h3>
+<ul>
+<li><p><strong>On-Delay Timer (TON)</strong>: Delays activation after an input signal.</p></li>
+<li><p><strong>Off-Delay Timer (TOF)</strong>: Delays deactivation after an input signal.</p></li>
+<li><p><strong>Retentive Timer (RTO)</strong>: Holds accumulated time value.</p>
+<p><img src="figures/Captura de pantalla 2025-02-19 232345.png" class="img-fluid"></p></li>
+</ul>
+</section>
+<section id="counter-functions" class="level3" data-number="5.6.2">
+<h3 data-number="5.6.2" class="anchored" data-anchor-id="counter-functions"><span class="header-section-number">5.6.2</span> Counter Functions</h3>
+<ul>
+<li><strong>Up-Counter (CTU)</strong>: Increments when an event occurs.</li>
+<li><strong>Down-Counter (CTD)</strong>: Decrements when an event occurs.</li>
+</ul>
+<p><img src="figures/Captura de pantalla 2025-02-19 232652.png" class="img-fluid"></p>
+<p><img src="figures/Captura de pantalla 2025-02-19 232703.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="latch-and-unlatch-instructions" class="level2" data-number="5.7">
+<h2 data-number="5.7" class="anchored" data-anchor-id="latch-and-unlatch-instructions"><span class="header-section-number">5.7</span> Latch and Unlatch Instructions</h2>
+<p>Latch (Set) and Unlatch (Reset) instructions are used to maintain a state in a PLC.</p>
+<ul>
+<li><strong>Latch (Set)</strong>: When activated, the output remains ON until an Unlatch is triggered.</li>
+<li><strong>Unlatch (Reset)</strong>: Turns off the latched output.</li>
+</ul>
+</section>
+<section id="sequencers-in-plcs" class="level2" data-number="5.8">
+<h2 data-number="5.8" class="anchored" data-anchor-id="sequencers-in-plcs"><span class="header-section-number">5.8</span> Sequencers in PLCs</h2>
+<p>Sequencers allow executing predefined step-based operations. Each step triggers an output sequence, commonly used in manufacturing processes.</p>
+<ul>
+<li><p><strong>Step-Based Execution</strong></p></li>
+<li><p><strong>Memory Storage for Steps</strong></p></li>
+<li><p><strong>Timing Control for Sequential Execution</strong></p>
+<p><img src="figures/Captura de pantalla 2025-02-20 002252.png" class="img-fluid"></p></li>
+</ul>
+</section>
+<section id="subroutines-in-plcs" class="level2" data-number="5.9">
+<h2 data-number="5.9" class="anchored" data-anchor-id="subroutines-in-plcs"><span class="header-section-number">5.9</span> Subroutines in PLCs</h2>
+<p>Subroutines allow modular programming by dividing a large program into smaller, reusable blocks.</p>
+<ul>
+<li><strong>Efficiency Improvement</strong></li>
+<li><strong>Code Reusability</strong></li>
+<li><strong>Simplified Debugging</strong></li>
+</ul>
+<p><img src="figures/Captura de pantalla 2025-02-20 002507.png" class="img-fluid"></p>
+</section>
+<section id="rslogix-and-plc-programming-software" class="level2" data-number="5.10">
+<h2 data-number="5.10" class="anchored" data-anchor-id="rslogix-and-plc-programming-software"><span class="header-section-number">5.10</span> RSLogix and PLC Programming Software</h2>
+<section id="software-tools-for-plc-programming" class="level3" data-number="5.10.1">
+<h3 data-number="5.10.1" class="anchored" data-anchor-id="software-tools-for-plc-programming"><span class="header-section-number">5.10.1</span> Software Tools for PLC Programming</h3>
+<ul>
+<li><strong>RSLinx</strong>: Manages communication between a PLC and a PC.</li>
+<li><strong>RSLogix 500</strong>: Software for editing, verifying, and simulating PLC programs.</li>
+<li><strong>RSLogix Emulate 500</strong>: Allows for program testing without a physical PLC.</li>
+</ul>
+<p><strong>Getting Started with RSLinx</strong></p>
 <ol type="1">
-<li><strong>Step 1</strong>: The part reaches position B (sensor detects it).</li>
-<li><strong>Step 2</strong>: Conveyor moves part from A to B.</li>
-<li><strong>Step 3</strong>: Robot picks up the part.</li>
-<li><strong>Step 4</strong>: Drilling process begins.</li>
-<li><strong>Step 5</strong>: Finished part is detected and removed.</li>
+<li><p><strong>Run RSLinx.</strong></p></li>
+<li><p><strong>Menu:</strong></p>
+<p>Communications &gt; Configure drivers.</p></li>
+<li><p>In <strong>Available Driver Types</strong>:</p>
+<p>SLC 500 (DH485) Emulator Driver.</p></li>
+<li><p>Click on <strong>Add</strong> and leave the default name.</p></li>
+<li><p>Station Number: 00</p></li>
+<li><p>Click <strong>OK</strong>.</p>
+<p><img src="figures/Captura de pantalla 2025-02-20 000051.png" class="img-fluid"></p></li>
 </ol>
-<p><strong>Insert Image</strong><br>
-</p>
-<div style="color: red; font-weight: bold;">
-<p>INSERT IMAGE</p>
-</div>
 </section>
 </section>
-<section id="conversion-from-grafcet-to-ladder-diagram" class="level2">
-<h2 class="anchored" data-anchor-id="conversion-from-grafcet-to-ladder-diagram">Conversion from GRAFCET to Ladder Diagram</h2>
+<section id="example-programs-in-ladder-logic" class="level2" data-number="5.11">
+<h2 data-number="5.11" class="anchored" data-anchor-id="example-programs-in-ladder-logic"><span class="header-section-number">5.11</span> Example Programs in Ladder Logic</h2>
+<section id="example-1-simple-ladder-logic-program" class="level3" data-number="5.11.1">
+<h3 data-number="5.11.1" class="anchored" data-anchor-id="example-1-simple-ladder-logic-program"><span class="header-section-number">5.11.1</span> Example 1: Simple Ladder Logic Program</h3>
 <ul>
-<li>Each stage corresponds to an internal PLC bit (B3).</li>
-<li>Stages are activated and deactivated using <strong>Latch</strong> and <strong>Unlatch</strong> commands.</li>
-<li>Left side conditions define activation and deactivation logic.</li>
+<li><strong>Objective</strong>: Implement an AND gate logic using ladder diagram.</li>
+<li><strong>Inputs</strong>: Two push buttons (X1, X2)</li>
+<li><strong>Output</strong>: A lamp (Y1) that turns on when both buttons are pressed.</li>
 </ul>
-<section id="example-traffic-light-control-using-timers" class="level3">
-<h3 class="anchored" data-anchor-id="example-traffic-light-control-using-timers">Example: Traffic Light Control Using Timers</h3>
-<ol type="1">
-<li><strong>Start Button</strong>: Initiates the sequence.</li>
-<li><strong>Red Light</strong>: Turns on for a specified duration.</li>
-<li><strong>Green Light</strong>: Turns on after Red Light.</li>
-<li><strong>Yellow Light</strong>: Activates before Red.</li>
-<li><strong>Cycle Restarts</strong>.</li>
-</ol>
-<p><strong>Insert Image</strong><br>
-</p>
-<div style="color: red; font-weight: bold;">
-<p>INSERT IMAGE</p>
-</div>
 </section>
 </section>
-<section id="common-errors-in-grafcet-implementation" class="level2">
-<h2 class="anchored" data-anchor-id="common-errors-in-grafcet-implementation">Common Errors in GRAFCET Implementation</h2>
+<section id="troubleshooting-and-debugging-in-plcs" class="level2" data-number="5.12">
+<h2 data-number="5.12" class="anchored" data-anchor-id="troubleshooting-and-debugging-in-plcs"><span class="header-section-number">5.12</span> Troubleshooting and Debugging in PLCs</h2>
+<section id="common-errors" class="level3" data-number="5.12.1">
+<h3 data-number="5.12.1" class="anchored" data-anchor-id="common-errors"><span class="header-section-number">5.12.1</span> Common Errors</h3>
 <ol type="1">
-<li><strong>Incorrect transition conditions</strong> leading to improper process evolution.</li>
+<li><strong>Incorrect transition conditions</strong>: Leads to improper process evolution.</li>
 <li><strong>Simultaneous sequence start/end issues</strong>.</li>
 <li><strong>Nested simultaneous sequences causing execution conflicts</strong>.</li>
 <li><strong>Skipping intermediate stages unintentionally</strong>.</li>
 </ol>
 </section>
-<section id="practical-exercises" class="level2">
-<h2 class="anchored" data-anchor-id="practical-exercises">Practical Exercises</h2>
-<section id="exercise-1-convert-the-following-sequence-to-ladder-diagram" class="level3">
-<h3 class="anchored" data-anchor-id="exercise-1-convert-the-following-sequence-to-ladder-diagram">Exercise 1: Convert the Following Sequence to Ladder Diagram</h3>
-<ul>
-<li><strong>Sequence</strong>: B+ → A+ → A- → A+ → B- → A-</li>
-</ul>
 </section>
-<section id="exercise-2-crane-control-system" class="level3">
-<h3 class="anchored" data-anchor-id="exercise-2-crane-control-system">Exercise 2: Crane Control System</h3>
-<ul>
-<li><strong>Four limit switches</strong>: Two for horizontal movement (S3, S4) and two for vertical (S1, S2).</li>
-<li><strong>Motors</strong>: Two dual-direction motors controlling crane movement.</li>
-<li><strong>Process Flow</strong>:
-<ul>
-<li>Move crane to pickup position.</li>
-<li>Lift part using vertical motor.</li>
-<li>Transport to destination.</li>
-<li>Lower and release part.</li>
-</ul></li>
-</ul>
-<p><strong>Insert Image</strong><br>
-</p>
-<div style="color: red; font-weight: bold;">
-<p>INSERT IMAGE</p>
-</div>
-<p><em>Note: Replace INSERT IMAGE with actual images related to each section.</em></p>
+<section id="conclusion" class="level2" data-number="5.13">
+<h2 data-number="5.13" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">5.13</span> Conclusion</h2>
+<p>PLCs are essential in industrial automation, offering robustness, flexibility, and efficiency in process control. By mastering programming techniques and logical operations, engineers can optimize automation systems and improve productivity.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -853,6 +842,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./chapter02.html" class="pagination-link" aria-label="Pneumatic and Electro-pneumatic Automatization">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Pneumatic and Electro-pneumatic Automatization</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./chapter04.html" class="pagination-link" aria-label="GRAFCET - Funcional Graph of Stage-Transition Control">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">GRAFCET - Funcional Graph of Stage-Transition Control</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 
 
