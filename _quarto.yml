@@ -47,7 +47,6 @@ website:
       - section: About
         contents: 
           - about.qmd
-      
 format:
   html:
     theme: default
