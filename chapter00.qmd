@@ -78,4 +78,4 @@ editor: visual
 
 -   Industrial Robots (optional)
 
--   ![](figures/fig00-002.png)
+-   ![](images//fig00-002.png)

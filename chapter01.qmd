@@ -15,11 +15,11 @@ There are basically two types of control: Open Loop and Closed Loop
 
 The open loop has the following structure. It receives a command or reference signal. The controller calulates an input signal for the actuator. The output of the actuator starts manipulating the system. Since the controler does not receives any feedback on how the systems reacts on the command the results might be different from the desired behaviour. Examples for the application of open loop control are: A tennis player who hits the ball, if you turn on a light in you room or a DC motor without sensors.
 
-![fig. 1.1: general structure of a open loop control](figures/fig01-001.png)
+![fig. 1.1: general structure of a open loop control](images/fig01-001.png)
 
 To improve the resulting behaviour and be able to correct possible differences between the commad value and the resulting value, one can implement sensors that observe the resulting behaviour of the systems or process. This sensors return the current behaviour to the controller and the controller can correct the input signal to the actuator. The following figure shows the general structure of a close loop control.
 
-![fig. 1.2: general structure of a close loop control](figures/fig01-002.png)
+![fig. 1.2: general structure of a close loop control](images/fig01-002.png)
 
 ## Industrial Process
 
@@ -37,9 +37,9 @@ There are different types of proceses within industrial processes: Continuous Pr
 
 *Example: Heating System* Someone defines the requiered temperature in the room. The input value can be done by different types of devices, digital or analogue inputs, for example. At the same time, the current room temperature is measured and compared to the reference. The difference between these two values are the input to the controller and the controller calculates the new opening value for a valve that opens the gas flow to the burner. The room gets warmer (or not) and a new temparature is measured. This new temparature value is then compared again to the reference value.
 
-![fig. 1.3 Heating System](figures/fig01-003.png)
+![fig. 1.3 Heating System](images/fig01-003.png)
 
-![fig. 1.4 representation of a heating System in blocks](figures/fig01-004.png)
+![fig. 1.4 representation of a heating System in blocks](images/fig01-004.png)
 
 ### Discrete Processes
 
@@ -61,7 +61,7 @@ Steps:
 
 5.  Take the piece out
 
-![fig. 1.5 example of the production of a metalic product](figures/fig01-005.png){width="60%"}
+![fig. 1.5 example of the production of a metalic product](images/fig01-005.png){width="60%"}
 
 ## Non-continuous Processes by batches
 
@@ -77,15 +77,15 @@ Steps:
 
 4.  Return cylinders pieces C, D and E
 
-![fig. 1.6 Assembly process](figures/fig01-006.png){width="80%"}
+![fig. 1.6 Assembly process](images/fig01-006.png){width="80%"}
 
 Box Stacker:
 
-![fig. 1.7 process of box positioning for further transport.](figures/fig01-007.png){width="80%"}
+![fig. 1.7 process of box positioning for further transport.](images/fig01-007.png){width="80%"}
 
 ## Resume: Types of processes and types of control
 
-![fig. 1.8 resume of processes and control types](figures/fig01-008.png){width="80%"}
+![fig. 1.8 resume of processes and control types](images/fig01-008.png){width="80%"}
 
 ## Industrial Automation
 
