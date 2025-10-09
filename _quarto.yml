@@ -55,7 +55,6 @@ format:
     toc: false
     toc-location: left
     toc-depth: 3
-
 editor: visual
 execute:
   freeze: auto
