@@ -13,7 +13,7 @@ Replacement of the human operator by an artificial operator, in the execution of
 
 There are basically two types of control: Open Loop and Closed Loop
 
-The open loop has the following structure. It receives a command or reference signal. The controller calulates an input signal for the actuator. The output of the actuator starts manipulating the system. Since the controler does not receives any feedback on how the systems reacts on the command the results might be different from the desired behaviour. Examples for the application of open loop control are: A tennis player who hits the ball, if you turn on a light in you room or a DC motor without sensors.
+The open loop has the following structure. It receives a command or reference signal. The controller calculates an input signal for the actuator. The output of the actuator starts manipulating the system. Since the controller does not receives any feedback on how the systems reacts on the command the results might be different from the desired behaviour. Examples for the application of open loop control are: A tennis player who hits the ball, if you turn on a light in you room or a DC motor without sensors.
 
 ![fig. 1.1: general structure of a open loop control](images/fig01-001.png)
 
