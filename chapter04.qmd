@@ -7,6 +7,6 @@ editor: visual
 
 ## Stages and transition conditions
 
-## Rules to develope a GRAFCET
+## Rules to develop a GRAFCET
 
-## Transformation of a GRAFCET into a ladder diagram lenguaje Ladder
+## Transformation of a GRAFCET into a ladder diagram language Ladder
