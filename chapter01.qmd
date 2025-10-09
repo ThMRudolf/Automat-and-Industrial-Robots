@@ -7,7 +7,7 @@ editor: visual
 
 ## Definition of Automation
 
-Replacement of the human operator by an artificial operator, in the execution of a previously programmed physical or mental task. One has to control the system in order to automate it. 
+Replacement of the human operator by an artificial operator, in the execution of a previously programmed physical or mental task. One has to control the system in order to automate it.
 
 ## Types of control schemes
 
@@ -31,10 +31,9 @@ There are different types of proceses within industrial processes: Continuous Pr
 
 ### Continuous Processes:
 
--   Uninterrupted process over time in which analog variables (temperature, speed, etc.) are manipulated. 
+-   Uninterrupted process over time in which analog variables (temperature, speed, etc.) are manipulated.
 
 -   Process in which raw materials are constantly entering at one end of the system, while at the other end a finished product is continuously obtained.
-
 
 *Example: Heating System* Someone defines the requiered temperature in the room. The input value can be done by different types of devices, digital or analogue inputs, for example. At the same time, the current room temperature is measured and compared to the reference. The difference between these two values are the input to the controller and the controller calculates the new opening value for a valve that opens the gas flow to the burner. The room gets warmer (or not) and a new temparature is measured. This new temparature value is then compared again to the reference value.
 
@@ -58,7 +57,7 @@ Steps:
 
 3.  Drilling A
 
-4.  Drilling B 
+4.  Drilling B
 
 5.  Take the piece out
 
