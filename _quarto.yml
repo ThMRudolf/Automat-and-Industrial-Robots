@@ -7,7 +7,7 @@ project:
 
 website:
   title: "HOME" # "Automatation and Industrial Robots"
-  author: "Thomas M. Rudolf"
+  #author: "Thomas M. Rudolf"
   
   navbar:
     left:
