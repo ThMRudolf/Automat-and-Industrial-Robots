@@ -5,7 +5,9 @@ project:
   type: book
   output-dir: docs
 book:
-  chapter:
+  title: "HOME" # "Automatation and Industrial Robots"
+  author: "Thomas M. Rudolf"
+  chapters:
     - index.qmd
     - chapter00.qmd
     - chapter01.qmd
@@ -14,8 +16,7 @@ book:
     - chapter04.qmd
     - chapter05.qmd
     - chapter06.qmd      
-title: "HOME" # "Automatation and Industrial Robots"
-author: "Thomas M. Rudolf"
+
 website:
   title: "HOME" # "Automatation and Industrial Robots"
   #author: "Thomas M. Rudolf"
