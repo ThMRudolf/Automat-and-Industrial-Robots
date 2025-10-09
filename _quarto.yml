@@ -2,12 +2,12 @@ execute:
   freeze: auto
 
 project:
-  type: website
+  type: book
   output-dir: docs
-  #author: "Thomas M. Rudolf"
 
 website:
   title: "HOME" # "Automatation and Industrial Robots"
+  author: "Thomas M. Rudolf"
   
   navbar:
     left:
@@ -57,3 +57,5 @@ format:
     toc-depth: 3
 
 editor: visual
+execute:
+  freeze: auto
