@@ -9,6 +9,6 @@ editor: visual
 
 ## States and transitions
 
-## Control a simulation enviroment with state flow
+## Control a simulation environment with state flow
 
 ## Control a plant with state flow

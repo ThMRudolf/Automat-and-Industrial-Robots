@@ -140,7 +140,7 @@ Subroutines allow modular programming by dividing a large program into smaller, 
 -   **Code Reusability**
 -   **Simplified Debugging**
 
-![](fimages/Captura%20de%20pantalla%202025-02-20%20002507.png)
+![](images/Subroutines.png)
 
 ## RSLogix and PLC Programming Software
 
