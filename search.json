@@ -2,7 +2,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "HOME",
+    "title": "Automatation and Industrial Robots",
     "section": "",
     "text": "1 Introduction\n\nDefinition of Automation\nProcess Control\nTypes of different Industrial Processes\n\n\n\n2 Pneumatic and Electro-pneumatic Automatization\n\nElements of a neumatic circuit\nElements of a electic circuit, electrical acutators and control elements\nAutomatization of neumatic and electroneumatic sequences\n\n\n\n3 Programable Logical Control (PLC)\n\nLogical Operations with ladder diagram\nInput and output variables, internal registers of PLC\nDifferent componentens and instructions of PLC programation\n\n\n\n4 GRAFCET - Funcional Graph of Stage-Transition Control\n\nStages and transition conditions\nRules to develope a GRAFCET\nTransformation of a GRAFCET into a ladder diagram lenguaje Ladder\n\n\n\n5 State flow\n\nIntroduction to state flow in Matlab\nStates and transitions\nControl a simulation enviroment with state flow\nControl a plant with state flow\n\n\n\n6 Industrial Robots (optional)\n\nIntroductions to industrial robots\nSecurity topics for usage of industrial robots",
     "crumbs": [
