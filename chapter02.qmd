@@ -1,3 +1,9 @@
+---
+title: "Elements of a pneumatic circuit"
+author: "Thomas M. Rudolf"
+format: html
+editor: visual
+---
 ## Elements of a pneumatic circuit
 
 The word ‘Pneumatics’ is derived from the Greek ‘neuma’ (air or breath). Originally, the term pneumatics designated the science of the movement and properties of air. This is the branch of engineering that deals with the study and application of compressed air, its generation, transmission and control.
