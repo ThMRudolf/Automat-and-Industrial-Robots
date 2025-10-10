@@ -4,7 +4,7 @@ The word ‘Pneumatics’ is derived from the Greek ‘neuma’ (air or breath).
 
 The design of devices that used air energy dates back to the 18th century (with the pneumatic rifle). “Modern” devices: pneumatic rock drill, pneumatic brakes. “Modern” pneumatics was born in the 1950s, when techniques and forms of air energy control were introduced in industrial processes.
 
-#### Why compressed air?
+### Why compressed air?
 
 -   It is **abundant**. It is available in unlimited quantities.
 
@@ -16,7 +16,7 @@ The design of devices that used air energy dates back to the 18th century (with 
 
 -   It is **clean**. In case of stagnation, it does not produce dirt.
 
-#### Comparison with other technologies
+### Comparison with other technologies
 
 +--------------------------+--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+---------------------------------------------------------------------------+--------+--------+--------+
 |                          | **Electricity**                                                                | **Hydraulic**                                                                  | **Pneumatic**                                                             |        |        |        |
@@ -56,7 +56,7 @@ Air density is significantly smaller than that of oil (used in hydraulics). Ther
 | -   The tools and operating elements are safe, when they are overloaded they simply stop working.   |                                                                                                                                                                  |
 +-----------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-### Basic physical characteristics of gases
+## Basic physical characteristics of gases
 
 *Composition:* Types of gases that make up the air under consideration. Example: dry air at sea level is composed mainly of Nitrogen (78%) and Oxygen (20.99%). *Shape and volume:* They have no defined shape or volume. They acquire the shape and volume of the tank that contains them. *Cost (Flow):* It is the quantity of fluid that circulates through a section of the duct per unit of time.
 
