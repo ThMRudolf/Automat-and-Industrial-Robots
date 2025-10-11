@@ -5,13 +5,13 @@ format: html
 editor: visual
 ---
 
-## 1. Introduction
+# Introduction
 
 The kinematic analysis of a robot is performed using the Denavit-Hartenberg convention. This method is essential for describing the transformations of the joints and links of an industrial robot. In this material, we discuss how the coordinate system is defined for each joint and how transformations are applied to calculate the position of the TCP (Tool Center Point).
 
 ---
 
-## 2. Coordinate Systems
+# Coordinate Systems
 
 - **Base Coordinate System**
   
@@ -27,7 +27,7 @@ The kinematic analysis of a robot is performed using the Denavit-Hartenberg conv
 
 ---
 
-## 3. Forward and Inverse Kinematics
+# Forward and Inverse Kinematics
 
 Forward kinematics describes how the position and orientation of the TCP depend on the joint variables (angles and displacements). On the other hand, inverse kinematics involves calculating the joint angles from a desired TCP position.
 
@@ -35,17 +35,17 @@ Forward kinematics describes how the position and orientation of the TCP depend 
 
 ---
 
-## 4. Homogeneous Transformations
+# Homogeneous Transformations
 
 Homogeneous transformations are used to describe the position and orientation of links in three-dimensional space using 4x4 matrices. Below are examples of transformations.
 
-### Displacement and Rotation
+## Displacement and Rotation
 
 **Image: insert image of homogeneous transformation matrix for displacement and rotation**
 
 ---
 
-## 5. Denavit-Hartenberg Parameters
+# Denavit-Hartenberg Parameters
 
 The Denavit-Hartenberg parameterization uses four parameters to describe each link of the robot:  
 1. \( \theta_n \) - Angle between the axes \( x_{n-1} \) and \( x_n \), rotated about \( z_{n-1} \).
