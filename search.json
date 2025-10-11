@@ -4,77 +4,37 @@
     "href": "index.html",
     "title": "Automatation and Industrial Robots",
     "section": "",
-    "text": "0.1 General Information about the lecture",
+    "text": "1 General Information about the lecture",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>About the Lecture</span>"
     ]
   },
   {
-    "objectID": "index.html#general-information-about-the-lecture",
-    "href": "index.html#general-information-about-the-lecture",
+    "objectID": "index.html#schedules",
+    "href": "index.html#schedules",
     "title": "Automatation and Industrial Robots",
-    "section": "",
-    "text": "0.1.1 Schedules\n\nTheory: Mon / Wed, 12:30-14:00 hrs\nLaboratory:\n\nG001 Fri 11:00-14:00 hrs\nG002 Fri 16:00-19:00 hrs\n\n\n\n\n0.1.2 Lecturers\n\nProf. Thomas M. Rudolf (theory)\nProf. Claudia Victoria Olivar Jiménez (laboratory)\n\n\n\n0.1.3 Location\n\nAula LMINT",
+    "section": "1.1 Schedules",
+    "text": "1.1 Schedules\n\nTheory: Mon / Wed, 12:30-14:00 hrs\nLaboratory:\n\nG001 Fri 11:00-14:00 hrs\nG002 Fri 16:00-19:00 hrs",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>About the Lecture</span>"
     ]
   },
   {
-    "objectID": "index.html#description-and-objetives",
-    "href": "index.html#description-and-objetives",
+    "objectID": "index.html#lecturers",
+    "href": "index.html#lecturers",
     "title": "Automatation and Industrial Robots",
-    "section": "0.2 Description and Objetives",
-    "text": "0.2 Description and Objetives\n\nAddress concepts related to Industrial Automation systems.\nControl methods applied mainly to sequential processes and the theory related to Grafcet will also be studied.\nApplication of emerging technologies to automate industrial processes. The structure and programming logic for Programmable Logic Controllers (PLC) will be studied.",
+    "section": "1.2 Lecturers",
+    "text": "1.2 Lecturers\n\nProf. Thomas M. Rudolf (theory)\nProf. Claudia Victoria Olivar Jiménez (laboratory)",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>About the Lecture</span>"
     ]
   },
   {
-    "objectID": "index.html#what-is-covered-in-this-lecture",
-    "href": "index.html#what-is-covered-in-this-lecture",
+    "objectID": "index.html#location",
+    "href": "index.html#location",
     "title": "Automatation and Industrial Robots",
-    "section": "0.3 What is covered in this lecture:",
-    "text": "0.3 What is covered in this lecture:",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>About the Lecture</span>"
-    ]
-  },
-  {
-    "objectID": "index.html#what-is-not-covered-in-this-lecture",
-    "href": "index.html#what-is-not-covered-in-this-lecture",
-    "title": "Automatation and Industrial Robots",
-    "section": "0.4 What is not covered in this lecture:",
-    "text": "0.4 What is not covered in this lecture:\n\nIt is not a lectur about pneumatics nor hydraulics.\nIt is not a fluid dynamics lecture.",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>About the Lecture</span>"
-    ]
-  },
-  {
-    "objectID": "index.html#evaluation",
-    "href": "index.html#evaluation",
-    "title": "Automatation and Industrial Robots",
-    "section": "0.5 Evaluation",
-    "text": "0.5 Evaluation\n\n\n\n\n\n\n\nType\npercentage\n\n\n\n\n2 Parcials:\n\n1st partial: 30/09/2024 or 02/10/2024 (1 hr, 20 min)\n2nd partial: 04/11/2024 or 06/11/2024 (1 hr, 20 min)\n\n25 % each\n\n\nFinal Project (Exam final: tbd (LMINT))\n30%\n\n\nLaboratory\n20%",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>About the Lecture</span>"
-    ]
-  },
-  {
-    "objectID": "index.html#course-rules",
-    "href": "index.html#course-rules",
-    "title": "Automatation and Industrial Robots",
-    "section": "0.6 Course rules",
-    "text": "0.6 Course rules\n\nMaximum 10 minutes delay.\nNO re-examinations.\nSanction for plagiarism according to the regulations\nFood is not allowed in the lab",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>About the Lecture</span>"
-    ]
-  },
-  {
-    "objectID": "index.html#topics",
-    "href": "index.html#topics",
-    "title": "Automatation and Industrial Robots",
-    "section": "0.7 Topics",
-    "text": "0.7 Topics\n\nIntroduction to automation\nPneumatic and Electro-pneumatic Automatization\nPLC programmable controllers\nGrafcet\nState Flow\nIndustrial Robots (optional)",
+    "section": "1.3 Location",
+    "text": "1.3 Location\n\nAula LMINT",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>About the Lecture</span>"
     ]
