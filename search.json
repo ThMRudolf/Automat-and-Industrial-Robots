@@ -4,89 +4,89 @@
     "href": "index.html",
     "title": "Automatation and Industrial Robots",
     "section": "",
-    "text": "1 Introduction\n\nDefinition of Automation\nProcess Control\nTypes of different Industrial Processes\n\n\n\n2 Pneumatic and Electro-pneumatic Automatization\n\nElements of a neumatic circuit\nElements of a electic circuit, electrical acutators and control elements\nAutomatization of neumatic and electroneumatic sequences\n\n\n\n3 Programable Logical Control (PLC)\n\nLogical Operations with ladder diagram\nInput and output variables, internal registers of PLC\nDifferent componentens and instructions of PLC programation\n\n\n\n4 GRAFCET - Funcional Graph of Stage-Transition Control\n\nStages and transition conditions\nRules to develope a GRAFCET\nTransformation of a GRAFCET into a ladder diagram lenguaje Ladder\n\n\n\n5 State flow\n\nIntroduction to state flow in Matlab\nStates and transitions\nControl a simulation enviroment with state flow\nControl a plant with state flow\n\n\n\n6 Industrial Robots (optional)\n\nIntroductions to industrial robots\nSecurity topics for usage of industrial robots",
+    "text": "0.1 General Information about the lecture",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Automation and Process Control</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>About the Lecture</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#general-information-about-the-lecture",
+    "href": "index.html#general-information-about-the-lecture",
+    "title": "Automatation and Industrial Robots",
+    "section": "",
+    "text": "0.1.1 Schedules\n\nTheory: Mon / Wed, 12:30-14:00 hrs\nLaboratory:\n\nG001 Fri 11:00-14:00 hrs\nG002 Fri 16:00-19:00 hrs\n\n\n\n\n0.1.2 Lecturers\n\nProf. Thomas M. Rudolf (theory)\nProf. Claudia Victoria Olivar Jiménez (laboratory)\n\n\n\n0.1.3 Location\n\nAula LMINT",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>About the Lecture</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#description-and-objetives",
+    "href": "index.html#description-and-objetives",
+    "title": "Automatation and Industrial Robots",
+    "section": "0.2 Description and Objetives",
+    "text": "0.2 Description and Objetives\n\nAddress concepts related to Industrial Automation systems.\nControl methods applied mainly to sequential processes and the theory related to Grafcet will also be studied.\nApplication of emerging technologies to automate industrial processes. The structure and programming logic for Programmable Logic Controllers (PLC) will be studied.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>About the Lecture</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#what-is-covered-in-this-lecture",
+    "href": "index.html#what-is-covered-in-this-lecture",
+    "title": "Automatation and Industrial Robots",
+    "section": "0.3 What is covered in this lecture:",
+    "text": "0.3 What is covered in this lecture:",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>About the Lecture</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#what-is-not-covered-in-this-lecture",
+    "href": "index.html#what-is-not-covered-in-this-lecture",
+    "title": "Automatation and Industrial Robots",
+    "section": "0.4 What is not covered in this lecture:",
+    "text": "0.4 What is not covered in this lecture:\n\nIt is not a lectur about pneumatics nor hydraulics.\nIt is not a fluid dynamics lecture.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>About the Lecture</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#evaluation",
+    "href": "index.html#evaluation",
+    "title": "Automatation and Industrial Robots",
+    "section": "0.5 Evaluation",
+    "text": "0.5 Evaluation\n\n\n\n\n\n\n\nType\npercentage\n\n\n\n\n2 Parcials:\n\n1st partial: 30/09/2024 or 02/10/2024 (1 hr, 20 min)\n2nd partial: 04/11/2024 or 06/11/2024 (1 hr, 20 min)\n\n25 % each\n\n\nFinal Project (Exam final: tbd (LMINT))\n30%\n\n\nLaboratory\n20%",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>About the Lecture</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#course-rules",
+    "href": "index.html#course-rules",
+    "title": "Automatation and Industrial Robots",
+    "section": "0.6 Course rules",
+    "text": "0.6 Course rules\n\nMaximum 10 minutes delay.\nNO re-examinations.\nSanction for plagiarism according to the regulations\nFood is not allowed in the lab",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>About the Lecture</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#topics",
+    "href": "index.html#topics",
+    "title": "Automatation and Industrial Robots",
+    "section": "0.7 Topics",
+    "text": "0.7 Topics\n\nIntroduction to automation\nPneumatic and Electro-pneumatic Automatization\nPLC programmable controllers\nGrafcet\nState Flow\nIndustrial Robots (optional)",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>About the Lecture</span>"
     ]
   },
   {
     "objectID": "chapter00.html",
     "href": "chapter00.html",
-    "title": "2  About the Lecture",
+    "title": "2  Automation and Process Control",
     "section": "",
-    "text": "2.1 General Information about the lecture",
+    "text": "3 Introduction\n\nDefinition of Automation\nProcess Control\nTypes of different Industrial Processes\n\n\n\n4 Pneumatic and Electro-pneumatic Automatization\n\nElements of a neumatic circuit\nElements of a electic circuit, electrical acutators and control elements\nAutomatization of neumatic and electroneumatic sequences\n\n\n\n5 Programable Logical Control (PLC)\n\nLogical Operations with ladder diagram\nInput and output variables, internal registers of PLC\nDifferent componentens and instructions of PLC programation\n\n\n\n6 GRAFCET - Funcional Graph of Stage-Transition Control\n\nStages and transition conditions\nRules to develope a GRAFCET\nTransformation of a GRAFCET into a ladder diagram lenguaje Ladder\n\n\n\n7 State flow\n\nIntroduction to state flow in Matlab\nStates and transitions\nControl a simulation enviroment with state flow\nControl a plant with state flow\n\n\n\n8 Industrial Robots (optional)\n\nIntroductions to industrial robots\nSecurity topics for usage of industrial robots",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>About the Lecture</span>"
-    ]
-  },
-  {
-    "objectID": "chapter00.html#general-information-about-the-lecture",
-    "href": "chapter00.html#general-information-about-the-lecture",
-    "title": "2  About the Lecture",
-    "section": "",
-    "text": "2.1.1 Schedules\n\nTheory: Mon / Wed, 12:30-14:00 hrs\nLaboratory:\n\nG001 Fri 11:00-14:00 hrs\nG002 Fri 16:00-19:00 hrs\n\n\n\n\n2.1.2 Lecturers\n\nProf. Thomas M. Rudolf (theory)\nProf. Claudia Victoria Olivar Jiménez (laboratory)\n\n\n\n2.1.3 Location\n\nAula LMINT",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>About the Lecture</span>"
-    ]
-  },
-  {
-    "objectID": "chapter00.html#description-and-objetives",
-    "href": "chapter00.html#description-and-objetives",
-    "title": "2  About the Lecture",
-    "section": "2.2 Description and Objetives",
-    "text": "2.2 Description and Objetives\n\nAddress concepts related to Industrial Automation systems.\nControl methods applied mainly to sequential processes and the theory related to Grafcet will also be studied.\nApplication of emerging technologies to automate industrial processes. The structure and programming logic for Programmable Logic Controllers (PLC) will be studied.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>About the Lecture</span>"
-    ]
-  },
-  {
-    "objectID": "chapter00.html#what-is-covered-in-this-lecture",
-    "href": "chapter00.html#what-is-covered-in-this-lecture",
-    "title": "2  About the Lecture",
-    "section": "2.3 What is covered in this lecture:",
-    "text": "2.3 What is covered in this lecture:",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>About the Lecture</span>"
-    ]
-  },
-  {
-    "objectID": "chapter00.html#what-is-not-covered-in-this-lecture",
-    "href": "chapter00.html#what-is-not-covered-in-this-lecture",
-    "title": "2  About the Lecture",
-    "section": "2.4 What is not covered in this lecture:",
-    "text": "2.4 What is not covered in this lecture:\n\nIt is not a lectur about pneumatics nor hydraulics.\nIt is not a fluid dynamics lecture.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>About the Lecture</span>"
-    ]
-  },
-  {
-    "objectID": "chapter00.html#evaluation",
-    "href": "chapter00.html#evaluation",
-    "title": "2  About the Lecture",
-    "section": "2.5 Evaluation",
-    "text": "2.5 Evaluation\n\n\n\n\n\n\n\nType\npercentage\n\n\n\n\n2 Parcials:\n\n1st partial: 30/09/2024 or 02/10/2024 (1 hr, 20 min)\n2nd partial: 04/11/2024 or 06/11/2024 (1 hr, 20 min)\n\n25 % each\n\n\nFinal Project (Exam final: tbd (LMINT))\n30%\n\n\nLaboratory\n20%",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>About the Lecture</span>"
-    ]
-  },
-  {
-    "objectID": "chapter00.html#course-rules",
-    "href": "chapter00.html#course-rules",
-    "title": "2  About the Lecture",
-    "section": "2.6 Course rules",
-    "text": "2.6 Course rules\n\nMaximum 10 minutes delay.\nNO re-examinations.\nSanction for plagiarism according to the regulations\nFood is not allowed in the lab",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>About the Lecture</span>"
-    ]
-  },
-  {
-    "objectID": "chapter00.html#topics",
-    "href": "chapter00.html#topics",
-    "title": "2  About the Lecture",
-    "section": "2.7 Topics",
-    "text": "2.7 Topics\n\nIntroduction to automation\nPneumatic and Electro-pneumatic Automatization\nPLC programmable controllers\nGrafcet\nState Flow\nIndustrial Robots (optional)",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>About the Lecture</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Automation and Process Control</span>"
     ]
   },
   {
