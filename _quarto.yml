@@ -19,7 +19,7 @@ book:
         - chapter05.qmd
         - chapter06.qmd      
     - part: "About"
-        chapters:
+      chapters:
         - about.qmd
 website:
   title: "HOME" # "Automatation and Industrial Robots"
