@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Thomas M. Rudolf">
+<meta name="author" content="Prof.&nbsp;Thomas M. Rudolf">
 
-<title>6&nbsp; GRAFCET - Funcional Graph of Stage-Transition Control – Automatation and Industrial Robots</title>
+<title>6&nbsp; GRAFCET: Automation and Control of Processes – Automatation and Industrial Robots</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -41,7 +41,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-07ba0ad10f5680c660e360ac31d2f3b6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-25c43093a0633db8d575a5b8a26d9bb2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-91195c5476dd1a4682e07e28f5dbfec7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="nav-sidebar floating fullcontent">
+<body class="nav-sidebar floating">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -83,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter04.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">GRAFCET - Funcional Graph of Stage-Transition Control</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter04.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">GRAFCET: Automation and Control of Processes</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -141,7 +141,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter04.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">GRAFCET - Funcional Graph of Stage-Transition Control</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">GRAFCET: Automation and Control of Processes</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -158,17 +158,43 @@ ul.task-list li input[type="checkbox"] {
 </li>
     </ul>
     </div>
-    
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">7</span> Introduction</a></li>
+  <li><a href="#basic-principles" id="toc-basic-principles" class="nav-link" data-scroll-target="#basic-principles"><span class="header-section-number">8</span> 1. Basic Principles</a></li>
+  <li><a href="#elements-of-grafcet" id="toc-elements-of-grafcet" class="nav-link" data-scroll-target="#elements-of-grafcet"><span class="header-section-number">9</span> 2. Elements of GRAFCET</a>
+  <ul class="collapse">
+  <li><a href="#stages" id="toc-stages" class="nav-link" data-scroll-target="#stages"><span class="header-section-number">9.1</span> Stages</a></li>
+  <li><a href="#transitions" id="toc-transitions" class="nav-link" data-scroll-target="#transitions"><span class="header-section-number">9.2</span> Transitions</a></li>
+  <li><a href="#links" id="toc-links" class="nav-link" data-scroll-target="#links"><span class="header-section-number">9.3</span> Links</a></li>
+  <li><a href="#actions" id="toc-actions" class="nav-link" data-scroll-target="#actions"><span class="header-section-number">9.4</span> Actions</a></li>
+  <li><a href="#transition-conditions" id="toc-transition-conditions" class="nav-link" data-scroll-target="#transition-conditions"><span class="header-section-number">9.5</span> Transition Conditions</a></li>
+  </ul></li>
+  <li><a href="#rules-for-evolution" id="toc-rules-for-evolution" class="nav-link" data-scroll-target="#rules-for-evolution"><span class="header-section-number">10</span> 3. Rules for Evolution</a></li>
+  <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples"><span class="header-section-number">11</span> 4. Examples</a>
+  <ul class="collapse">
+  <li><a href="#example-1-simple-sequence" id="toc-example-1-simple-sequence" class="nav-link" data-scroll-target="#example-1-simple-sequence"><span class="header-section-number">11.1</span> Example 1: Simple Sequence</a></li>
+  </ul></li>
+  <li><a href="#grafcet-to-ladder-diagram" id="toc-grafcet-to-ladder-diagram" class="nav-link" data-scroll-target="#grafcet-to-ladder-diagram"><span class="header-section-number">12</span> Grafcet to Ladder Diagram</a>
+  <ul class="collapse">
+  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises"><span class="header-section-number">12.1</span> Exercises</a></li>
+  </ul></li>
+  <li><a href="#common-mistakes" id="toc-common-mistakes" class="nav-link" data-scroll-target="#common-mistakes"><span class="header-section-number">13</span> Common Mistakes</a></li>
+  </ul>
+</nav>
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">GRAFCET - Funcional Graph of Stage-Transition Control</span></h1>
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">GRAFCET: Automation and Control of Processes</span></h1>
 </div>
 
 
@@ -178,7 +204,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Thomas M. Rudolf </p>
+             <p>Prof.&nbsp;Thomas M. Rudolf </p>
           </div>
   </div>
     
@@ -191,14 +217,79 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="stages-and-transition-conditions" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="stages-and-transition-conditions"><span class="header-section-number">6.1</span> Stages and transition conditions</h2>
+<section id="introduction" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Introduction</h1>
+<p>GRAFCET (Graphe Fonctionnel de Commande Étape Transition) is a graphical tool for describing the deterministic behavior of the control part of an automated system. It emerged in the 1970s through collaboration between manufacturers like Télémecanique and Aper, and organizations such as AFCET and ADEPA.</p>
 </section>
-<section id="rules-to-develop-a-grafcet" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="rules-to-develop-a-grafcet"><span class="header-section-number">6.2</span> Rules to develop a GRAFCET</h2>
+<section id="basic-principles" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> 1. Basic Principles</h1>
+<ul>
+<li>Models the sequential behavior of automated systems.</li>
+<li>Describes process evolution and triggering conditions.</li>
+<li>Uses stages, transitions, and actions.</li>
+</ul>
 </section>
-<section id="transformation-of-a-grafcet-into-a-ladder-diagram-language-ladder" class="level2" data-number="6.3">
-<h2 data-number="6.3" class="anchored" data-anchor-id="transformation-of-a-grafcet-into-a-ladder-diagram-language-ladder"><span class="header-section-number">6.3</span> Transformation of a GRAFCET into a ladder diagram language Ladder</h2>
+<section id="elements-of-grafcet" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> 2. Elements of GRAFCET</h1>
+<section id="stages" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="stages"><span class="header-section-number">9.1</span> Stages</h2>
+<p>Each stage represents a state in the process. The initial stage is marked with a double square.</p>
+</section>
+<section id="transitions" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="transitions"><span class="header-section-number">9.2</span> Transitions</h2>
+<p>Transitions connect stages and are triggered by specific conditions.</p>
+</section>
+<section id="links" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="links"><span class="header-section-number">9.3</span> Links</h2>
+<p>Links visually connect stages and transitions.</p>
+</section>
+<section id="actions" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="actions"><span class="header-section-number">9.4</span> Actions</h2>
+<p>Actions are associated with stages and define what the system does (e.g., activate motor, retract piston).</p>
+</section>
+<section id="transition-conditions" class="level2" data-number="9.5">
+<h2 data-number="9.5" class="anchored" data-anchor-id="transition-conditions"><span class="header-section-number">9.5</span> Transition Conditions</h2>
+<p>Types: - <strong>Active</strong>: CT[i] = F1 - <strong>Inactive</strong>: CT[i] = F1’ - <strong>Time-based</strong>: CT[i] = t/i/10 sec - <strong>Logical</strong>: CT[i] = F1·F2’·F3 - <strong>Unconditional</strong>: CT[i] = 1</p>
+</section>
+</section>
+<section id="rules-for-evolution" class="level1" data-number="10">
+<h1 data-number="10"><span class="header-section-number">10</span> 3. Rules for Evolution</h1>
+<ol type="1">
+<li>The process is broken into sequential stages.</li>
+<li>Actions may be associated with multiple stages.</li>
+<li>A stage activates when the previous stage and its transition condition are active.</li>
+<li>Transition activation deactivates the previous stage.</li>
+<li>Stage 0 must be active to start the cycle.</li>
+</ol>
+</section>
+<section id="examples" class="level1" data-number="11">
+<h1 data-number="11"><span class="header-section-number">11</span> 4. Examples</h1>
+<section id="example-1-simple-sequence" class="level2" data-number="11.1">
+<h2 data-number="11.1" class="anchored" data-anchor-id="example-1-simple-sequence"><span class="header-section-number">11.1</span> Example 1: Simple Sequence</h2>
+<p>´´´plaintext Sequence: <code>A+ A-</code></p>
+<p>plaintext Stage 0 → a0 ∙ INICIO Stage 1 → a+ Stage 2 → a- ´´´ ## Example 2: Traffic Light - Start button initiates continuous sequence. - Timers control light durations. - Ladder logic uses Latch/Unlatch for stage control. ## Example 3: Crane Control - Limit switches: S1, S2 (vertical), S3, S4 (horizontal) - Motors: MV (vertical), MH (horizontal) - Uses timers and conditional transitions.</p>
+</section>
+</section>
+<section id="grafcet-to-ladder-diagram" class="level1" data-number="12">
+<h1 data-number="12"><span class="header-section-number">12</span> Grafcet to Ladder Diagram</h1>
+<p>Conversion Steps - Activate E0 to start. - Use Latch/Unlatch for stage control. - Actions linked to stages. - Conditioned actions use timers and switches. ## Ladder Logic Snippet ´´´plaintext E[i-1] + CT[i-1] → Latch E[i] E[i] → Execute Action ´´´</p>
+<section id="exercises" class="level2" data-number="12.1">
+<h2 data-number="12.1" class="anchored" data-anchor-id="exercises"><span class="header-section-number">12.1</span> Exercises</h2>
+<ul>
+<li>Stacker: Sequence control for stacking operation.</li>
+<li>Parking Barrier: Delay-based barrier control using sensors.</li>
+<li>Mobile Movement: Bidirectional movement with reset and stop logic.</li>
+<li>Scale: Gate control based on weight thresholds. # Advanced Constructs ### Conditional Transitions Only one path activates based on conditions. ### Simultaneous Sequences Parallel execution using dual lines. ### Jumps Allows skipping intermediate stages.</li>
+</ul>
+</section>
+</section>
+<section id="common-mistakes" class="level1" data-number="13">
+<h1 data-number="13"><span class="header-section-number">13</span> Common Mistakes</h1>
+<ul>
+<li>Misconfigured transition conditions.</li>
+<li>Incorrect simultaneous start/end.</li>
+<li>Nested simultaneous sequences without proper separation.</li>
+</ul>
 
 
 </section>
