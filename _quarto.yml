@@ -10,7 +10,7 @@ book:
   chapters:
     - index.qmd
     - chapter00.qmd
-    part "Chapters"
+    - part: "Chapters"
       chapters: 
         - chapter01.qmd
         - chapter02.qmd 
@@ -18,8 +18,8 @@ book:
         - chapter04.qmd
         - chapter05.qmd
         - chapter06.qmd      
-    part: "About"
-      chapters:
+    - part: "About"
+        chapters:
         - about.qmd
 website:
   title: "HOME" # "Automatation and Industrial Robots"
