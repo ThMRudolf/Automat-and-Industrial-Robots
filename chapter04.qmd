@@ -1,12 +1,105 @@
 ---
-title: "GRAFCET - Funcional Graph of Stage-Transition Control"
-author: "Thomas M. Rudolf"
-format: html
-editor: visual
+title: "GRAFCET: Automation and Control of Processes"
+author: "Prof. Thomas M. Rudolf"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    theme: cosmo
 ---
 
-## Stages and transition conditions
+# Introduction
 
-## Rules to develop a GRAFCET
+GRAFCET (Graphe Fonctionnel de Commande Étape Transition) is a graphical tool for describing the deterministic behavior of the control part of an automated system. It emerged in the 1970s through collaboration between manufacturers like Télémecanique and Aper, and organizations such as AFCET and ADEPA.
 
-## Transformation of a GRAFCET into a ladder diagram language Ladder
+# 1. Basic Principles
+
+- Models the sequential behavior of automated systems.
+- Describes process evolution and triggering conditions.
+- Uses stages, transitions, and actions.
+
+# 2. Elements of GRAFCET
+
+## Stages
+
+Each stage represents a state in the process. The initial stage is marked with a double square.
+
+## Transitions
+
+Transitions connect stages and are triggered by specific conditions.
+
+## Links
+
+Links visually connect stages and transitions.
+
+## Actions
+
+Actions are associated with stages and define what the system does (e.g., activate motor, retract piston).
+
+## Transition Conditions
+
+Types:
+- **Active**: CT[i] = F1
+- **Inactive**: CT[i] = F1'
+- **Time-based**: CT[i] = t/i/10 sec
+- **Logical**: CT[i] = F1·F2'·F3
+- **Unconditional**: CT[i] = 1
+
+# 3. Rules for Evolution
+
+1. The process is broken into sequential stages.
+2. Actions may be associated with multiple stages.
+3. A stage activates when the previous stage and its transition condition are active.
+4. Transition activation deactivates the previous stage.
+5. Stage 0 must be active to start the cycle.
+
+# 4. Examples
+
+## Example 1: Simple Sequence
+´´´plaintext
+Sequence: `A+ A-`
+
+plaintext
+Stage 0 → a0 ∙ INICIO
+Stage 1 → a+
+Stage 2 → a-
+´´´
+## Example 2: Traffic Light
+- Start button initiates continuous sequence.
+- Timers control light durations.
+- Ladder logic uses Latch/Unlatch for stage control.
+## Example 3: Crane Control
+- Limit switches: S1, S2 (vertical), S3, S4 (horizontal)
+- Motors: MV (vertical), MH (horizontal)
+- Uses timers and conditional transitions.
+
+# Grafcet to Ladder Diagram
+Conversion Steps
+- Activate E0 to start.
+- Use Latch/Unlatch for stage control.
+- Actions linked to stages.
+- Conditioned actions use timers and switches.
+## Ladder Logic Snippet
+´´´plaintext
+E[i-1] + CT[i-1] → Latch E[i]
+E[i] → Execute Action
+´´´
+
+## Exercises
+- Stacker: Sequence control for stacking operation.
+- Parking Barrier: Delay-based barrier control using sensors.
+- Mobile Movement: Bidirectional movement with reset and stop logic.
+- Scale: Gate control based on weight thresholds.
+# Advanced Constructs
+### Conditional Transitions
+Only one path activates based on conditions.
+### Simultaneous Sequences
+Parallel execution using dual lines.
+### Jumps
+Allows skipping intermediate stages.
+
+# Common Mistakes
+- Misconfigured transition conditions.
+- Incorrect simultaneous start/end.
+- Nested simultaneous sequences without proper separation.
