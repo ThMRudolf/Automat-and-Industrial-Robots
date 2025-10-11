@@ -1,81 +1,59 @@
 ---
-title: "About the Lecture"
-author: "Thomas M. Rudolf"
-format: html
+title: "Automation and Process Control" #Automation and Industrial Robots" Automation and Process Control
+output: 
+  html_document:
+    toc: true
+author: Thomas M. Rudolf
 editor: visual
+email_address: thomas.rudolf@itam.mx
+toc: false
+toc-title: "Index 2024-3"
 ---
 
-## General Information about the lecture
+# Introduction
 
-### Schedules
+-   Definition of Automation
 
--   Theory: Mon / Wed, 12:30-14:00 hrs
+-   Process Control
 
--   Laboratory:
+-   Types of different Industrial Processes
 
-    -   G001 Fri 11:00-14:00 hrs
+# Pneumatic and Electro-pneumatic Automatization
 
-    -   G002 Fri 16:00-19:00 hrs
+-   Elements of a neumatic circuit
 
-### Lecturers
+-   Elements of a electic circuit, electrical acutators and control elements
 
--   Prof. Thomas M. Rudolf (theory)
--   Prof. Claudia Victoria Olivar Jiménez (laboratory)
+-   Automatization of neumatic and electroneumatic sequences
 
-### Location
+# Programable Logical Control (PLC)
 
--   Aula LMINT
+-   Logical Operations with ladder diagram
 
-## Description and Objetives
+-   Input and output variables, internal registers of PLC
 
--   Address concepts related to Industrial Automation systems.
--   Control methods applied mainly to sequential processes and the theory related to Grafcet will also be studied.
--   Application of emerging technologies to automate industrial processes. The structure and programming logic for Programmable Logic Controllers (PLC) will be studied.
+-   Different componentens and instructions of PLC programation
 
-## What is covered in this lecture:
+# GRAFCET - Funcional Graph of Stage-Transition Control
 
-![](figures/fig00-001.png)
+-   Stages and transition conditions
 
-## What is not covered in this lecture:
+-   Rules to develope a GRAFCET
 
--   It is not a lectur about pneumatics nor hydraulics.
--   It is not a fluid dynamics lecture.
+-   Transformation of a GRAFCET into a ladder diagram lenguaje Ladder
 
-## Evaluation
+# State flow
 
-+----------------------------------------------------------+------------+
-| Type                                                     | percentage |
-+==========================================================+============+
-| 2 Parcials:                                              | 25 % each  |
-|                                                          |            |
-| -   1st partial: 30/09/2024 or 02/10/2024 (1 hr, 20 min) |            |
-|                                                          |            |
-| -   2nd partial: 04/11/2024 or 06/11/2024 (1 hr, 20 min) |            |
-+----------------------------------------------------------+------------+
-| Final Project (Exam final: tbd (LMINT))                  | 30%        |
-+----------------------------------------------------------+------------+
-| Laboratory                                               | 20%        |
-+----------------------------------------------------------+------------+
+-   Introduction to state flow in Matlab
 
-## Course rules
+-   States and transitions
 
--   Maximum 10 minutes delay.
--   **NO** re-examinations.
--   Sanction for plagiarism according to the regulations
--   Food is not allowed in the lab
+-   Control a simulation enviroment with state flow
 
-## Topics
+-   Control a plant with state flow
 
--   Introduction to automation
+# Industrial Robots (optional)
 
--   Pneumatic and Electro-pneumatic Automatization
+-   Introductions to industrial robots
 
--   PLC programmable controllers
-
--   Grafcet
-
--   State Flow
-
--   Industrial Robots (optional)
-
--   ![](images//fig00-002.png)
+-   Security topics for usage of industrial robots
