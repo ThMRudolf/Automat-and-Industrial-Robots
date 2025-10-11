@@ -111,7 +111,7 @@ GRAFCET (Graphical Functional Control Step Transition) is a graphical tool for m
 
 ![](images/Captura%20de%20pantalla%202025-02-19%20232652.png)
 
-![](fimages/Captura%20de%20pantalla%202025-02-19%20232703.png)
+![](images/Captura%20de%20pantalla%202025-02-19%20232703.png)
 
 ## Latch and Unlatch Instructions
 
@@ -130,7 +130,7 @@ Sequencers allow executing predefined step-based operations. Each step triggers 
 
 -   **Timing Control for Sequential Execution**
 
-    ![](fimages/Captura%20de%20pantalla%202025-02-20%20002252.png)
+    ![](images/Captura%20de%20pantalla%202025-02-20%20002252.png)
 
 ## Subroutines in PLCs
 
