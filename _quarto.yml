@@ -5,8 +5,6 @@ project:
   type: book
   output-dir: docs
 book:
-  sidebar: 
-      numbered: false
   title: "Automatation and Industrial Robots" 
   author: "Thomas M. Rudolf"
   chapters:
@@ -33,6 +31,7 @@ website:
         text: Home
   
   sidebar:
+    numbered: false
     style: docked
     search: true
     contents:
