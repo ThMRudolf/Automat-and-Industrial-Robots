@@ -4,6 +4,7 @@ author: "Thomas M. Rudolf"
 format: html
 editor: visual
 numbered: false
+number-sections: false
 toc: false
 ---
 
