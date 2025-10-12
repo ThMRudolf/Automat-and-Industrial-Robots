@@ -5,6 +5,9 @@ project:
   type: book
   output-dir: docs
 book:
+  numbered: true
+  sidebar: 
+    numbered: false
   title: "Automatation and Industrial Robots" 
   author: "Thomas M. Rudolf"
   chapters:
