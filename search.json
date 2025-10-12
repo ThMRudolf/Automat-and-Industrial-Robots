@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Automatation and Industrial Robots",
     "section": "",
-    "text": "1 General Information about the lecture",
+    "text": "General Information about the lecture",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>About the Lecture</span>"
     ]
@@ -13,8 +13,8 @@
     "objectID": "index.html#schedules",
     "href": "index.html#schedules",
     "title": "Automatation and Industrial Robots",
-    "section": "1.1 Schedules",
-    "text": "1.1 Schedules\n\nTheory: Mon / Wed, 12:30-14:00 hrs\nLaboratory:\n\nG001 Fri 11:00-14:00 hrs\nG002 Fri 16:00-19:00 hrs",
+    "section": "Schedules",
+    "text": "Schedules\n\nTheory: Mon / Wed, 12:30-14:00 hrs\nLaboratory:\n\nG001 Fri 11:00-14:00 hrs\nG002 Fri 16:00-19:00 hrs",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>About the Lecture</span>"
     ]
@@ -23,8 +23,8 @@
     "objectID": "index.html#lecturers",
     "href": "index.html#lecturers",
     "title": "Automatation and Industrial Robots",
-    "section": "1.2 Lecturers",
-    "text": "1.2 Lecturers\n\nProf. Thomas M. Rudolf (theory)\nProf. Claudia Victoria Olivar Jiménez (laboratory)",
+    "section": "Lecturers",
+    "text": "Lecturers\n\nProf. Thomas M. Rudolf (theory)\nProf. Claudia Victoria Olivar Jiménez (laboratory)",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>About the Lecture</span>"
     ]
@@ -33,8 +33,8 @@
     "objectID": "index.html#location",
     "href": "index.html#location",
     "title": "Automatation and Industrial Robots",
-    "section": "1.3 Location",
-    "text": "1.3 Location\n\nAula LMINT",
+    "section": "Location",
+    "text": "Location\n\nAula LMINT",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>About the Lecture</span>"
     ]
