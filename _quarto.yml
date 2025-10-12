@@ -7,7 +7,7 @@ project:
 book:
   numbered: true
   sidebar: 
-    numbered: false
+      numbered: false
   title: "Automatation and Industrial Robots" 
   author: "Thomas M. Rudolf"
   chapters:
