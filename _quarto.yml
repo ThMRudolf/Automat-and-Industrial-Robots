@@ -7,7 +7,6 @@ project:
 book:
   title: "Automatation and Industrial Robots" 
   author: "Thomas M. Rudolf"
-  numbered: false
   chapters:
     - index.qmd
     - chapter00.qmd
