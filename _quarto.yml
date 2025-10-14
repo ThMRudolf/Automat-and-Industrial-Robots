@@ -2,12 +2,28 @@ execute:
   freeze: auto
 
 project:
-  type: website
+  type: book
   output-dir: docs
-  #author: "Thomas M. Rudolf"
-
+book:
+  title: "Automatation and Industrial Robots" 
+  author: "Thomas M. Rudolf"
+  chapters:
+    - index.qmd
+    - chapter00.qmd
+    - part: "Chapters"
+      chapters: 
+        - chapter01.qmd
+        - chapter02.qmd 
+        - chapter03.qmd
+        - chapter04.qmd
+        - chapter05.qmd
+        - chapter06.qmd      
+    - part: "About"
+      chapters:
+        - about.qmd
 website:
   title: "HOME" # "Automatation and Industrial Robots"
+  #author: "Thomas M. Rudolf"
   
   navbar:
     left:
@@ -15,6 +31,7 @@ website:
         text: Home
   
   sidebar:
+    numbered: false
     style: docked
     search: true
     contents:
@@ -47,7 +64,6 @@ website:
       - section: About
         contents: 
           - about.qmd
-      
 format:
   html:
     theme: default
@@ -55,5 +71,4 @@ format:
     toc: false
     toc-location: left
     toc-depth: 3
-
 editor: visual

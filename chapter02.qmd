@@ -1,18 +1,16 @@
-<<<<<<< HEAD
 ---
-title: "Pneumatic and Electro-pneumatic Automatization"
+title: "Elements of a pneumatic circuit"
 author: "Thomas M. Rudolf"
 format: html
 editor: visual
 ---
-
 ## Elements of a pneumatic circuit
 
 The word ‘Pneumatics’ is derived from the Greek ‘neuma’ (air or breath). Originally, the term pneumatics designated the science of the movement and properties of air. This is the branch of engineering that deals with the study and application of compressed air, its generation, transmission and control.
 
 The design of devices that used air energy dates back to the 18th century (with the pneumatic rifle). “Modern” devices: pneumatic rock drill, pneumatic brakes. “Modern” pneumatics was born in the 1950s, when techniques and forms of air energy control were introduced in industrial processes.
 
-#### Why compressed air?
+### Why compressed air?
 
 -   It is **abundant**. It is available in unlimited quantities.
 
@@ -24,23 +22,21 @@ The design of devices that used air energy dates back to the 18th century (with 
 
 -   It is **clean**. In case of stagnation, it does not produce dirt.
 
-#### Comparison with other technologies
+### Comparison with other technologies
 
-+--------------------------+--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+---------------------------------------------------------------------------+---+
-| ### Leaks                | ### Electricity                                                                | ### Hydraulic                                                                  | ### Pneumatic                                                             |   |
-|                          |                                                                                |                                                                                |                                                                           |   |
-|                          |                                                                                | Pollution                                                                      | Apart from energy loss, no disadvantages.                                 |   |
-+--------------------------+--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+---------------------------------------------------------------------------+---+
-|                          |                                                                                |                                                                                |                                                                           |   |
-+--------------------------+--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+---------------------------------------------------------------------------+---+
-| Environmental influences | Explosion hazard in certain environments; relatively sensitive to temperature. | Sensitive to temperature fluctuations; Fire hazard in case of leaks.           | Does not cause explosions; Insensitive to temperatures.                   |   |
-+--------------------------+--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+---------------------------------------------------------------------------+---+
-| Energy storage           | Difficult and only in small quantities using batteries                         | Within certain limits, using gases                                             | Easy                                                                      |   |
-+--------------------------+--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+---------------------------------------------------------------------------+---+
-| Energy transport         | Unlimited, but with energy loss                                                | Up to 100 m with flow velocity of v = 2-6 m/s, signal velocity up to 1000 m/s. | Up to 1000 m with flow velocity v = 20-40 m/s, signal velocity 20-40 m/s. |   |
-+--------------------------+--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+---------------------------------------------------------------------------+---+
-| Working speed            |                                                                                | v = 0.5 m/s                                                                    | v = 1.5 m/s                                                               |   |
-+--------------------------+--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+---------------------------------------------------------------------------+---+
++--------------------------+--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+---------------------------------------------------------------------------+--------+--------+--------+
+|                          | **Electricity**                                                                | **Hydraulic**                                                                  | **Pneumatic**                                                             |        |        |        |
++--------------------------+--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+---------------------------------------------------------------------------+--------+--------+--------+
+| Leaks                    |                                                                                | Pollution                                                                      | Apart from energy loss, no disadvantages.                                 |        |        |        |
++--------------------------+--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+---------------------------------------------------------------------------+--------+--------+--------+
+| Environmental influences | Explosion hazard in certain environments; relatively sensitive to temperature. | Sensitive to temperature fluctuations; Fire hazard in case of leaks.           | Does not cause explosions; Insensitive to temperatures.                   |        |        |        |
++--------------------------+--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+---------------------------------------------------------------------------+--------+--------+--------+
+| Energy storage           | Difficult and only in small quantities using batteries                         | Within certain limits, using gases                                             | Easy                                                                      |        |        |        |
++--------------------------+--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+---------------------------------------------------------------------------+--------+--------+--------+
+| Energy transport         | Unlimited, but with energy loss                                                | Up to 100 m with flow velocity of v = 2-6 m/s, signal velocity up to 1000 m/s. | Up to 1000 m with flow velocity v = 20-40 m/s, signal velocity 20-40 m/s. |        |        |        |
++--------------------------+--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+---------------------------------------------------------------------------+--------+--------+--------+
+| Working speed            |                                                                                | v = 0.5 m/s                                                                    | v = 1.5 m/s                                                               |        |        |        |
++--------------------------+--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+---------------------------------------------------------------------------+--------+--------+--------+
 
 : Comparison with other technologies
 
@@ -66,7 +62,7 @@ Air density is significantly smaller than that of oil (used in hydraulics). Ther
 | -   The tools and operating elements are safe, when they are overloaded they simply stop working.   |                                                                                                                                                                  |
 +-----------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-### Basic physical characteristics of gases
+## Basic physical characteristics of gases
 
 *Composition:* Types of gases that make up the air under consideration. Example: dry air at sea level is composed mainly of Nitrogen (78%) and Oxygen (20.99%). *Shape and volume:* They have no defined shape or volume. They acquire the shape and volume of the tank that contains them. *Cost (Flow):* It is the quantity of fluid that circulates through a section of the duct per unit of time.
 
@@ -76,7 +72,7 @@ Consider the behavior of air with water under defined circumstances: temperature
 
 When the compressor compresses the 4 $𝑚^3$. to form 1 $𝑚^3$, the $4×8.7=34.8 g$ of water cannot hold in it. The $𝑚^3$ can hold at most 17.4 g of water. The other $2×8.7=17.4g$ fall as drops.
 
-![fig. 2.1 effect on air with relative humidity when compressed](figures/fig02-001.png){width="60%"}
+![fig. 2.1 effect on air with relative humidity when compressed](images/fig02-001.png){width="60%"}
 
 *Conclusion:* When air is compressed, water $H_2O$ liquefies from gaseous state to liquid state. The water vapor in the air is also compressed and the result is similar to squeezing a sponge. The compressed air reaches a saturation of 100% relative humidity inside the tank. The separated water can be drained via a drainage system.
 
@@ -88,11 +84,11 @@ The flow is defined as the quantity of fluid that circulates through a section o
 
 -   $[v] = [\frac{m}{s}]$
 
-    ![Fig. 2.2 graphical description of flow \$Q\$](figures/fig02-002.png){width="352"}
+    ![Fig. 2.2 graphical description of flow \$Q\$](images/fig02-002.png){width="352"}
 
 *Gas pressure and gas laws:* The relation between force $F$ and pressure $p$ is related by its contact cross section area A: $F=pA$. The unit in Pascal $[Pa]=[\frac{N}{m^2}]$in the international system (SI) and it is $[psi]=[\frac{lb}{in^2}]$ in english units. For many industrial aplications, one uses $bar$. The relation between $bar$ and $Pa$ is $1 bar = 10^5 Pa =100kPa$. The pressure that air exerts “naturally” on the Earth's surface due to its weight is called atmospheric pressure (Atm): $1 atm = 1.01325 bar = 101,325 P$. Due to the weight of the air column above: it decreases at higher altitudes and increases at lower altitudes.
 
-![fig. 2.3 pressure defined by force and cross section](figures/fig02-003.png){width="31%"}
+![fig. 2.3 pressure defined by force and cross section](images/fig02-003.png){width="31%"}
 
 *Gauge pressure (relative pressure)* indicated by the manometers (\$bar\$ or $ps$). It is the excess of air pressure with respect to atmospheric pressure. It is abbreviated $p_m$ ($p_g$ in English).
 
@@ -102,7 +98,7 @@ For simplification, one approximates $1 atm \propto 1 bar$
 
 Another unit of pressure measurement is the $torr$ or $mmHg$. It is equivalent to the pressure exerted by a one millimeter column of mercury. However, we won´t use this units in our course.
 
-![](figures/fig02-004.png){width="60%"}
+![](images/fig02-004.png){width="60%"}
 
 $Equivalences$:
 
@@ -114,7 +110,7 @@ The gas behaviour can be explained by several laws, explained as follows with $V
 
     Fluid pressure is transmitted equally in all directions. The force exerted by a piston is equal to the product of the effective area times the air pressure: Example of a Hydraulic Press:
 
-![](figures/fig02-005.png){fig-align="center" width="50%"}
+![](images/fig02-005.png){fig-align="center" width="50%"}
 
 ### Gas Law´s
 
@@ -190,9 +186,11 @@ Where:
 
 The follwoing part explains the components required to use pneumatic systems. The structure is composed of 5 main components: Power Supply, Actuators, Conductors, Control valves and Air conditioning.
 
-| Structure | Example |
-|----|----|
++---------------------------------------------------+---------------------------------------------------+
+| Structure                                         | Example                                           |
++===================================================+===================================================+
 | ![](images/clipboard-2333093332.png){width="60%"} | ![](images/clipboard-3902604058.png){width="80%"} |
++---------------------------------------------------+---------------------------------------------------+
 
 ![](images/clipboard-1185823059.png){fig-align="center" width="60%"}
 
@@ -291,6 +289,7 @@ Example: Found in HVAC systems and large industrial plants.
 Summary Table: Compressor Types
 
 ### Pneumatic actuators.
+
 A pneumatic actuator is a device that converts compressed air energy into mechanical motion. They are widely used in automation, manufacturing, robotics, and process industries.
 
 The most common types are linear actuators (cylinders) and rotary actuators.
@@ -303,31 +302,47 @@ Pneumatic actuators are attractive because they are simple, robust, and cost-eff
 
 **Advantages of Pneumatic Actuators**
 
++------------------------------+------------------------------------------------------------------------------------------------------------------+
 | Advantage                    | Explanation                                                                                                      |
-| ---------------------------- | ---------------------------------------------------------------------------------------------------------------- |
++==============================+==================================================================================================================+
 | **Simplicity & Reliability** | Few moving parts → easy to maintain, long service life.                                                          |
++------------------------------+------------------------------------------------------------------------------------------------------------------+
 | **High Speed**               | Can achieve rapid response times; suitable for pick-and-place, packaging, etc.                                   |
++------------------------------+------------------------------------------------------------------------------------------------------------------+
 | **Cost-Effective**           | Components (cylinders, valves, fittings) are relatively inexpensive compared to electric or hydraulic actuators. |
++------------------------------+------------------------------------------------------------------------------------------------------------------+
 | **Clean Operation**          | Air is non-contaminating, suitable for food, pharma, or cleanroom applications.                                  |
++------------------------------+------------------------------------------------------------------------------------------------------------------+
 | **Safety**                   | No risk of sparks (compared to electric actuators) → usable in explosive environments.                           |
++------------------------------+------------------------------------------------------------------------------------------------------------------+
 | **Force-to-Weight Ratio**    | Pneumatics can generate relatively large forces for their size.                                                  |
++------------------------------+------------------------------------------------------------------------------------------------------------------+
 | **Overload Tolerance**       | Can stall without damage (unlike many electric motors).                                                          |
-| **Easy Integration**         | Compatible with various control systems (manual, PLC, etc.).       
-
++------------------------------+------------------------------------------------------------------------------------------------------------------+
+| **Easy Integration**         | Compatible with various control systems (manual, PLC, etc.).                                                     |
++------------------------------+------------------------------------------------------------------------------------------------------------------+
 
 **Risks and Limitations of Pneumatic Actuators**
 
++----------------------------+-----------------------------------------------------------------------------------------------------------------------------+
 | Limitation / Risk          | Explanation                                                                                                                 |
-| -------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
++============================+=============================================================================================================================+
 | **Compressibility of Air** | Air is compressible → motion control is less precise, positioning is not as accurate as with electric or hydraulic systems. |
++----------------------------+-----------------------------------------------------------------------------------------------------------------------------+
 | **Energy Inefficiency**    | Compressing air consumes a lot of energy; leaks waste power → high operational cost if system is not well maintained.       |
++----------------------------+-----------------------------------------------------------------------------------------------------------------------------+
 | **Noise**                  | Exhaust air and compressors generate noise, which may require mitigation.                                                   |
++----------------------------+-----------------------------------------------------------------------------------------------------------------------------+
 | **Force Limitations**      | While strong for size, pneumatics cannot achieve the extremely high forces that hydraulics can.                             |
++----------------------------+-----------------------------------------------------------------------------------------------------------------------------+
 | **Speed Variability**      | Speed depends on air pressure, line length, leaks, and load → consistency can be a challenge.                               |
++----------------------------+-----------------------------------------------------------------------------------------------------------------------------+
 | **Maintenance Needs**      | Leaks are common; require regular inspection of seals, hoses, and fittings.                                                 |
++----------------------------+-----------------------------------------------------------------------------------------------------------------------------+
 | **Limited Stroke Length**  | Linear cylinders are typically limited to \~2–3 meters max; longer travel requires other technologies.                      |
++----------------------------+-----------------------------------------------------------------------------------------------------------------------------+
 | **Safety Hazards**         | Sudden release of compressed air can cause injury; uncontrolled movement may occur if air supply is lost.                   |
-
++----------------------------+-----------------------------------------------------------------------------------------------------------------------------+
 
 ### Pneumatic valves.
 

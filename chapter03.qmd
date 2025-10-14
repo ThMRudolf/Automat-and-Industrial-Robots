@@ -29,7 +29,7 @@ A typical PLC consists of:
 -   **Diagnostics tools**
 
 | Feature | Importance / Advantage | Challenges |
-|----|----|----|
+|------------------------|------------------------|------------------------|
 | **Modularity & Scalability** | Easy to expand with more I/O, CPUs, or communication modules → adaptable for small and large systems. | Compatibility and configuration management can get complex. |
 | **Robustness & Reliability** | Designed for 24/7 operation in industrial environments with high noise, vibration, and temperature. | Higher cost compared to microcontrollers or simple relays. |
 | **I/O Flexibility** | Supports both digital and analog inputs/outputs; also high-speed counters, motion modules, etc. | Wiring effort, calibration, and complexity with fast I/O. |
@@ -52,13 +52,13 @@ A PLC consists of several key components: 1. **CPU (Central Processing Unit)**: 
 -   **Compact PLC**: A single unit containing all essential components.
 -   **Modular PLC**: Allows separate modules for power, processing, and I/O, providing flexibility.
 
-![](figures/Captura%20de%20pantalla%202025-02-19%20230523.png)
+![](images/Captura%20de%20pantalla%202025-02-19%20230523.png)
 
 ## PLC Scan Cycle
 
 A PLC operates in a repetitive cycle: 1. **Input Scan**: Reads the status of input devices. 2. **Program Execution**: Processes logic based on the input conditions. 3. **Output Scan**: Updates the status of output devices. 4. **Housekeeping**: Manages internal operations such as diagnostics and communication.
 
-![](figures/Captura%20de%20pantalla%202025-02-19%20232122.png)
+![](images/Captura%20de%20pantalla%202025-02-19%20232122.png)
 
 ## Programming a PLC
 
@@ -75,7 +75,7 @@ A PLC operates in a repetitive cycle: 1. **Input Scan**: Reads the status of inp
 -   **Horizontal rungs**: Define logical operations.
 -   **Contacts and coils**: Represent input conditions and outputs.
 
-![](figures/Captura%20de%20pantalla%202025-02-19%20230747.png)
+![](images/Captura%20de%20pantalla%202025-02-19%20230747.png)
 
 ## Logical Operations with Ladder Diagram
 
@@ -90,7 +90,7 @@ GRAFCET (Graphical Functional Control Step Transition) is a graphical tool for m
 -   **Links**: Connect different process elements.
 
     \
-    ![](figures/Captura%20de%20pantalla%202025-02-19%20230001.png)
+    ![](images/Captura%20de%20pantalla%202025-02-19%20230001.png)
 
 ## Timers and Counters in PLCs
 
@@ -102,16 +102,16 @@ GRAFCET (Graphical Functional Control Step Transition) is a graphical tool for m
 
 -   **Retentive Timer (RTO)**: Holds accumulated time value.
 
-    ![](figures/Captura%20de%20pantalla%202025-02-19%20232345.png)
+    ![](images/Captura%20de%20pantalla%202025-02-19%20232345.png)
 
 ### Counter Functions
 
 -   **Up-Counter (CTU)**: Increments when an event occurs.
 -   **Down-Counter (CTD)**: Decrements when an event occurs.
 
-![](figures/Captura%20de%20pantalla%202025-02-19%20232652.png)
+![](images/Captura%20de%20pantalla%202025-02-19%20232652.png)
 
-![](figures/Captura%20de%20pantalla%202025-02-19%20232703.png)
+![](images/Captura%20de%20pantalla%202025-02-19%20232703.png)
 
 ## Latch and Unlatch Instructions
 
@@ -130,7 +130,7 @@ Sequencers allow executing predefined step-based operations. Each step triggers 
 
 -   **Timing Control for Sequential Execution**
 
-    ![](figures/Captura%20de%20pantalla%202025-02-20%20002252.png)
+    ![](images/Captura%20de%20pantalla%202025-02-20%20002252.png)
 
 ## Subroutines in PLCs
 
@@ -140,7 +140,7 @@ Subroutines allow modular programming by dividing a large program into smaller, 
 -   **Code Reusability**
 -   **Simplified Debugging**
 
-![](figures/Captura%20de%20pantalla%202025-02-20%20002507.png)
+![](images/Subroutines.png)
 
 ## RSLogix and PLC Programming Software
 
@@ -168,7 +168,7 @@ Subroutines allow modular programming by dividing a large program into smaller, 
 
 6.  Click **OK**.
 
-    ![](figures/Captura%20de%20pantalla%202025-02-20%20000051.png)
+    ![](images/Captura%20de%20pantalla%202025-02-20%20000051.png)
 
 ## Example Programs in Ladder Logic
 
