@@ -13,6 +13,7 @@ book:
     - part: "Chapters"
       chapters: 
         - chapter01.qmd
+            number-offset: 1   # explicitly start numbering here
         - chapter02.qmd 
         - chapter03.qmd
         - chapter04.qmd
