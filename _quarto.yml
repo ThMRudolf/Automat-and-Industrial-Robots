@@ -5,31 +5,25 @@ project:
   type: book
   output-dir: docs
 book:
-  title: "Automatation and Industrial Robots" 
+  title: "Automation and Industrial Robots"
   author: "Thomas M. Rudolf"
   chapters:
     - index.qmd
+      numbered: false
     - chapter00.qmd
+      numbered: false
     - part: "Chapters"
-      chapters: 
+      chapters:
         - chapter01.qmd
-            number-offset: 1   # explicitly start numbering here
-        - chapter02.qmd 
+        - chapter02.qmd
         - chapter03.qmd
         - chapter04.qmd
         - chapter05.qmd
-        - chapter06.qmd      
+        - chapter06.qmd
     - part: "About"
       chapters:
         - about.qmd
-website:
-  title: "HOME" # "Automatation and Industrial Robots"
-  #author: "Thomas M. Rudolf"
-  
-  navbar:
-    left:
-      - href: index.qmd
-        text: Home
+
   
   sidebar:
     numbered: false
