@@ -5,37 +5,37 @@ format: html
 editor: visual
 ---
 
-# Introduction
+## Introduction
 
 The kinematic analysis of a robot is performed using the Denavit-Hartenberg convention. This method is essential for describing the transformations of the joints and links of an industrial robot. In this material, we discuss how the coordinate system is defined for each joint and how transformations are applied to calculate the position of the TCP (Tool Center Point).
 
----
+------------------------------------------------------------------------
 
-# Coordinate Systems
+## Coordinate Systems
 
-- **Base Coordinate System**
-  
-  **Image: insert image of the base coordinate system setup for the robot**
+-   **Base Coordinate System**
 
-- **Joint Coordinate System**
-  
-  **Image: insert image of the joint coordinate system for the robot**
+    **Image: insert image of the base coordinate system setup for the robot**
 
-- **Cartesian Coordinate System**
-  
-  **Image: insert image of the Cartesian coordinate system used in the robot**
+-   **Joint Coordinate System**
 
----
+    **Image: insert image of the joint coordinate system for the robot**
 
-# Forward and Inverse Kinematics
+-   **Cartesian Coordinate System**
+
+    **Image: insert image of the Cartesian coordinate system used in the robot**
+
+------------------------------------------------------------------------
+
+## Forward and Inverse Kinematics
 
 Forward kinematics describes how the position and orientation of the TCP depend on the joint variables (angles and displacements). On the other hand, inverse kinematics involves calculating the joint angles from a desired TCP position.
 
 **Image: insert image showing the forward kinematics and inverse kinematics process**
 
----
+------------------------------------------------------------------------
 
-# Homogeneous Transformations
+## Homogeneous Transformations
 
 Homogeneous transformations are used to describe the position and orientation of links in three-dimensional space using 4x4 matrices. Below are examples of transformations.
 
@@ -43,51 +43,48 @@ Homogeneous transformations are used to describe the position and orientation of
 
 **Image: insert image of homogeneous transformation matrix for displacement and rotation**
 
----
+------------------------------------------------------------------------
 
-# Denavit-Hartenberg Parameters
+## Denavit-Hartenberg Parameters
 
-The Denavit-Hartenberg parameterization uses four parameters to describe each link of the robot:  
-1. \( \theta_n \) - Angle between the axes \( x_{n-1} \) and \( x_n \), rotated about \( z_{n-1} \).
-2. \( d_n \) - Distance between the origins \( O_n \) and \( O_{n-1} \) along the \( z_{n-1} \) axis.
-3. \( a_n \) - Perpendicular distance between the \( z_{n-1} \) and \( z_n \) axes.
-4. \( \alpha_n \) - Angle between the \( z_{n-1} \) and \( z_n \) axes, rotated about \( x_n \).
+The Denavit-Hartenberg parameterization uses four parameters to describe each link of the robot:\
+1. ( \theta*n ) - Angle between the axes ( x*{n-1} ) and ( x_n ), rotated about ( z\_{n-1} ). 2. ( d_n ) - Distance between the origins ( O_n ) and ( O\_{n-1} ) along the ( z\_{n-1} ) axis. 3. ( a_n ) - Perpendicular distance between the ( z\_{n-1} ) and ( z_n ) axes. 4. ( \alpha*n ) - Angle between the ( z*{n-1} ) and ( z_n ) axes, rotated about ( x_n ).
 
 **Image: insert image of Denavit-Hartenberg parameters with graphical representation of the robot's joints**
 
----
+------------------------------------------------------------------------
 
-## 6. Mathematical Model of a 6-DOF Robot
+### Mathematical Model of a 6-DOF Robot
 
 The model of a 6-degree-of-freedom robot is described by the transformations of each link, applying the Denavit-Hartenberg parameters to obtain the TCP position in the global coordinate system.
 
 **Image: insert image showing the transformation of the 6-DOF robot with all links and joints represented**
 
----
+------------------------------------------------------------------------
 
-## 7. Inverse Kinematics Ambiguities
+### Inverse Kinematics Ambiguities
 
 When solving inverse kinematics, multiple solutions for the joint angles can arise. These ambiguities occur because the positions of the higher axes depend on the positions of the lower axes. Approximation procedures exist for conventional robots.
 
 **Image: insert image showing inverse kinematics ambiguities and multiple solutions**
 
----
+------------------------------------------------------------------------
 
-## 8. Denavit-Hartenberg Transformation Exercise
+### Denavit-Hartenberg Transformation Exercise
 
 An exercise is presented to calculate the Denavit-Hartenberg transformation for a 6-DOF robot.
 
 **Image: insert image showing the Denavit-Hartenberg transformation calculation steps for a 6-DOF robot**
 
----
+------------------------------------------------------------------------
 
-## 9. Conclusion
+### Conclusion
 
 Kinematic analysis is essential for robot control and simulation. Using the Denavit-Hartenberg model, the position and orientation of the TCP can be efficiently calculated. Additionally, inverse kinematics is crucial for determining the joint angles in practical applications.
 
----
+------------------------------------------------------------------------
 
 ## References
 
-- Corke, Peter. "Robotics, Vision and Control".  
-- KUKA Robotics.
+-   Corke, Peter. "Robotics, Vision and Control".\
+-   KUKA Robotics.
