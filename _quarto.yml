@@ -9,9 +9,7 @@ book:
   author: "Thomas M. Rudolf"
   chapters:
     - index.qmd
-      numbered: false
     - chapter00.qmd
-      numbered: false
     - part: "Chapters"
       chapters:
         - chapter01.qmd
