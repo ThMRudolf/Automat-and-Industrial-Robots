@@ -42,71 +42,71 @@
   {
     "objectID": "chapter00.html",
     "href": "chapter00.html",
-    "title": "2  Automation and Process Control",
+    "title": "2  Preface",
     "section": "",
     "text": "2.1 Introduction",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Automation and Process Control</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Preface</span>"
     ]
   },
   {
     "objectID": "chapter00.html#introduction",
     "href": "chapter00.html#introduction",
-    "title": "2  Automation and Process Control",
+    "title": "2  Preface",
     "section": "",
     "text": "Definition of Automation\nProcess Control\nTypes of different Industrial Processes",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Automation and Process Control</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Preface</span>"
     ]
   },
   {
     "objectID": "chapter00.html#pneumatic-and-electro-pneumatic-automatization",
     "href": "chapter00.html#pneumatic-and-electro-pneumatic-automatization",
-    "title": "2  Automation and Process Control",
+    "title": "2  Preface",
     "section": "2.2 Pneumatic and Electro-pneumatic Automatization",
     "text": "2.2 Pneumatic and Electro-pneumatic Automatization\n\nElements of a neumatic circuit\nElements of a electic circuit, electrical acutators and control elements\nAutomatization of neumatic and electroneumatic sequences",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Automation and Process Control</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Preface</span>"
     ]
   },
   {
     "objectID": "chapter00.html#programable-logical-control-plc",
     "href": "chapter00.html#programable-logical-control-plc",
-    "title": "2  Automation and Process Control",
+    "title": "2  Preface",
     "section": "2.3 Programable Logical Control (PLC)",
     "text": "2.3 Programable Logical Control (PLC)\n\nLogical Operations with ladder diagram\nInput and output variables, internal registers of PLC\nDifferent componentens and instructions of PLC programation",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Automation and Process Control</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Preface</span>"
     ]
   },
   {
     "objectID": "chapter00.html#grafcet---funcional-graph-of-stage-transition-control",
     "href": "chapter00.html#grafcet---funcional-graph-of-stage-transition-control",
-    "title": "2  Automation and Process Control",
+    "title": "2  Preface",
     "section": "2.4 GRAFCET - Funcional Graph of Stage-Transition Control",
     "text": "2.4 GRAFCET - Funcional Graph of Stage-Transition Control\n\nStages and transition conditions\nRules to develope a GRAFCET\nTransformation of a GRAFCET into a ladder diagram lenguaje Ladder",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Automation and Process Control</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Preface</span>"
     ]
   },
   {
     "objectID": "chapter00.html#state-flow",
     "href": "chapter00.html#state-flow",
-    "title": "2  Automation and Process Control",
+    "title": "2  Preface",
     "section": "2.5 State flow",
     "text": "2.5 State flow\n\nIntroduction to state flow in Matlab\nStates and transitions\nControl a simulation enviroment with state flow\nControl a plant with state flow",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Automation and Process Control</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Preface</span>"
     ]
   },
   {
     "objectID": "chapter00.html#industrial-robots-optional",
     "href": "chapter00.html#industrial-robots-optional",
-    "title": "2  Automation and Process Control",
+    "title": "2  Preface",
     "section": "2.6 Industrial Robots (optional)",
     "text": "2.6 Industrial Robots (optional)\n\nIntroductions to industrial robots\nSecurity topics for usage of industrial robots",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Automation and Process Control</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Preface</span>"
     ]
   },
   {
