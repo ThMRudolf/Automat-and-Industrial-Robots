@@ -400,84 +400,73 @@
     "href": "chapter04.html",
     "title": "6  GRAFCET: Automation and Control of Processes",
     "section": "",
-    "text": "7 Introduction\nGRAFCET (Graphe Fonctionnel de Commande Étape Transition) is a graphical tool for describing the deterministic behavior of the control part of an automated system. It emerged in the 1970s through collaboration between manufacturers like Télémecanique and Aper, and organizations such as AFCET and ADEPA.",
+    "text": "6.1 Introduction\nGRAFCET (Graphe Fonctionnel de Commande Étape Transition) is a graphical tool for describing the deterministic behavior of the control part of an automated system. It emerged in the 1970s through collaboration between manufacturers like Télémecanique and Aper, and organizations such as AFCET and ADEPA.",
     "crumbs": [
       "Chapters",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>GRAFCET: Automation and Control of Processes</span>"
     ]
   },
   {
-    "objectID": "chapter04.html#stages",
-    "href": "chapter04.html#stages",
+    "objectID": "chapter04.html#basic-principles",
+    "href": "chapter04.html#basic-principles",
     "title": "6  GRAFCET: Automation and Control of Processes",
-    "section": "9.1 Stages",
-    "text": "9.1 Stages\nEach stage represents a state in the process. The initial stage is marked with a double square.",
+    "section": "6.2 Basic Principles",
+    "text": "6.2 Basic Principles\n\nModels the sequential behavior of automated systems.\nDescribes process evolution and triggering conditions.\nUses stages, transitions, and actions.",
     "crumbs": [
       "Chapters",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>GRAFCET: Automation and Control of Processes</span>"
     ]
   },
   {
-    "objectID": "chapter04.html#transitions",
-    "href": "chapter04.html#transitions",
+    "objectID": "chapter04.html#elements-of-grafcet",
+    "href": "chapter04.html#elements-of-grafcet",
     "title": "6  GRAFCET: Automation and Control of Processes",
-    "section": "9.2 Transitions",
-    "text": "9.2 Transitions\nTransitions connect stages and are triggered by specific conditions.",
+    "section": "6.3 Elements of GRAFCET",
+    "text": "6.3 Elements of GRAFCET\n\n6.3.1 Stages\nEach stage represents a state in the process. The initial stage is marked with a double square.\n\n\n6.3.2 Transitions\nTransitions connect stages and are triggered by specific conditions.\n\n\n6.3.3 Links\nLinks visually connect stages and transitions.\n\n\n6.3.4 Actions\nActions are associated with stages and define what the system does (e.g., activate motor, retract piston).\n\n\n6.3.5 Transition Conditions\nTypes: - Active: CT[i] = F1 - Inactive: CT[i] = F1’ - Time-based: CT[i] = t/i/10 sec - Logical: CT[i] = F1·F2’·F3 - Unconditional: CT[i] = 1",
     "crumbs": [
       "Chapters",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>GRAFCET: Automation and Control of Processes</span>"
     ]
   },
   {
-    "objectID": "chapter04.html#links",
-    "href": "chapter04.html#links",
+    "objectID": "chapter04.html#rules-for-evolution",
+    "href": "chapter04.html#rules-for-evolution",
     "title": "6  GRAFCET: Automation and Control of Processes",
-    "section": "9.3 Links",
-    "text": "9.3 Links\nLinks visually connect stages and transitions.",
+    "section": "6.4 Rules for Evolution",
+    "text": "6.4 Rules for Evolution\n\nThe process is broken into sequential stages.\nActions may be associated with multiple stages.\nA stage activates when the previous stage and its transition condition are active.\nTransition activation deactivates the previous stage.\nStage 0 must be active to start the cycle.",
     "crumbs": [
       "Chapters",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>GRAFCET: Automation and Control of Processes</span>"
     ]
   },
   {
-    "objectID": "chapter04.html#actions",
-    "href": "chapter04.html#actions",
+    "objectID": "chapter04.html#examples",
+    "href": "chapter04.html#examples",
     "title": "6  GRAFCET: Automation and Control of Processes",
-    "section": "9.4 Actions",
-    "text": "9.4 Actions\nActions are associated with stages and define what the system does (e.g., activate motor, retract piston).",
+    "section": "6.5 Examples",
+    "text": "6.5 Examples\n\n6.5.1 Example 1: Simple Sequence\n´´´plaintext Sequence: A+ A-\nplaintext Stage 0 → a0 ∙ INICIO Stage 1 → a+ Stage 2 → a- ´´´ ## Example 2: Traffic Light - Start button initiates continuous sequence. - Timers control light durations. - Ladder logic uses Latch/Unlatch for stage control. ## Example 3: Crane Control - Limit switches: S1, S2 (vertical), S3, S4 (horizontal) - Motors: MV (vertical), MH (horizontal) - Uses timers and conditional transitions.",
     "crumbs": [
       "Chapters",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>GRAFCET: Automation and Control of Processes</span>"
     ]
   },
   {
-    "objectID": "chapter04.html#transition-conditions",
-    "href": "chapter04.html#transition-conditions",
+    "objectID": "chapter04.html#grafcet-to-ladder-diagram",
+    "href": "chapter04.html#grafcet-to-ladder-diagram",
     "title": "6  GRAFCET: Automation and Control of Processes",
-    "section": "9.5 Transition Conditions",
-    "text": "9.5 Transition Conditions\nTypes: - Active: CT[i] = F1 - Inactive: CT[i] = F1’ - Time-based: CT[i] = t/i/10 sec - Logical: CT[i] = F1·F2’·F3 - Unconditional: CT[i] = 1",
+    "section": "6.6 Grafcet to Ladder Diagram",
+    "text": "6.6 Grafcet to Ladder Diagram\nConversion Steps - Activate E0 to start. - Use Latch/Unlatch for stage control. - Actions linked to stages. - Conditioned actions use timers and switches. ## Ladder Logic Snippet ´´´plaintext E[i-1] + CT[i-1] → Latch E[i] E[i] → Execute Action ´´´\n\n6.6.1 Exercises\n\nStacker: Sequence control for stacking operation.\nParking Barrier: Delay-based barrier control using sensors.\nMobile Movement: Bidirectional movement with reset and stop logic.\nScale: Gate control based on weight thresholds. # Advanced Constructs ### Conditional Transitions Only one path activates based on conditions. ### Simultaneous Sequences Parallel execution using dual lines. ### Jumps Allows skipping intermediate stages.",
     "crumbs": [
       "Chapters",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>GRAFCET: Automation and Control of Processes</span>"
     ]
   },
   {
-    "objectID": "chapter04.html#example-1-simple-sequence",
-    "href": "chapter04.html#example-1-simple-sequence",
+    "objectID": "chapter04.html#common-mistakes",
+    "href": "chapter04.html#common-mistakes",
     "title": "6  GRAFCET: Automation and Control of Processes",
-    "section": "11.1 Example 1: Simple Sequence",
-    "text": "11.1 Example 1: Simple Sequence\n´´´plaintext Sequence: A+ A-\nplaintext Stage 0 → a0 ∙ INICIO Stage 1 → a+ Stage 2 → a- ´´´ ## Example 2: Traffic Light - Start button initiates continuous sequence. - Timers control light durations. - Ladder logic uses Latch/Unlatch for stage control. ## Example 3: Crane Control - Limit switches: S1, S2 (vertical), S3, S4 (horizontal) - Motors: MV (vertical), MH (horizontal) - Uses timers and conditional transitions.",
-    "crumbs": [
-      "Chapters",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>GRAFCET: Automation and Control of Processes</span>"
-    ]
-  },
-  {
-    "objectID": "chapter04.html#exercises",
-    "href": "chapter04.html#exercises",
-    "title": "6  GRAFCET: Automation and Control of Processes",
-    "section": "12.1 Exercises",
-    "text": "12.1 Exercises\n\nStacker: Sequence control for stacking operation.\nParking Barrier: Delay-based barrier control using sensors.\nMobile Movement: Bidirectional movement with reset and stop logic.\nScale: Gate control based on weight thresholds. # Advanced Constructs ### Conditional Transitions Only one path activates based on conditions. ### Simultaneous Sequences Parallel execution using dual lines. ### Jumps Allows skipping intermediate stages.",
+    "section": "6.7 Common Mistakes",
+    "text": "6.7 Common Mistakes\n\nMisconfigured transition conditions.\nIncorrect simultaneous start/end.\nNested simultaneous sequences without proper separation.",
     "crumbs": [
       "Chapters",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>GRAFCET: Automation and Control of Processes</span>"
