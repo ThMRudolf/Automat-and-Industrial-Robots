@@ -219,13 +219,13 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="introduction" class="level1" data-number="9">
-<h1 data-number="9"><span class="header-section-number">9</span> Introduction</h1>
+<section id="introduction" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">8.1</span> Introduction</h2>
 <p>The kinematic analysis of a robot is performed using the Denavit-Hartenberg convention. This method is essential for describing the transformations of the joints and links of an industrial robot. In this material, we discuss how the coordinate system is defined for each joint and how transformations are applied to calculate the position of the TCP (Tool Center Point).</p>
 <hr>
 </section>
-<section id="coordinate-systems" class="level1" data-number="10">
-<h1 data-number="10"><span class="header-section-number">10</span> Coordinate Systems</h1>
+<section id="coordinate-systems" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="coordinate-systems"><span class="header-section-number">8.2</span> Coordinate Systems</h2>
 <ul>
 <li><p><strong>Base Coordinate System</strong></p>
 <p><strong>Image: insert image of the base coordinate system setup for the robot</strong></p></li>
@@ -236,52 +236,53 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <hr>
 </section>
-<section id="forward-and-inverse-kinematics" class="level1" data-number="11">
-<h1 data-number="11"><span class="header-section-number">11</span> Forward and Inverse Kinematics</h1>
+<section id="forward-and-inverse-kinematics" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="forward-and-inverse-kinematics"><span class="header-section-number">8.3</span> Forward and Inverse Kinematics</h2>
 <p>Forward kinematics describes how the position and orientation of the TCP depend on the joint variables (angles and displacements). On the other hand, inverse kinematics involves calculating the joint angles from a desired TCP position.</p>
 <p><strong>Image: insert image showing the forward kinematics and inverse kinematics process</strong></p>
 <hr>
 </section>
-<section id="homogeneous-transformations" class="level1" data-number="12">
-<h1 data-number="12"><span class="header-section-number">12</span> Homogeneous Transformations</h1>
+<section id="homogeneous-transformations" class="level2" data-number="8.4">
+<h2 data-number="8.4" class="anchored" data-anchor-id="homogeneous-transformations"><span class="header-section-number">8.4</span> Homogeneous Transformations</h2>
 <p>Homogeneous transformations are used to describe the position and orientation of links in three-dimensional space using 4x4 matrices. Below are examples of transformations.</p>
-<section id="displacement-and-rotation" class="level2" data-number="12.1">
-<h2 data-number="12.1" class="anchored" data-anchor-id="displacement-and-rotation"><span class="header-section-number">12.1</span> Displacement and Rotation</h2>
+</section>
+<section id="displacement-and-rotation" class="level2" data-number="8.5">
+<h2 data-number="8.5" class="anchored" data-anchor-id="displacement-and-rotation"><span class="header-section-number">8.5</span> Displacement and Rotation</h2>
 <p><strong>Image: insert image of homogeneous transformation matrix for displacement and rotation</strong></p>
 <hr>
 </section>
-</section>
-<section id="denavit-hartenberg-parameters" class="level1" data-number="13">
-<h1 data-number="13"><span class="header-section-number">13</span> Denavit-Hartenberg Parameters</h1>
+<section id="denavit-hartenberg-parameters" class="level2" data-number="8.6">
+<h2 data-number="8.6" class="anchored" data-anchor-id="denavit-hartenberg-parameters"><span class="header-section-number">8.6</span> Denavit-Hartenberg Parameters</h2>
 <p>The Denavit-Hartenberg parameterization uses four parameters to describe each link of the robot:<br>
-1. ( <em>n ) - Angle between the axes ( x</em>{n-1} ) and ( x_n ), rotated about ( z_{n-1} ). 2. ( d_n ) - Distance between the origins ( O_n ) and ( O_{n-1} ) along the ( z_{n-1} ) axis. 3. ( a_n ) - Perpendicular distance between the ( z_{n-1} ) and ( z_n ) axes. 4. ( <em>n ) - Angle between the ( z</em>{n-1} ) and ( z_n ) axes, rotated about ( x_n ).</p>
+1. ( n ) - Angle between the axes ( x<em>{n-1} ) and ( x_n ), rotated about ( z_{n-1} ). 2. ( d_n ) - Distance between the origins ( O_n ) and ( O_{n-1} ) along the ( z_{n-1} ) axis. 3. ( a_n ) - Perpendicular distance between the ( z_{n-1} ) and ( z_n ) axes. 4. ( n ) - Angle between the ( z</em>{n-1} ) and ( z_n ) axes, rotated about ( x_n ).</p>
 <p><strong>Image: insert image of Denavit-Hartenberg parameters with graphical representation of the robot’s joints</strong></p>
 <hr>
-<section id="mathematical-model-of-a-6-dof-robot" class="level2" data-number="13.1">
-<h2 data-number="13.1" class="anchored" data-anchor-id="mathematical-model-of-a-6-dof-robot"><span class="header-section-number">13.1</span> 6. Mathematical Model of a 6-DOF Robot</h2>
+<section id="mathematical-model-of-a-6-dof-robot" class="level3" data-number="8.6.1">
+<h3 data-number="8.6.1" class="anchored" data-anchor-id="mathematical-model-of-a-6-dof-robot"><span class="header-section-number">8.6.1</span> Mathematical Model of a 6-DOF Robot</h3>
 <p>The model of a 6-degree-of-freedom robot is described by the transformations of each link, applying the Denavit-Hartenberg parameters to obtain the TCP position in the global coordinate system.</p>
 <p><strong>Image: insert image showing the transformation of the 6-DOF robot with all links and joints represented</strong></p>
 <hr>
 </section>
-<section id="inverse-kinematics-ambiguities" class="level2" data-number="13.2">
-<h2 data-number="13.2" class="anchored" data-anchor-id="inverse-kinematics-ambiguities"><span class="header-section-number">13.2</span> 7. Inverse Kinematics Ambiguities</h2>
+<section id="inverse-kinematics-ambiguities" class="level3" data-number="8.6.2">
+<h3 data-number="8.6.2" class="anchored" data-anchor-id="inverse-kinematics-ambiguities"><span class="header-section-number">8.6.2</span> Inverse Kinematics Ambiguities</h3>
 <p>When solving inverse kinematics, multiple solutions for the joint angles can arise. These ambiguities occur because the positions of the higher axes depend on the positions of the lower axes. Approximation procedures exist for conventional robots.</p>
 <p><strong>Image: insert image showing inverse kinematics ambiguities and multiple solutions</strong></p>
 <hr>
 </section>
-<section id="denavit-hartenberg-transformation-exercise" class="level2" data-number="13.3">
-<h2 data-number="13.3" class="anchored" data-anchor-id="denavit-hartenberg-transformation-exercise"><span class="header-section-number">13.3</span> 8. Denavit-Hartenberg Transformation Exercise</h2>
+<section id="denavit-hartenberg-transformation-exercise" class="level3" data-number="8.6.3">
+<h3 data-number="8.6.3" class="anchored" data-anchor-id="denavit-hartenberg-transformation-exercise"><span class="header-section-number">8.6.3</span> Denavit-Hartenberg Transformation Exercise</h3>
 <p>An exercise is presented to calculate the Denavit-Hartenberg transformation for a 6-DOF robot.</p>
 <p><strong>Image: insert image showing the Denavit-Hartenberg transformation calculation steps for a 6-DOF robot</strong></p>
 <hr>
 </section>
-<section id="conclusion" class="level2" data-number="13.4">
-<h2 data-number="13.4" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">13.4</span> 9. Conclusion</h2>
+<section id="conclusion" class="level3" data-number="8.6.4">
+<h3 data-number="8.6.4" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">8.6.4</span> Conclusion</h3>
 <p>Kinematic analysis is essential for robot control and simulation. Using the Denavit-Hartenberg model, the position and orientation of the TCP can be efficiently calculated. Additionally, inverse kinematics is crucial for determining the joint angles in practical applications.</p>
 <hr>
 </section>
-<section id="references" class="level2" data-number="13.5">
-<h2 data-number="13.5" class="anchored" data-anchor-id="references"><span class="header-section-number">13.5</span> References</h2>
+</section>
+<section id="references" class="level2" data-number="8.7">
+<h2 data-number="8.7" class="anchored" data-anchor-id="references"><span class="header-section-number">8.7</span> References</h2>
 <ul>
 <li>Corke, Peter. “Robotics, Vision and Control”.<br>
 </li>
@@ -289,7 +290,6 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

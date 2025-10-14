@@ -521,7 +521,40 @@
     "href": "chapter06.html",
     "title": "8  Industrial Robots",
     "section": "",
-    "text": "9 Introduction\nThe kinematic analysis of a robot is performed using the Denavit-Hartenberg convention. This method is essential for describing the transformations of the joints and links of an industrial robot. In this material, we discuss how the coordinate system is defined for each joint and how transformations are applied to calculate the position of the TCP (Tool Center Point).",
+    "text": "8.1 Introduction\nThe kinematic analysis of a robot is performed using the Denavit-Hartenberg convention. This method is essential for describing the transformations of the joints and links of an industrial robot. In this material, we discuss how the coordinate system is defined for each joint and how transformations are applied to calculate the position of the TCP (Tool Center Point).",
+    "crumbs": [
+      "Chapters",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Industrial Robots</span>"
+    ]
+  },
+  {
+    "objectID": "chapter06.html#coordinate-systems",
+    "href": "chapter06.html#coordinate-systems",
+    "title": "8  Industrial Robots",
+    "section": "8.2 Coordinate Systems",
+    "text": "8.2 Coordinate Systems\n\nBase Coordinate System\nImage: insert image of the base coordinate system setup for the robot\nJoint Coordinate System\nImage: insert image of the joint coordinate system for the robot\nCartesian Coordinate System\nImage: insert image of the Cartesian coordinate system used in the robot",
+    "crumbs": [
+      "Chapters",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Industrial Robots</span>"
+    ]
+  },
+  {
+    "objectID": "chapter06.html#forward-and-inverse-kinematics",
+    "href": "chapter06.html#forward-and-inverse-kinematics",
+    "title": "8  Industrial Robots",
+    "section": "8.3 Forward and Inverse Kinematics",
+    "text": "8.3 Forward and Inverse Kinematics\nForward kinematics describes how the position and orientation of the TCP depend on the joint variables (angles and displacements). On the other hand, inverse kinematics involves calculating the joint angles from a desired TCP position.\nImage: insert image showing the forward kinematics and inverse kinematics process",
+    "crumbs": [
+      "Chapters",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Industrial Robots</span>"
+    ]
+  },
+  {
+    "objectID": "chapter06.html#homogeneous-transformations",
+    "href": "chapter06.html#homogeneous-transformations",
+    "title": "8  Industrial Robots",
+    "section": "8.4 Homogeneous Transformations",
+    "text": "8.4 Homogeneous Transformations\nHomogeneous transformations are used to describe the position and orientation of links in three-dimensional space using 4x4 matrices. Below are examples of transformations.",
     "crumbs": [
       "Chapters",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Industrial Robots</span>"
@@ -531,52 +564,19 @@
     "objectID": "chapter06.html#displacement-and-rotation",
     "href": "chapter06.html#displacement-and-rotation",
     "title": "8  Industrial Robots",
-    "section": "12.1 Displacement and Rotation",
-    "text": "12.1 Displacement and Rotation\nImage: insert image of homogeneous transformation matrix for displacement and rotation",
+    "section": "8.5 Displacement and Rotation",
+    "text": "8.5 Displacement and Rotation\nImage: insert image of homogeneous transformation matrix for displacement and rotation",
     "crumbs": [
       "Chapters",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Industrial Robots</span>"
     ]
   },
   {
-    "objectID": "chapter06.html#mathematical-model-of-a-6-dof-robot",
-    "href": "chapter06.html#mathematical-model-of-a-6-dof-robot",
+    "objectID": "chapter06.html#denavit-hartenberg-parameters",
+    "href": "chapter06.html#denavit-hartenberg-parameters",
     "title": "8  Industrial Robots",
-    "section": "13.1 6. Mathematical Model of a 6-DOF Robot",
-    "text": "13.1 6. Mathematical Model of a 6-DOF Robot\nThe model of a 6-degree-of-freedom robot is described by the transformations of each link, applying the Denavit-Hartenberg parameters to obtain the TCP position in the global coordinate system.\nImage: insert image showing the transformation of the 6-DOF robot with all links and joints represented",
-    "crumbs": [
-      "Chapters",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Industrial Robots</span>"
-    ]
-  },
-  {
-    "objectID": "chapter06.html#inverse-kinematics-ambiguities",
-    "href": "chapter06.html#inverse-kinematics-ambiguities",
-    "title": "8  Industrial Robots",
-    "section": "13.2 7. Inverse Kinematics Ambiguities",
-    "text": "13.2 7. Inverse Kinematics Ambiguities\nWhen solving inverse kinematics, multiple solutions for the joint angles can arise. These ambiguities occur because the positions of the higher axes depend on the positions of the lower axes. Approximation procedures exist for conventional robots.\nImage: insert image showing inverse kinematics ambiguities and multiple solutions",
-    "crumbs": [
-      "Chapters",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Industrial Robots</span>"
-    ]
-  },
-  {
-    "objectID": "chapter06.html#denavit-hartenberg-transformation-exercise",
-    "href": "chapter06.html#denavit-hartenberg-transformation-exercise",
-    "title": "8  Industrial Robots",
-    "section": "13.3 8. Denavit-Hartenberg Transformation Exercise",
-    "text": "13.3 8. Denavit-Hartenberg Transformation Exercise\nAn exercise is presented to calculate the Denavit-Hartenberg transformation for a 6-DOF robot.\nImage: insert image showing the Denavit-Hartenberg transformation calculation steps for a 6-DOF robot",
-    "crumbs": [
-      "Chapters",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Industrial Robots</span>"
-    ]
-  },
-  {
-    "objectID": "chapter06.html#conclusion",
-    "href": "chapter06.html#conclusion",
-    "title": "8  Industrial Robots",
-    "section": "13.4 9. Conclusion",
-    "text": "13.4 9. Conclusion\nKinematic analysis is essential for robot control and simulation. Using the Denavit-Hartenberg model, the position and orientation of the TCP can be efficiently calculated. Additionally, inverse kinematics is crucial for determining the joint angles in practical applications.",
+    "section": "8.6 Denavit-Hartenberg Parameters",
+    "text": "8.6 Denavit-Hartenberg Parameters\nThe Denavit-Hartenberg parameterization uses four parameters to describe each link of the robot:\n1. ( n ) - Angle between the axes ( x{n-1} ) and ( x_n ), rotated about ( z_{n-1} ). 2. ( d_n ) - Distance between the origins ( O_n ) and ( O_{n-1} ) along the ( z_{n-1} ) axis. 3. ( a_n ) - Perpendicular distance between the ( z_{n-1} ) and ( z_n ) axes. 4. ( n ) - Angle between the ( z{n-1} ) and ( z_n ) axes, rotated about ( x_n ).\nImage: insert image of Denavit-Hartenberg parameters with graphical representation of the robot’s joints\n\n\n8.6.1 Mathematical Model of a 6-DOF Robot\nThe model of a 6-degree-of-freedom robot is described by the transformations of each link, applying the Denavit-Hartenberg parameters to obtain the TCP position in the global coordinate system.\nImage: insert image showing the transformation of the 6-DOF robot with all links and joints represented\n\n\n\n8.6.2 Inverse Kinematics Ambiguities\nWhen solving inverse kinematics, multiple solutions for the joint angles can arise. These ambiguities occur because the positions of the higher axes depend on the positions of the lower axes. Approximation procedures exist for conventional robots.\nImage: insert image showing inverse kinematics ambiguities and multiple solutions\n\n\n\n8.6.3 Denavit-Hartenberg Transformation Exercise\nAn exercise is presented to calculate the Denavit-Hartenberg transformation for a 6-DOF robot.\nImage: insert image showing the Denavit-Hartenberg transformation calculation steps for a 6-DOF robot\n\n\n\n8.6.4 Conclusion\nKinematic analysis is essential for robot control and simulation. Using the Denavit-Hartenberg model, the position and orientation of the TCP can be efficiently calculated. Additionally, inverse kinematics is crucial for determining the joint angles in practical applications.",
     "crumbs": [
       "Chapters",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Industrial Robots</span>"
@@ -586,8 +586,8 @@
     "objectID": "chapter06.html#references",
     "href": "chapter06.html#references",
     "title": "8  Industrial Robots",
-    "section": "13.5 References",
-    "text": "13.5 References\n\nCorke, Peter. “Robotics, Vision and Control”.\n\nKUKA Robotics.",
+    "section": "8.7 References",
+    "text": "8.7 References\n\nCorke, Peter. “Robotics, Vision and Control”.\n\nKUKA Robotics.",
     "crumbs": [
       "Chapters",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Industrial Robots</span>"
